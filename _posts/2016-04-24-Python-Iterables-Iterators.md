@@ -17,15 +17,15 @@ When I use a for-loop to iterate over a list, for example, conceptually I unders
 
 When we create a list in Python...
 
-```
+```python
 the_list = [1, 2, 3]
 ```
 
-We know that we can iterate over the list by invoking:
+We know that we can iterate over the list like this:
 
-```
+```python
 for element in the_list:
-  print element
+    print element
 ```
 
 That has been all I’ve needed to know for most of the coding I’ve done up until this week.
