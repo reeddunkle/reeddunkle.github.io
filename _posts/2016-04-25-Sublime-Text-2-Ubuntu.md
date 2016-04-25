@@ -19,9 +19,9 @@ I hope this guide will make things simpler the next time I or anyone needs to in
     `$ sudo apt-get update`  
     `$ sudo apt-get install sublime-text`  
 
-2. **Set up Sublime Text 2**:
-  - This requires about 30 minutes
-  - I followed this [clean, well-written guide](https://blog.alexmaccaw.com/sublime-text). He wrote the guide for OSX, so I’ll translate the steps for Ubuntu:  
+## **Set up Sublime Text 2**:
+ - This requires about 30 minutes
+ - I followed this [clean, well-written guide](https://blog.alexmaccaw.com/sublime-text). He wrote the guide for OSX, so I’ll translate the steps for Ubuntu:  
     1. **Open Sublime Text for the first time**:  
        1. Go to your terminal and enter `$ subl` to open Sublime.  
        2. Right click on the icon in the Launcher, and **Lock to Launcher**  
