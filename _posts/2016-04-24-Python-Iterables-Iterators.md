@@ -138,12 +138,12 @@ A list is an example of an iterable. An iterable is defined as a object that has
 
 The custom iterator class:
 
-```
+```python
 class MyIterator(object):
 
-  def __init__(self, iterable_that_is_made_iterator):
-    self.iterable_that_is_made_iterator = iterable_that_is_made_iterator
-    self.index = 0   # I assume we're already receiving an iterable
+    def __init__(self, iterable_that_is_made_iterator):
+        self.iterable_that_is_made_iterator = iterable_that_is_made_iterator
+        self.index = 0   # I assume we're already receiving an iterable
 
   ''' Below is the next() method we kept using above. I want to make it clear
   where I am using the concepts we used above.)
