@@ -130,7 +130,7 @@ iterator_two = iter(iterator_one)
 
 You can then call `next()` on `iterator_one` and `iterator_two` independently. They are on their own tracks.
 
-Apparently this is not what is happening when you use an object that is already an iterator in a for-loop like I did above. Otherwise, we should be able to call next() on “`list_that_can_be_iterated_on`” _after_ the for-loop, and still retrieve the next element. But we can’t; it raises a `StopIteration` exception.
+Apparently this is not what is happening when you use an object that is already an iterator in a for-loop like I did above. Otherwise, we should be able to call `next()` on “`list_that_can_be_iterated_on`” _after_ the for-loop, and still retrieve the next element. But we can’t; it raises a `StopIteration` exception.
 
 #### Reviewing the important concepts with custom classes:
 
