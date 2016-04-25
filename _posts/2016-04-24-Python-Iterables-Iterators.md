@@ -205,7 +205,7 @@ while True:
 
 I will continue to edit this post and try to make it cleaner. If this is confusing to you to whatever degree, check out the following explanations from other people, and see if they make things clearer. I tried to over-explain each step of how this works, but I worry that it does make it all feel more muddled than it needs to be.
 
-Again, this is a tough problem, because it’s confusing up to the point when it isn’t. Hopefully my long explanation makes it easier for some to understand, but I suspect that more important than the right explanation is general exposure to the confusion, stretched out over time, flopping around in the confusion, reading any explanation that helps to whatever degree, and out of this will come some clarity.
+Again, this is a tough problem, because it’s confusing up to the point when it isn’t. I hope that my long explanation makes it easier for some to understand, but I suspect that, more important than the right explanation, is just general exposure to the confusion, stretched out over time, flopping around in the confusion, reading any explanation that helps to whatever degree, and out of that will come some clarity.
 
 Here are some other explanations, more thorough, but possibly more confusing:
 
