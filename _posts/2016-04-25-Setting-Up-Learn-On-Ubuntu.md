@@ -27,10 +27,16 @@ This is the part that took the most troubleshooting for me.
 
 - Enter this into the terminal, and wait for it to install:
 
-`gem install learn-co`
+```
+gem install learn-co
+```
+
 - I then entered:
 
-`learn help`
+```
+learn help
+```
+
 - And it said:
 
 ```
@@ -65,8 +71,10 @@ Commands:
 ```
 - Next, enter:
 
-`cd ~`
-`ls`
+```
+cd ~
+ls
+```
 
 - Now you should see a code directory listed. Inside the code directory is a labs directory, which you then use the same that you used the labs directory in Nitrous.
 
