@@ -15,9 +15,10 @@ I hope this guide will make things simpler the next time I or anyone needs to in
 
 ## **Install Sublime Text 2**:
  - I followed [this guide](http://askubuntu.com/questions/172698/how-do-i-install-sublime-text-2-3) to install via the Package Manager (apt-get):  
-    `$ sudo add-apt-repository ppa:webupd8team/sublime-text-2`  
-    `$ sudo apt-get update`  
-    `$ sudo apt-get install sublime-text`  
+
+    $ sudo add-apt-repository ppa:webupd8team/sublime-text-2 
+    $ sudo apt-get update
+    $ sudo apt-get install sublime-text
 
 ## **Set up Sublime Text 2**:
  - This requires about 30 minutes
