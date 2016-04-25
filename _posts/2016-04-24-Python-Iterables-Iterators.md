@@ -107,7 +107,13 @@ To demonstrate this, I’ll first call `next()` on an iterator, and then use a f
 [1, 2, 3]
 ```
 
-Notice at the end of this that “`the_list`” has not been affected. It still contains a list of `[1, 2, 3]`. This is what allows us to call for-loops multiple times on the same iterables. To do that here, we could just keep re-entering “`list_that_can_be_iterated_on = iter(the_list)`“, and each time we would receive a fresh iterator of `the_list`, that starts at its first element.
+Notice at the end of this that “`the_list`” has not been affected. It still contains a list of `[1, 2, 3]`. This is what allows us to call for-loops multiple times on the same iterables. To do that here, we could just keep re-entering
+
+```
+list_that_can_be_iterated_on = iter(the_list)
+```
+
+and each time we would receive a fresh iterator of `the_list`, that starts at its first element.
 
 Also, I did something above that may be confusing. I took “`the_list`” (an iterable) and stored it in “`list_that_can_be_iterated_on`” as an iterator (with the `iter()` method), and _then_ I called it in a for-loop. I did this to show you in a familiar form (the for-loop) that after already having called `next()` on the iterator, the for-loop would start at the _second_ element (because we already called `next()` on it once, outside of the for-loop).
 
