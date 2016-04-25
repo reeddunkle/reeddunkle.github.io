@@ -11,6 +11,8 @@ The final layer of confusion I’ve had to unravel is that, for my day-to-day us
 
 When I use a for-loop to iterate over a list, for example, conceptually I understand that I am iterating over a list…and that’s all I am really required to know.
 
+**Specifications**: I'm on Ubuntu 14.04 LTS, using Python 2.7.6
+
 **Diving In**:
 
 When we create a list in Python...
@@ -41,15 +43,22 @@ Confused yet?
 Part of the confusing part of this all, for me at least, is that these concepts aren’t that complicated. It feels more complicated than it is. And we are accustomed to for-loops doing this work for us.
 
 Hop into a Python repl, and I’ll show you the simple aspects of what a for-loop does, to demonstrate the differences between iterables and iterators.
+
+```
+python
+Python 2.7.6 (default, Jun 22 2015, 17:58:13) 
+[GCC 4.8.2] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
 >>> the_list = [1, 2, 3]
 >>> the_list
 [1, 2, 3]
->>>the_list.next()
+>>> the_list.next()
 Traceback (most recent call last):
-File "<stdin>", line 1, in <module>
+  File "<stdin>", line 1, in <module>
 AttributeError: 'list' object has no attribute 'next'
+```
 
-To make the_list into an iterator, on which you can call the .next() function, to retrieve the next element in the iterable, you call the iter() function on the iterable.
+To make the_list into an iterator, on which you can call the `next()` function, to retrieve the next element in the iterable, you call the `iter()` function on the iterable.
 
 >>> list_that_can_be_iterated_on = iter(the_list)
 >>> list_that_can_be_iterated_on.next()
