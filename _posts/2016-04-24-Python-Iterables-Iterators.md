@@ -89,7 +89,7 @@ The `iter()` method returns an iterator of an iterable.
 
 Above we had a container (a list) that has the ability to be made into an iterator. We called this iterable “`the_list`“. We then set the variable “`list_that_can_be_iterated_on`” to be an iterator of the iterable “`the_list`“. Then we called `next()` on the iterator “`list_that_can_be_iterated_on`“, and each time it retrieved and returned the next element of the original iterable “`the_list`“.
 
-[This article](http://nvie.com/posts/iterators-vs-generators/) calls iterators lazy, because they don’t do anything more than bookmark their position within an iterable, and when .next() is called on them, return the next element, and in turn bookmark _that_ position.
+[This article](http://nvie.com/posts/iterators-vs-generators/) calls iterators lazy, because they don’t do anything more than bookmark their position within an iterable, and when `next()` is called on them, return the next element, and in turn bookmark _that_ position.
 
 To demonstrate this, I’ll first call `next()` on an iterator, and then use a for-loop on the iterator to print out its elements. The first `next()` call will retrieve its first element, which means that the next time `next()` is called on it, it will move to the second element and so on. When I use the for-loop, it will start at the second element, because `next()` was already called once on the iterator.
 
