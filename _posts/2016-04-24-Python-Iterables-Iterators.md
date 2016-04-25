@@ -126,7 +126,7 @@ You can then call `next()` on `iterator_one` and `iterator_two` independently. T
 
 Apparently this is not what is happening when you use an object that is already an iterator in a for-loop like I did above. Otherwise, we should be able to call next() on “`list_that_can_be_iterated_on`” _after_ the for-loop, and still retrieve the next element. But we can’t; it raises a `StopIteration` exception.
 
-Let’s review the important concepts with custom classes:
+#### Reviewing the important concepts with custom classes:
 
 A list is an example of an iterable. An iterable is defined as a object that has the `__iter__` method, which returns an iterator of the iterable.
 
@@ -153,29 +153,38 @@ class MyIterator(object):
 
 Back to the very first example in this post:
 
+```
 the_list = [1, 2, 3]
+```
 
 Remember that this doesn’t do anything yet:
 
+```
 the_list.next()
+```
 
 A list is an iterable, but it is not yet an iterator. Let’s use our custom MyIterator class to make it an iterator:
 
+```
 list_that_can_be_iterated_over = MyIterator(the_list)
+```
 
-This does the same thing as calling iter() on a list*. Now we can call the next() method on it and retrieve each element in turn.
+**This does the same thing as calling `iter()` on a list**. Now we can call the `next()` method on it and retrieve each element in turn.
 
-*Note: This custom MyIterator class does not work with dictionaries, or necessarily any other types than lists. I don’t understand all of this completely. This post is as much for my sake as it is for yours. (This is where the __getitem__ method comes in.) It does, however, demonstrate how iterables and iterators differ from one another, and how they depend on one another, and in this case, how a list becomes an iterator and is iterated over with the next() method.
+**Note:** This custom MyIterator class does not work with dictionaries, or necessarily any other types than lists. I don’t understand all of this completely. This post is as much for my sake as it is for yours. (This is where the [__getitem__](http://stackoverflow.com/questions/9884132/what-exactly-are-pythons-iterator-iterable-and-iteration-protocols) method comes in.) It does, however, demonstrate how iterables and iterators differ from one another, and how they depend on one another, and in this case, how a list becomes an iterator and is iterated over with the `next()` method.
 
 The last point that I want to demonstrate is how to reproduce the way a for-loop works to print out (for example) each element in a list.
 
+```
 the_list = [1, 2, 3]
 
 for element in the_list:
   print element
+```
 
-Behind the scenes, this is what the for-loop does (and remember, MyIterator() is the same as the iter() method for our purposes):
+Behind the scenes, this is what the for-loop does (and remember, `MyIterator()` is acting the same as the `iter()` method for our purposes):
 
+```
 the_list = [1, 2, 3]
 
 # What the for-loop does:
@@ -186,15 +195,16 @@ while True:
     print iterator_L.next()
   except StopIteration:
     break
+```
 
-I will edit this post and try to make it cleaner. If this is confusing to you to whatever degree, check out the following explanations from other people, and see if they make things clearer. I tried to over-explain each step of how this works, but I worry that it does make it all feel more muddled than it needs to be.
+I will continue to edit this post and try to make it cleaner. If this is confusing to you to whatever degree, check out the following explanations from other people, and see if they make things clearer. I tried to over-explain each step of how this works, but I worry that it does make it all feel more muddled than it needs to be.
 
 Again, this is a tough problem, because it’s confusing up to the point when it isn’t. Hopefully my long explanation makes it easier for some to understand, but I suspect that more important than the right explanation is general exposure to the confusion, stretched out over time, flopping around in the confusion, reading any explanation that helps to whatever degree, and out of this will come some clarity.
 
 Here are some other explanations, more thorough, but possibly more confusing:
 
-http://nvie.com/posts/iterators-vs-generators/
+<http://nvie.com/posts/iterators-vs-generators/>
 
-http://stackoverflow.com/questions/9884132/what-exactly-are-pythons-iterator-iterable-and-iteration-protocols
+<http://stackoverflow.com/questions/9884132/what-exactly-are-pythons-iterator-iterable-and-iteration-protocols>
 
-http://stackoverflow.com/questions/32799980/what-exactly-does-iterable-mean-in-python
+<http://stackoverflow.com/questions/32799980/what-exactly-does-iterable-mean-in-python>
