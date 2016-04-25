@@ -129,11 +129,11 @@ In the second search box that I describe above, type the name of the package, an
 - I think that this might work by default now, perhaps a change since the guide was written?
 
 #### **I ignored all of the extra packages the guide recommends at the end.**
-<br>
+
 #### **A couple of things I figured out on my own:**
-  - Set the language you’re coding in by navigating to:
-    **View > Syntax**
-  - It’s useful to open entire directories in Sublime
+- Set the language you’re coding in by navigating to:
+  **View > Syntax**
+- It’s useful to open entire directories in Sublime
 
 _Sources:_
 [Guide I followed](https://blog.alexmaccaw.com/sublime-text)
