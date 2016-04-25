@@ -17,7 +17,9 @@ I am enthusiastic about learning new things, and I try hard at learning.
 
 ### Background:
 
-I am working to transition my career into programming after coming from an academic background in Spanish and translation ([Allegheny College](http://allegheny.edu/) in Pennsylvania, and [Middlebury College](http://www.middlebury.edu/#story513416) in Vermont.)
+I am working to transition my career into programming after coming from an academic background in Spanish and translation.
+- [Allegheny College](http://allegheny.edu/) in northwestern Pennsylvania
+- [Middlebury College](http://www.middlebury.edu/#story513416) in Vermont)
 
 
 ### Contact me
