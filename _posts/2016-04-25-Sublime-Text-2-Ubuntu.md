@@ -22,13 +22,13 @@ I hope this guide will make things simpler the next time I or anyone needs to in
 ## **Set up Sublime Text 2**:
  - This requires about 30 minutes
  - I followed this [clean, well-written guide](https://blog.alexmaccaw.com/sublime-text). He wrote the guide for OSX, so I’ll translate the steps for Ubuntu:  
-    ### **Open Sublime Text for the first time**:  
+  ### **Open Sublime Text for the first time**:  
        1. Go to your terminal and enter `$ subl` to open Sublime.  
        2. Right click on the icon in the Launcher, and **Lock to Launcher**  
        3. Next, close the terminal that you used to open Sublime the first time. This will close Sublime.  
        4. Last, re-open Sublime from the Launcher, this time independent from any open Terminal.  
        (I do this because I find that as I open applications, and windows, and terminals, my environment quickly becomes messy and disorganized. I like to have my applications open independent of their terminals to make my life easier.)
-    ### **Open the editor’s console**:
+  ### **Open the editor’s console**:
        1. Go to [this website](https://packagecontrol.io/installation#st3). Select Sublime Text 2 at the top, and copy the entire block of code.
        2. Go back to Sublime, Press **ctrl+`** (control backtick)
        3. Paste the code and press Enter
