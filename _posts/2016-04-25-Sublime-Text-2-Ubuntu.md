@@ -15,17 +15,17 @@ I hope this guide will make things simpler the next time I or anyone needs to in
 
 ## **Install Sublime Text 2**:
  - I followed [this guide](http://askubuntu.com/questions/172698/how-do-i-install-sublime-text-2-3) to install via the Package Manager (apt-get):
-
-	sudo add-apt-repository ppa:webupd8team/sublime-text-2
-	sudo apt-get update
-	sudo apt-get install sublime-text
-
+````
+    sudo add-apt-repository ppa:webupd8team/sublime-text-2
+    sudo apt-get update
+    sudo apt-get install sublime-text
+````
 ## **Set up Sublime Text 2**:
  - This requires about 30 minutes
  - I followed this [clean, well-written guide](https://blog.alexmaccaw.com/sublime-text). He wrote the guide for OSX, so I’ll translate the steps for Ubuntu:
   
 #### **Open Sublime Text for the first time**:  
-  1. Go to your terminal and enter `$ subl` to open Sublime.  
+  1. Go to your terminal and enter `subl` to open Sublime.  
   2. Right click on the icon in the Launcher, and **Lock to Launcher**  
   3. Next, close the terminal that you used to open Sublime the first time. This will close Sublime.  
   4. Last, re-open Sublime from the Launcher, this time independent from any open Terminal.  
@@ -64,17 +64,17 @@ In the second search box that I describe above, type the name of the package, an
     `]`
    ` }`
   3. I’m going to paste my **Settings – User** file here:
-	`{`
-	`“font_size”: 16,`
-	`“ignored_packages”:`
-	` [`
-	`“Vintage”`
-	`],`
-	`“tab_size”: 4,`
-	`“translate_tabs_to_spaces”: true,`
-	`"theme”: “Soda Dark.sublime-theme”,`
-	`“trim_trailing_white_space_on_save”: true`
- 	`}`
+    `{`
+    `“font_size”: 16,`
+    `“ignored_packages”:`
+    ` [`
+    `“Vintage”`
+    `],`
+    `“tab_size”: 4,`
+    `“translate_tabs_to_spaces”: true,`
+    `"theme”: “Soda Dark.sublime-theme”,`
+    `“trim_trailing_white_space_on_save”: true`
+    `}`
  4. The “`theme`” above selects the **Theme – Soda** (I chose Dark version — replace Dark with Light for alternate)
  5. Adjust “`tab_size`” if needed
 
@@ -100,8 +100,8 @@ In the second search box that I describe above, type the name of the package, an
       - The second key binding assigns your standard Paste function to ctrl+shift+v
       - The last key binding is one of my own making. Pressing **shift+space** will jump to the end of the line I’m on.  
 
-	**Another Note**:
-	- A built-in key binding that is really useful is **ctrl+m**. This will jump to the end of the current bracket in which you’re typing. 
+    **Another Note**:
+    - A built-in key binding that is really useful is **ctrl+m**. This will jump to the end of the current bracket in which you’re typing. 
 
 #### **Don’t try to change Sublime’s icon**
  - The guide I was mentioned suggested doing this.
