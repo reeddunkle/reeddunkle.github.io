@@ -90,23 +90,25 @@ In the second search box that I describe above, type the name of the package, an
 1. Navigate in Sublime’s menu bar to:
 **Preferences > Package Settings > TrailingSpaces > Settings – User**
 2. Add this:
-````
+
+```
 {
 "trailing_spaces_include_current_line": false
 }
-````
+```
 
 #### **Configure a few Key Bindings**:
 1. Navigate in Sublime’s menu bar to:
         **Preferences > Key Bindings – User**
 2. Here is my file:
-````
+
+```
 [
 { "keys": ["super+v"], "command": "paste_and_indent" },
 { "keys": ["super+shift+v"], "command": "paste" },`
 { "keys": ["shift+space"], "command": "move_to", "args": {"to": "eol", "extend": false} }
 ]
-````
+```
 **Note**:
 - The first key binding replaces the **ctrl+v** function with “**Paste and Indent**“. This will adjust your **Paste** to automatically match the indentation of that in which you’re pasting.
 - The second key binding assigns your standard Paste function to ctrl+shift+v
