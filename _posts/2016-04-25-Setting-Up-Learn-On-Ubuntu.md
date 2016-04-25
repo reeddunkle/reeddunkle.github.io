@@ -38,27 +38,32 @@ https://learn.co/your-github-username.
 Once you have it, please come back here and paste it in:
 ```
 
-  - They want you to change "your-github-username" to your actual github username (this didn't occur to me at first...), which will take you to your Learn profile page.
-    - I went to: [https://learn.co/reeddunkle](https://learn.co/reeddunkle)
-  - All the way at the bottom of the page, in a tiny font, which is a color that almost blends in with the background color of the page, is your **OAuth token**.
-  - Copy this string of characters, and paste it into your terminal (Ctrl+Shift+V, or middle mouse click), and press Enter. You should then see:
-    `Authenticating...`
-    `Commands:`
-    ` learn [test] [options] # R...`
-    ` learn directory # S...`
-    ` learn doctor # C...`
-    ` learn hello # V...`
-    ` learn help [COMMAND] # D...`
-    ` learn next [--editor=editor-binary] # O...`
-    ` learn open [lesson-name] [--editor=editor-binary] # O...`
-    ` learn reset # R...`
-    ` learn save # S...`
-    ` learn status # G...`
-    ` learn submit [-m|--message "message"] [-t|--team @username @username2] # S...`
-    ` learn version, -v, --version # D...`
-    ` learn whoami # D...`  
-  - Next, enter:
-    `$ cd ~`
-    `$ ls`
-  - Now you should see a code directory listed. Inside the code directory is a labs directory, which you then use the same that you used the labs directory in Nitrous.
-  You should be good to go!
+- They want you to change "your-github-username" to your actual github username (this didn't occur to me at first...), which will take you to your Learn profile page.
+- I went to: [https://learn.co/reeddunkle](https://learn.co/reeddunkle)
+- All the way at the bottom of the page, in a tiny font, which is a color that almost blends in with the background color of the page, is your **OAuth token**.
+- Copy this string of characters, and paste it into your terminal (Ctrl+Shift+V, or middle mouse click), and press Enter. You should then see:
+
+```
+Authenticating...
+Commands:
+ learn [test] [options] # R...
+ learn directory # S...
+ learn doctor # C...
+ learn hello # V...
+ learn help [COMMAND] # D...
+ learn next [--editor=editor-binary] # O...
+ learn open [lesson-name] [--editor=editor-binary] # O...
+ learn reset # R...
+ learn save # S...
+ learn status # G...
+ learn submit [-m|--message "message"] [-t|--team @username @username2] # S...
+ learn version, -v, --version # D...
+ learn whoami # D...
+```
+- Next, enter:
+`$ cd ~`
+`$ ls`
+
+- Now you should see a code directory listed. Inside the code directory is a labs directory, which you then use the same that you used the labs directory in Nitrous.
+
+#### You should be good to go!
