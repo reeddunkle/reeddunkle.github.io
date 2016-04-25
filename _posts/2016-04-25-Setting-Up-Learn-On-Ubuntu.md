@@ -26,10 +26,13 @@ Note: I realize now that in the first tutorial I used to install Ruby 2.2.3, he 
 This is the part that took the most troubleshooting for me.
 
 - Enter this into the terminal, and wait for it to install:
-`$ gem install learn-co`
+
+`gem install learn-co`
 - I then entered:
-`$ learn help`
+
+`learn help`
 - And it said:
+
 ```
 To connect with the Learn web application, you will need to
 configure the Learn gem with an OAuth token. You can find yours
@@ -61,8 +64,9 @@ Commands:
  learn whoami # D...
 ```
 - Next, enter:
-`$ cd ~`
-`$ ls`
+
+`cd ~`
+`ls`
 
 - Now you should see a code directory listed. Inside the code directory is a labs directory, which you then use the same that you used the labs directory in Nitrous.
 
