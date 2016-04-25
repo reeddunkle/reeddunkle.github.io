@@ -96,23 +96,25 @@ In the second search box that I describe above, type the name of the package, an
 1. Navigate in Sublime’s menu bar to:
         **Preferences > Key Bindings – User**
 2. Here is my file:
-        `[`
-        `{ "keys": ["super+v"], "command": "paste_and_indent" },`
-        `{ "keys": ["super+shift+v"], "command": "paste" },`
-        `{ "keys": ["shift+space"], "command": "move_to", "args": {"to": "eol", "extend": false} }`
-       ` ]`
-      **Note**:
-      - The first key binding replaces the **ctrl+v** function with “**Paste and Indent**“. This will adjust your **Paste** to automatically match the indentation of that in which you’re pasting.
-      - The second key binding assigns your standard Paste function to ctrl+shift+v
-      - The last key binding is one of my own making. Pressing **shift+space** will jump to the end of the line I’m on.  
+````
+[
+{ "keys": ["super+v"], "command": "paste_and_indent" },
+{ "keys": ["super+shift+v"], "command": "paste" },`
+{ "keys": ["shift+space"], "command": "move_to", "args": {"to": "eol", "extend": false} }
+]
+````
+**Note**:
+- The first key binding replaces the **ctrl+v** function with “**Paste and Indent**“. This will adjust your **Paste** to automatically match the indentation of that in which you’re pasting.
+- The second key binding assigns your standard Paste function to ctrl+shift+v
+- The last key binding is one of my own making. Pressing **shift+space** will jump to the end of the line I’m on.  
 
-    **Another Note**:
-    - A built-in key binding that is really useful is **ctrl+m**. This will jump to the end of the current bracket in which you’re typing. 
+**Another Note**:
+- A built-in key binding that is really useful is **ctrl+m**. This will jump to the end of the current bracket in which you’re typing. 
 
 #### **Don’t try to change Sublime’s icon**
  - The guide I was mentioned suggested doing this.
- I embarked upon that mission not knowing what I was getting myself into. It took me at least an hour to get it set up, and it wasn’t a big deal in the first place.
-**Instead of coding for an hour+, I troubleshot changing icons in Ubuntu for an hour+**
+- However, I embarked upon that mission not knowing what I was getting myself into. It took me at least an hour to get it set up, and it wasn’t a big deal in the first place.
+- **Instead of coding for an hour+, I troubleshot changing icons in Ubuntu for an hour+**
 
 #### **Set up a binary?**
 - I don’t know what this means, honestly, but the guide that I followed suggests doing it.
