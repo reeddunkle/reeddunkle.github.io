@@ -150,11 +150,11 @@ class MyIterator(object):
     '''
     def next(self):
         try:
-          element = self.iterable_that_is_made_iterator[self.index]
-          self.index += 1
-          return element
+            element = self.iterable_that_is_made_iterator[self.index]
+            self.index += 1
+            return element
         except IndexError:
-          raise StopIteration
+            raise StopIteration
 ```
 
 Back to the very first example in this post:
@@ -197,10 +197,10 @@ the_list = [1, 2, 3]
 iterator_list = iter(the_list)
 
 while True:
-    try:
-      print iterator_L.next()
-    except StopIteration:
-      break
+      try:
+          print iterator_L.next()
+      except StopIteration:
+          break
 ```
 
 I will continue to edit this post and try to make it cleaner. If this is confusing to you to whatever degree, check out the following explanations from other people, and see if they make things clearer. I tried to over-explain each step of how this works, but I worry that it does make it all feel more muddled than it needs to be.
