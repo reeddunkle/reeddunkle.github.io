@@ -119,7 +119,7 @@ Also, I did something above that may be confusing. I took “`the_list`” (an i
 
 I have glossed over the fact that _normally_ when you call use a list (an iterable) in a for-loop, it both turns it into an iterator without showing us that it is doing this, and then iterates over the iterator, returning each element by calling `next()` on the (invisible) iterator that it creates out of our original iterable.
 
-**Note: Iterators are lazy, but they still contain all of the information of the original iterable.**
+**Note:** Iterators are lazy, but they still contain all of the information of the original iterable.
 To demonstrate this, type:
 
 ```
