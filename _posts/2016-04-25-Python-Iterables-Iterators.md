@@ -56,10 +56,14 @@ Type "help", "copyright", "credits" or "license" for more information.
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 AttributeError: 'list' object has no attribute 'next'
+>>>
 ```
 
 To make the_list into an iterator, on which you can call the `next()` function, to retrieve the next element in the iterable, you call the `iter()` function on the iterable.
+Continuing from above:
 
+```
+...
 >>> list_that_can_be_iterated_on = iter(the_list)
 >>> list_that_can_be_iterated_on.next()
 1
@@ -69,10 +73,12 @@ To make the_list into an iterator, on which you can call the `next()` function, 
 3
 >>> list_that_can_be_iterated_on.next()
 Traceback (most recent call last):
-File "<stdin>", line 1, in <module>
+  File "<stdin>", line 1, in <module>
 StopIteration
+>>>
+```
 
-StopIteration is the Exception that is raised when .next() has already retrieved all of the elements in the iterable.
+StopIteration is the Exception that is raised when `next()` has already retrieved all of the elements in the iterable.
 
 There are a couple of concepts here that are important for understanding the distinction between iterables and iterators. Forgive me for repeating myself a little now. I want to bring back the points I made earlier and try to demonstrate more examples of how these two concepts are different and interdependent.
 
