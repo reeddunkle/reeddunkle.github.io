@@ -181,26 +181,26 @@ list_that_can_be_iterated_over = MyIterator(the_list)
 
 The last point that I want to demonstrate is how to reproduce the way a for-loop works to print out (for example) each element in a list.
 
-```
+```python
 the_list = [1, 2, 3]
 
 for element in the_list:
-  print element
+    print element
 ```
 
 Behind the scenes, this is what the for-loop does (and remember, `MyIterator()` is acting the same as the `iter()` method for our purposes):
 
-```
+```python
 the_list = [1, 2, 3]
 
 # What the for-loop does:
 iterator_list = iter(the_list)
 
 while True:
-  try:
-    print iterator_L.next()
-  except StopIteration:
-    break
+    try:
+      print iterator_L.next()
+    except StopIteration:
+      break
 ```
 
 I will continue to edit this post and try to make it cleaner. If this is confusing to you to whatever degree, check out the following explanations from other people, and see if they make things clearer. I tried to over-explain each step of how this works, but I worry that it does make it all feel more muddled than it needs to be.
