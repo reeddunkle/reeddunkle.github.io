@@ -136,6 +136,7 @@ In the second search box that I describe above, type the name of the package, an
 - It’s useful to open entire directories in Sublime
 
 _Sources:_
+
 - [Guide I followed](https://blog.alexmaccaw.com/sublime-text)  
 - [Set up end-of-line keybinding](http://stackoverflow.com/questions/14394598/move-to-end-of-line-without-end-key-in-sublime-text2)  
 - [Discover ctrl+m shortcut](https://forum.sublimetext.com/t/jump-to-matching-bracket-addition/3593)  
