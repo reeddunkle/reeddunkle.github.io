@@ -13,7 +13,7 @@ When I use a for-loop to iterate over a list, for example, conceptually I unders
 
 **Specifications**: I'm on Ubuntu 14.04 LTS, using Python 2.7.6
 
-**Diving In**:
+#### Diving In:
 
 When we create a list in Python...
 
@@ -82,17 +82,18 @@ StopIteration is the Exception that is raised when `next()` has already retrieve
 
 There are a couple of concepts here that are important for understanding the distinction between iterables and iterators. Forgive me for repeating myself a little now. I want to bring back the points I made earlier and try to demonstrate more examples of how these two concepts are different and interdependent.
 
-How they are different:
+#### How they are different:
 
-Here is the distinction for you to refer to:
-The iter() method returns an iterator of an iterable.
+Remember:
+The `iter()` method returns an iterator of an iterable.
 
-Above we had a container (a list) that has the ability to be made into an iterator. We called this iterable “the_list“. We then set the variable “list_that_can_be_iterated_on” to be an iterator of the iterable “the_list“. Then we called .next() on the iterator “list_that_can_be_iterated_on“, and each time it retrieved and returned the next element of the original iterable “the_list“.
+Above we had a container (a list) that has the ability to be made into an iterator. We called this iterable “`the_list`“. We then set the variable “`list_that_can_be_iterated_on`” to be an iterator of the iterable “`the_list`“. Then we called `next()` on the iterator “`list_that_can_be_iterated_on`“, and each time it retrieved and returned the next element of the original iterable “`the_list`“.
 
-This article calls iterators lazy, because they don’t do anything more than bookmark their position within an iterable, and when .next() is called on them, return the next element, and in turn bookmark that position.
+[This article](http://nvie.com/posts/iterators-vs-generators/) calls iterators lazy, because they don’t do anything more than bookmark their position within an iterable, and when .next() is called on them, return the next element, and in turn bookmark _that_ position.
 
-To demonstrate this, I’ll first call .next() on an iterator, and then use a for-loop on the iterator to print out its elements. The first next() call will retrieve its first element, which means that the next time .next() is called on it, it will move to the second element and so on. When I use the for-loop, it will start at the second element, because .next() was already called once on the iterator.
+To demonstrate this, I’ll first call `next()` on an iterator, and then use a for-loop on the iterator to print out its elements. The first `next()` call will retrieve its first element, which means that the next time `next()` is called on it, it will move to the second element and so on. When I use the for-loop, it will start at the second element, because `next()` was already called once on the iterator.
 
+```
 >>> the_list = [1, 2, 3]
 >>> list_that_can_be_iterated_on = iter(the_list)
 >>> list_that_can_be_iterated_on.next()
@@ -104,39 +105,43 @@ To demonstrate this, I’ll first call .next() on an iterator, and then use a fo
 3
 >>> the_list
 [1, 2, 3]
+```
 
-Notice at the end of this that “the_list” has not been affected. It still contains a list of [1, 2, 3]. This is what allows us to call for-loops multiple times on the same iterables. To do that here, we could just keep re-entering “list_that_can_be_iterated_on = iter(the_list)“, and each time we would receive a fresh iterator of the_list, that starts at its first element.
+Notice at the end of this that “`the_list`” has not been affected. It still contains a list of `[1, 2, 3]`. This is what allows us to call for-loops multiple times on the same iterables. To do that here, we could just keep re-entering “`list_that_can_be_iterated_on = iter(the_list)`“, and each time we would receive a fresh iterator of `the_list`, that starts at its first element.
 
-Also, I did something above that is a bit confusing. I took “the_list” (an iterable) and stored it in “list_that_can_be_iterated_on” as an iterator (with the iter() method), and then I called it in a for-loop. I did this to show you in a familiar form (the for-loop) that after already having called .next() on the iterator, the for-loop would start at the second element (because we already called .next() on it once, outside of the for-loop).
+Also, I did something above that may be confusing. I took “`the_list`” (an iterable) and stored it in “`list_that_can_be_iterated_on`” as an iterator (with the `iter()` method), and _then_ I called it in a for-loop. I did this to show you in a familiar form (the for-loop) that after already having called `next()` on the iterator, the for-loop would start at the _second_ element (because we already called `next()` on it once, outside of the for-loop).
 
-I have glossed over the fact that normally when you call use a list (an iterable) in a for-loop, it both turns it into an iterator without showing us that it is doing this, and then iterates over the iterator, returning each element by calling .next() on the (invisible) iterator that it creates out of our original iterable.
+I have glossed over the fact that _normally_ when you call use a list (an iterable) in a for-loop, it both turns it into an iterator without showing us that it is doing this, and then iterates over the iterator, returning each element by calling `next()` on the (invisible) iterator that it creates out of our original iterable.
 
-Note: Iterators are lazy, but they still contain all of the information of the original iterable. To demonstrate this, type:
+**Note: Iterators are lazy, but they still contain all of the information of the original iterable.**
+To demonstrate this, type:
 
+```
 the_list = [1, 2, 3]
 iterator_one = iter(the_list)
 iterator_two = iter(iterator_one)
+```
 
-You can then call next() on iterator_one and iterator_two independently.
+You can then call `next()` on `iterator_one` and `iterator_two` independently. They are on their own tracks.
 
-Apparently this is not what is happening when you use an object that is already an iterator in a for-loop like I did above. Otherwise, we should be able to call next() on “list_that_can_be_iterated_on” after the for-loop, and still retrieve the next element. But we can’t; it raises a StopIteration exception.
+Apparently this is not what is happening when you use an object that is already an iterator in a for-loop like I did above. Otherwise, we should be able to call next() on “`list_that_can_be_iterated_on`” _after_ the for-loop, and still retrieve the next element. But we can’t; it raises a `StopIteration` exception.
 
 Let’s review the important concepts with custom classes:
 
-A list is an example of an iterable. An iterable is defined as a object that has the __iter__ method, which returns an iterator of the iterable.
+A list is an example of an iterable. An iterable is defined as a object that has the `__iter__` method, which returns an iterator of the iterable.
 
 The custom iterator class:
 
+```
 class MyIterator(object):
 
   def __init__(self, iterable_that_is_made_iterator):
     self.iterable_that_is_made_iterator = iterable_that_is_made_iterator
     self.index = 0   # I assume we're already receiving an iterable
 
- ''' Below is the next() method we kept using above (Yes, I know this is a
- terrible comment for experienced coders, but I want to make it clear to
- beginners where I am using the concepts we used above.)
- '''
+  ''' Below is the next() method we kept using above. I want to make it clear
+  where I am using the concepts we used above.)
+  '''
   def next(self):
     try:
       element = self.iterable_that_is_made_iterator[self.index]
@@ -144,6 +149,7 @@ class MyIterator(object):
       return element
     except IndexError:
       raise StopIteration
+```
 
 Back to the very first example in this post:
 
