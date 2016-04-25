@@ -16,9 +16,9 @@ I hope this guide will make things simpler the next time I or anyone needs to in
 ## **Install Sublime Text 2**:
  - I followed [this guide](http://askubuntu.com/questions/172698/how-do-i-install-sublime-text-2-3) to install via the Package Manager (apt-get):
 ````
-    sudo add-apt-repository ppa:webupd8team/sublime-text-2
-    sudo apt-get update
-    sudo apt-get install sublime-text
+sudo add-apt-repository ppa:webupd8team/sublime-text-2
+sudo apt-get update
+sudo apt-get install sublime-text
 ````
 ## **Set up Sublime Text 2**:
  - This requires about 30 minutes
@@ -53,38 +53,44 @@ In the second search box that I describe above, type the name of the package, an
   - **TrailingSpaces**: Very useful
 
 #### **Configure your Settings**:
-  1. In the menu bar along the **top of your screen** (hold **Alt** if it isn’t coming up), navigate to:
+- In the menu bar along the **top of your screen** (hold **Alt** if it isn’t coming up), navigate to:
     **Preferences > Settings – User**
-  2. This will bring up a document (in Sublime) that looks roughly like:
-    `{ `
-    `"font_size": 14,`
-    `"ignored_packages":`
-    `[`
-    `"Vintage"`
-    `]`
-   ` }`
-  3. I’m going to paste my **Settings – User** file here:
-    `{`
-    `“font_size”: 16,`
-    `“ignored_packages”:`
-    ` [`
-    `“Vintage”`
-    `],`
-    `“tab_size”: 4,`
-    `“translate_tabs_to_spaces”: true,`
-    `"theme”: “Soda Dark.sublime-theme”,`
-    `“trim_trailing_white_space_on_save”: true`
-    `}`
- 4. The “`theme`” above selects the **Theme – Soda** (I chose Dark version — replace Dark with Light for alternate)
- 5. Adjust “`tab_size`” if needed
+- This will bring up a document (in Sublime) that looks roughly like:
+````    
+{ 
+"font_size": 14,
+"ignored_packages":
+[
+"Vintage"
+]
+}
+````
+3. I’m going to paste my **Settings – User** file here:
+````
+{
+“font_size”: 16,
+“ignored_packages”:
+[
+“Vintage”
+],
+“tab_size”: 4,
+“translate_tabs_to_spaces”: true,
+"theme”: “Soda Dark.sublime-theme”,
+“trim_trailing_white_space_on_save”: true
+}
+````
+- The “`theme`” above selects the **Theme – Soda** (I chose Dark version — replace Dark with Light for alternate)
+- Adjust “`tab_size`” if needed
 
 #### **Configure *more* settings**:
 1. Navigate in Sublime’s menu bar to:
 **Preferences > Package Settings > TrailingSpaces > Settings – User**
 2. Add this:
-        `{`
-        `"trailing_spaces_include_current_line": false`
-       ` }`
+````
+{
+"trailing_spaces_include_current_line": false
+}
+````
 
 #### **Configure a few Key Bindings**:
 1. Navigate in Sublime’s menu bar to:
