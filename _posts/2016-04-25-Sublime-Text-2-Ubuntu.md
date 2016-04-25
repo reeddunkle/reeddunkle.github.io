@@ -5,10 +5,10 @@ title: Sublime Text 2 On Ubuntu
 
 **Note: I was getting this [annoying error](http://stackoverflow.com/questions/23165426/sublime-text-on-ubuntu-14-04-keeps-attempting-to-remove-it) which seems to happen because I am on Ubuntu 14.04. Apparently upgrading to Sublime Text 3 will fix it. I am now in the process of installing and setting up ST3. I’ll post about that I’m sure.**
 
- 
+  
 
 It took me a bit of time to set up Sublime Text 2 (ST2), and it required a lot of troubleshooting (using Google), lots of resources which all had different suggestions, and generally some headache.
-
+  
 I hope this guide will make things simpler the next time I or anyone needs to install and set up Sublime Text 2.
 
 **Specifications:** Ubuntu 14.04.4 LTS
