@@ -146,7 +146,7 @@ class MyIterator(object):
         self.index = 0   # I assume we're already receiving an iterable
 
     ''' Below is the next() method we kept using above. I want to make it clear
-    where I am using the concepts we used above.)
+    where I am using the concepts we used above.
     '''
     def next(self):
         try:
