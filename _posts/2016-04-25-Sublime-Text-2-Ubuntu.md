@@ -48,17 +48,17 @@ In the second search box that I describe above, type the name of the package, an
   - **AllAutocomplete**
   - **TrailingSpaces**: Very useful
 ### **Configure your Settings**:
-      1. In the menu bar along the **top of your screen** (hold **Alt** if it isn’t coming up), navigate to:
-        **Preferences > Settings – User**
-      2. This will bring up a document (in Sublime) that looks roughly like:
-        `{
-        "font_size": 14,
-        "ignored_packages":
-        [
-        "Vintage"
-        ]
-        }`
-      3. I’m going to paste my **Settings – User** file here:
+  1. In the menu bar along the **top of your screen** (hold **Alt** if it isn’t coming up), navigate to:
+    **Preferences > Settings – User**
+  2. This will bring up a document (in Sublime) that looks roughly like:
+    `{  
+    "font_size": 14,  
+    "ignored_packages":`  
+    `[
+    "Vintage"
+    ]
+    }`
+  3. I’m going to paste my **Settings – User** file here:
         `{
         “font_size”: 16,
         “ignored_packages”:
