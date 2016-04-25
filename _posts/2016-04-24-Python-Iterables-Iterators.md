@@ -145,16 +145,16 @@ class MyIterator(object):
         self.iterable_that_is_made_iterator = iterable_that_is_made_iterator
         self.index = 0   # I assume we're already receiving an iterable
 
-  ''' Below is the next() method we kept using above. I want to make it clear
-  where I am using the concepts we used above.)
-  '''
-  def next(self):
-    try:
-      element = self.iterable_that_is_made_iterator[self.index]
-      self.index += 1
-      return element
-    except IndexError:
-      raise StopIteration
+    ''' Below is the next() method we kept using above. I want to make it clear
+    where I am using the concepts we used above.)
+    '''
+    def next(self):
+        try:
+          element = self.iterable_that_is_made_iterator[self.index]
+          self.index += 1
+          return element
+        except IndexError:
+          raise StopIteration
 ```
 
 Back to the very first example in this post:
