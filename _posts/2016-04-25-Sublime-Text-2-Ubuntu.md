@@ -58,7 +58,8 @@ In the second search box that I describe above, type the name of the package, an
 - In the menu bar along the **top of your screen** (hold **Alt** if it isn’t coming up), navigate to:
     **Preferences > Settings – User**
 - This will bring up a document (in Sublime) that looks roughly like:
-````    
+
+```
 { 
 "font_size": 14,
 "ignored_packages":
@@ -66,9 +67,10 @@ In the second search box that I describe above, type the name of the package, an
 "Vintage"
 ]
 }
-````
+```
 3. I’m going to paste my **Settings – User** file here:
-````
+
+```
 {
 “font_size”: 16,
 “ignored_packages”:
@@ -80,7 +82,7 @@ In the second search box that I describe above, type the name of the package, an
 "theme”: “Soda Dark.sublime-theme”,
 “trim_trailing_white_space_on_save”: true
 }
-````
+```
 - The “`theme`” above selects the **Theme – Soda** (I chose Dark version — replace Dark with Light for alternate)
 - Adjust “`tab_size`” if needed
 
