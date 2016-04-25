@@ -29,14 +29,14 @@ I hope this guide will make things simpler the next time I or anyone needs to in
   3. Next, close the terminal that you used to open Sublime the first time. This will close Sublime.  
   4. Last, re-open Sublime from the Launcher, this time independent from any open Terminal.  
   (I do this because I find that as I open applications, and windows, and terminals, my environment quickly becomes messy and disorganized. I like to have my applications open independent of their terminals to make my life easier.)
-<br>
+
 #### **Open the editor’s console**:
   1. Go to [this website](https://packagecontrol.io/installation#st3). Select Sublime Text 2 at the top, and copy the entire block of code.
   2. Go back to Sublime, Press **ctrl+`** (control backtick)
   3. Paste the code and press Enter
     - The code at that website will update with every release.
   4. **Restart Sublime** (You may have to do this more than once as it updates or installs things. They will prompt you to restart it.)
-<br>
+
 #### **How to Install Packages:**
   1. Press **ctrl+shift+p**
   2. This opens a search box at the top of the Sublime page
@@ -112,10 +112,10 @@ In the second search box that I describe above, type the name of the package, an
 - I can’t remember whether I actually did it.
 - I think this allows you to open Sublime, and to open documents and folders in Sublime, by using the keyword “subl”.
 - I think that this might work by default now, perhaps a change since the guide was written?
-<br>
+
 #### **I ignored all of the extra packages the guide recommends at the end.**
 <br>
-### **A couple of things I figured out on my own:**
+#### **A couple of things I figured out on my own:**
   - Set the language you’re coding in by navigating to:
     **View > Syntax**
   - It’s useful to open entire directories in Sublime
