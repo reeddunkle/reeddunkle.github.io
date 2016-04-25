@@ -97,14 +97,15 @@ In the second search box that I describe above, type the name of the package, an
 	- A built-in key binding that is really useful is **ctrl+m**. This will jump to the end of the current bracket in which you’re typing. 
 
 #### **Don’t try to change Sublime’s icon**
-      - The guide I was mentioned suggested doing this.
-      I embarked upon that mission not knowing what I was getting myself into. It took me at least an hour to get it set up, and it wasn’t a big deal in the first place.
-      **Instead of coding for an hour+, I troubleshot changing icons in Ubuntu for an hour+**
+ - The guide I was mentioned suggested doing this.
+ I embarked upon that mission not knowing what I was getting myself into. It took me at least an hour to get it set up, and it wasn’t a big deal in the first place.
+**Instead of coding for an hour+, I troubleshot changing icons in Ubuntu for an hour+**
+
 #### **Set up a binary?**
-      - I don’t know what this means, honestly, but the guide that I followed suggests doing it.
-      - I can’t remember whether I actually did it.
-      - I think this allows you to open Sublime, and to open documents and folders in Sublime, by using the keyword “subl”.
-      - I think that this might work by default now, perhaps a change since the guide was written?
+- I don’t know what this means, honestly, but the guide that I followed suggests doing it.
+- I can’t remember whether I actually did it.
+- I think this allows you to open Sublime, and to open documents and folders in Sublime, by using the keyword “subl”.
+- I think that this might work by default now, perhaps a change since the guide was written?
 <br>
 #### **I ignored all of the extra packages the guide recommends at the end.**
 <br>
