@@ -28,7 +28,7 @@ for element in the_list:
   print element
 ```
 
-That has been all I’ve needed to know for most of the coding I’ve done up until this week. Experienced coders will say, “Reed’s a noob.” (True), and beginners will say “What else is there to understand about what’s going on?” (The point of this post)
+That has been all I’ve needed to know for most of the coding I’ve done up until this week.
 
 It turns out that a list is iterable, but that it can’t be iterated on until it is  made into an iterator (for-loops do this for you), at which point it can be iterated on.
 
@@ -59,7 +59,7 @@ AttributeError: 'list' object has no attribute 'next'
 >>>
 ```
 
-To make the_list into an iterator, on which you can call the `next()` function, to retrieve the next element in the iterable, you call the `iter()` function on the iterable.
+To make the_list into an iterator, on which you can call the `next()` function, to retrieve the next element in the iterable, you call the `iter()` function on the iterable.  
 Continuing from above:
 
 ```
