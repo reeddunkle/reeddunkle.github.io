@@ -9,6 +9,7 @@ My name is Reed Dunkle. I am a [competent](http://learnpythonthehardway.org/book
 ### Interests:
 
 I love coding, even the boring stuff. I get excited about:
+
 - Language
 - Current events
 - Technology
@@ -18,6 +19,7 @@ I am enthusiastic about learning new things, and I try hard at learning.
 ### Background:
 
 I am working to transition my career into programming after coming from an academic background in Spanish and translation.
+
 - [Allegheny College](http://allegheny.edu/) in northwestern Pennsylvania
 - [Middlebury College](http://www.middlebury.edu/#story513416) in Vermont)
 
