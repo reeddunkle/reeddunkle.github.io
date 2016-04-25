@@ -29,24 +29,28 @@ I hope this guide will make things simpler the next time I or anyone needs to in
   3. Next, close the terminal that you used to open Sublime the first time. This will close Sublime.  
   4. Last, re-open Sublime from the Launcher, this time independent from any open Terminal.  
   (I do this because I find that as I open applications, and windows, and terminals, my environment quickly becomes messy and disorganized. I like to have my applications open independent of their terminals to make my life easier.)
+<br>
 #### **Open the editor’s console**:
   1. Go to [this website](https://packagecontrol.io/installation#st3). Select Sublime Text 2 at the top, and copy the entire block of code.
   2. Go back to Sublime, Press **ctrl+`** (control backtick)
   3. Paste the code and press Enter
     - The code at that website will update with every release.
   4. **Restart Sublime** (You may have to do this more than once as it updates or installs things. They will prompt you to restart it.)
+<br>
 #### **How to Install Packages:**
   1. Press **ctrl+shift+p**
   2. This opens a search box at the top of the Sublime page
   3. Type **Install Package**, and select “**Package Control: Install Package**” when it comes up
   4. Another search box will come up in place of the previous one
   5. From here you search for the different packages that you want. I installed the ones that the guide recommends. One or two of them might not have come up when I typed in the name. If so, I simply skipped them.
-### **Install Packages (and set them up)**:
+
+#### **Install Packages (and set them up)**:
 In the second search box that I describe above, type the name of the package, and press Enter when it comes up.
   - **Theme – Soda**
   - **SideBarEnhancements**: (I feel like this one might not have come up for me…)
   - **AllAutocomplete**
   - **TrailingSpaces**: Very useful
+
 #### **Configure your Settings**:
   1. In the menu bar along the **top of your screen** (hold **Alt** if it isn’t coming up), navigate to:
     **Preferences > Settings – User**
@@ -72,6 +76,7 @@ In the second search box that I describe above, type the name of the package, an
  	`}`
  4. The “`theme`” above selects the **Theme – Soda** (I chose Dark version — replace Dark with Light for alternate)
  5. Adjust “`tab_size`” if needed
+
 #### **Configure *more* settings**:
 1. Navigate in Sublime’s menu bar to:
 **Preferences > Package Settings > TrailingSpaces > Settings – User**
@@ -79,6 +84,7 @@ In the second search box that I describe above, type the name of the package, an
         `{`
         `"trailing_spaces_include_current_line": false`
        ` }`
+
 #### **Configure a few Key Bindings**:
 1. Navigate in Sublime’s menu bar to:
         **Preferences > Key Bindings – User**
