@@ -30,7 +30,7 @@ I am working to transition my career into programming after coming from an acade
 - [Middlebury College](http://www.middlebury.edu/#story513416) in Vermont
 
 
-### Contact me
+### Contact:
 
 My name is Reed Dunkle.
 
