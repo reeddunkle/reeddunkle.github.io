@@ -11,4 +11,5 @@ I also use this as a way to beat a path through some of the yak shaving, and lea
 I use [Jekyll Now](https://github.com/barryclark/jekyll-now) to generate my blog pages. It takes care of all of the HTML and CSS, and has made making this blog incredibly easy.
 
 I went to the GitHub repo linked above, and followed the instructions there.
+
 Big ass literal link to the repo: <https://github.com/barryclark/jekyll-now>
