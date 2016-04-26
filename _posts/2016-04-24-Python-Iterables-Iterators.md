@@ -3,7 +3,7 @@ layout: post
 title: Python's Iterables and Iterators
 ---
 
-Python has iterables and iterations, both of which are invoked during iteration (or while iterating). This is one of those things that is confusing until it isn’t, and there isn’t a great way to narrow that gap. I cycle between, “Oh, I get it.” and “Wait, what?…”
+Python has iterables and iterators, both of which are invoked during iteration (or while iterating). This is one of those things that is confusing until it isn’t, and there isn’t a great way to narrow that gap. I cycle between, “Oh, I get it.” and “Wait, what?…”
 
 There are strange logical differences between iterables and iterators, that demonstrate their interdependence on one another, but rather than explain one another they tend to confuse one another because they are so intimately tied.
 
