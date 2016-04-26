@@ -32,4 +32,5 @@ I am working to transition my career into programming after coming from an acade
 
 ### Contact me
 
+My name is Reed Dunkle. E-mail me:
 [reeddunkle@gmail.com](mailto:reeddunkle@gmail.com)
