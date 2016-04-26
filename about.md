@@ -6,7 +6,7 @@ permalink: /about/
 
 I am a hacker at the [Recurse Center](https://www.recurse.com/) (formerly [Hacker School](https://d29xw0ra2h4o4u.cloudfront.net/assets/instagram_22-535408341d14d3872ee06066f72c78d4d7393667e4b937d3f02007fd203ffa45.jpg)).
 
-I am using this blog to reinforce what I learn at RC by documenting here.
+I am using this blog to reinforce what I learn at RC by documenting it here.
 
 Writing about confusing concepts forces me to work through each step. It has proven the best tool I've found to identify the concepts that I don't understand as well as I might otherwise think that I do.
 
