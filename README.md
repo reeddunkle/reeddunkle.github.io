@@ -1,10 +1,10 @@
-This is the repo for my Jekyll Now powered blog (see below).
+This is the repo for my blog.
 
 I moved to NYC in April, 2016 to attend the Recurse Center for three months and learn as much as I can about coding. I'm using this blog to reinforce what I learn by documenting it.
 
 Writing about confusing concepts forces me to work through each step. It has proven the best tool I've found to identify the concepts that I don't understand as well as I might otherwise think that I do.
 
-I also use this as a way to beat a path through some of the yak shaving, and leave a trail to follow the next time needs to shave that same yak.
+I also use this as a way to beat a path through some of the yak shaving, and leave a trail to follow the next time that same yak needs shaving.
 
 ----
 
