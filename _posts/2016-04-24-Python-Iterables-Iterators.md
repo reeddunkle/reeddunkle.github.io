@@ -91,7 +91,7 @@ There are a couple of concepts here that are important for understanding the dis
 Remember:
 The `iter()` method returns an iterator from an iterable.
 
-Above we had a container (a list) that has the ability to return an iterator of itself. We called this iterable “`the_list`“. We then set the variable “`list_that_can_be_iterated_on`” to be an iterator of the iterable “`the_list`“. Then we called `next()` on the iterator “`list_that_can_be_iterated_on`“, and each time it retrieved and returned the next element of the original iterable “`the_list`“.
+Above we had a container (a list) that has the ability to return an iterator of itself. We called this iterable `the_list`. We then set the variable `list_that_can_be_iterated_on`” to be an iterator of the iterable `the_list`. Then we called `next()` on the iterator `list_that_can_be_iterated_on`, and each time it retrieved and returned the next element of the original iterable `the_list`.
 
 [This article](http://nvie.com/posts/iterators-vs-generators/) calls iterators lazy, because they don’t do anything more than bookmark their position, and when `next()` is called on them, they return the next element, and in turn bookmark _that_ position.
 
@@ -111,7 +111,7 @@ To demonstrate this, I’ll first call `next()` on an iterator, and then use a f
 [1, 2, 3]
 ```
 
-Notice at the end of this that “`the_list`” has not been affected. It still contains a list of `[1, 2, 3]`. This is what allows us to call for-loops multiple times on the same iterables. To do that here, we could just keep re-entering this...
+Notice at the end of this that `the_list` has not been affected. It still contains a list of `[1, 2, 3]`. This is what allows us to call for-loops multiple times on the same iterables. To do that here, we could just keep re-entering this...
 
 ```
 list_that_can_be_iterated_on = iter(the_list)
@@ -119,7 +119,7 @@ list_that_can_be_iterated_on = iter(the_list)
 
 And each time we would receive a fresh iterator from `the_list`, that starts at its first element.
 
-Also, I did something above that may be confusing. I took “`the_list`” (an iterable) and using the `iter()` method, I returned a iterator of `the_list` and stored it in “`list_that_can_be_iterated_on`”, and _then_ I called it in a for-loop. I did this to show you in a familiar form (the for-loop) that after already having called `next()` on the iterator, the for-loop would start at the _second_ element (because we already called `next()` on it once, outside of the for-loop).
+Also, I did something above that may be confusing. I took `the_list` (an iterable) and using the `iter()` method, I returned a iterator of `the_list` and stored it in `list_that_can_be_iterated_on`, and _then_ I called it in a for-loop. I did this to show you in a familiar form (the for-loop) that after already having called `next()` on the iterator, the for-loop would start at the _second_ element (because we already called `next()` on it once, outside of the for-loop).
 
 I have glossed over the fact that _normally_ when you use a list (an iterable) in a for-loop, it gets an iterator from it without showing us that it is doing this, and then iterates over that iterator, returning each element by calling `next()` on the (invisible) iterator that it created out of our original iterable.
 
@@ -134,7 +134,7 @@ iterator_two = iter(iterator_one)
 
 You can then call `next()` on `iterator_one` and `iterator_two` independently. They are on their own tracks.
 
-Apparently when you use an object that is already an iterator in a for-loop like I did above, it does not produce a fresh iterator from it. Otherwise, we would be able to call `next()` on “`list_that_can_be_iterated_on`” _after_ the for-loop, and still retrieve the next element. But we can’t; it raises a `StopIteration` exception.
+Apparently when you use an object that is already an iterator in a for-loop like I did above, it does not produce a fresh iterator from it. Otherwise, we would be able to call `next()` on `list_that_can_be_iterated_on` _after_ the for-loop, and still retrieve the next element. But we can’t; it raises a `StopIteration` exception.
 
 #### Reviewing the important concepts with custom classes:
 
