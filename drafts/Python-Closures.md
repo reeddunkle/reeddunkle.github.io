@@ -22,7 +22,7 @@ Create a file called example1.py and open it up in the editor of your choice. He
 
 ```
 touch example1.py
-subl example1.py
+subl example1.py  # Or the editor of your choice
 ```
 
 Let's say that we want to make a function that takes a number `x` and returns the value of multiplying that number by 10.
@@ -152,13 +152,13 @@ times_ten = times(10)
 
 What is this doing? It is setting the variable `times_ten` to the return value of calling `times(10)`.
 
-What is that return value? What does the function `times` return? It returns the function `multiply`.
+What is that return value; what does the function `times` return? It returns the function `multiply`.
 
-Then what does the function `multiply` return? It returns the value of multiplying `x` by `y`.
+Then, what does the function `multiply` return? It returns the value of multiplying `x` by `y`.
 
 Go back and track where, and at what point this closure receives the values of `x` and `y`.
 
-So, when we say...
+When we say...
 
 ```python
 times_ten = times(10)
@@ -168,6 +168,38 @@ We are setting `times_ten` to a function (`multiply`) that itself takes a parame
 
 If you go back to the top of your `example1.py` file, and look at the code we commented out, you'll that's exactly what we did to `times_ten`. We simply defined it as a function with the name `times_ten`.
 
+Closures provide us when an additional layer of abstraction. Now, instead of defining a function `times_ten` and `double` and `triple`, we can use our closure function from above, and simply declare:
+
+```python
+times_ten = times(10)
+double = times(2)
+triple = times(3)
+
+print(times_ten(5))  # => 50
+print(double(5))  # => 10
+print(triple(5))  # => 15
+```
+
+### Example 2
+
+```bash
+touch example2.py
+subl example2.py  # The editor of your choice
+```
+
+**Your challenge**:
+
+Inside `closure_practice/example2.py`, try to make a closure function `exponent` that takes a number `y`, and which returns a function that itself takes a number `x`, and which returns the value of raising `x` to the power of `y`.
+
+First, you should try to make it work on your own. If you get stuck, I'm going to give hints and work through this as we proceed. If at any point you think that you can figure it out on your own, stopping reading and go try it.
+
+If you're not sure where to begin, start by breaking it down into the chunks like we did above:
+
+1. Make a closure function `exponent` that takes a number `y`
+2. Which returns a function that takes a number `x`
+3. This function returns the value of raising `x` to the power of `y`
+
+If you're not sure how these steps should look, t
 
 
 
