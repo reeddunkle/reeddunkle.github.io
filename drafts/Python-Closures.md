@@ -103,12 +103,12 @@ def times(x):
 This is a closure. A function that encloses another function. The enclosed function is dependent on the enclosing function.
 Remember our `times_ten` function above? It took a number `x` and returned the value of multiplying `x` and `10`.
 
-With our new closure function `times`, we can remake the `times_ten` function.
+With our new closure function `times`, we can remake the function `times_ten`.
 
 Back inside `closure_practice/example1.py`:
 
 ```python
-# The closure from above
+# The closure function from above
 def times(x):
     def multiply(y):
         return x * y
@@ -126,3 +126,56 @@ Go to your shell and run it:
 
 ```bash
 python example1.py
+50
+```
+
+#### Explaining what is happening
+
+The key for my understanding of this -- when things really clicked for me -- was realizing what `return` is doing at each step. I went through this lesson today with a peer of mine, and this was where he was struggling also. This leads me to believe others will struggle with this too.
+
+Back to the code. Follow the `return` calls:
+
+```python
+# The closure function
+def times(x):
+    def multiply(y):
+        return x * y  # When multiply is called, this is what it returns
+    
+    return multiply  # When times is called, this is what it returns
+```
+
+Then we set...
+ 
+```python   
+times_ten = times(10)
+```
+
+What is this doing? It is setting the variable `times_ten` to the return value of calling `times(10)`.
+
+What is that return value? What does the function `times` return? It returns the function `multiply`.
+
+Then what does the function `multiply` return? It returns the value of multiplying `x` by `y`.
+
+Go back and track where, and at what point this closure receives the values of `x` and `y`.
+
+So, when we say...
+
+```python
+times_ten = times(10)
+```
+
+We are setting `times_ten` to a function (`multiply`) that itself takes a parameter `y`, and which returns the value of `x * y`.
+
+If you go back to the top of your `example1.py` file, and look at the code we commented out, you'll that's exactly what we did to `times_ten`. We simply defined it as a function with the name `times_ten`.
+
+
+
+
+
+
+
+
+
+
+
+
