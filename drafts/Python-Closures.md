@@ -65,13 +65,64 @@ python example1.py
 50
 ```
 
-Right, so on to the next one:
+Right, so comment all of that out, and it's on to the next one:
 
 #### Closures:
 
-What if we want to make a function `times` that takes a number `x`, and which returns a function that in turn takes a number `y`,
-and returns the value of multiplying `x` and `y`?
+What if we want to make a function `times` that takes a number `x`, and which returns a function that itself takes a number `y`, and this function returns the value of multiplying `x` and `y`?
 
 Let's step through this by breaking that down:
 
-**Make a function `times` that takes a number `x`:
+1. Make a function `times` that takes a number `x`:
+
+```python
+def times(x):
+    pass
+```
+
+2. Which returns a function that itself takes a number `y`...
+
+```python
+def times(x):
+    def multiply(y):
+        pass
+        
+    return multiply
+```
+
+3. And this function returns the value of multiplying `x` and `y`:
+
+```python
+def times(x):
+    def multiply(y):
+        return x * y
+    
+    return multiply
+```
+
+This is a closure. A function that encloses another function. The enclosed function is dependent on the enclosing function.
+Remember our `times_ten` function above? It took a number `x` and returned the value of multiplying `x` and `10`.
+
+With our new closure function `times`, we can remake the `times_ten` function.
+
+Back inside `closure_practice/example1.py`:
+
+```python
+# The closure from above
+def times(x):
+    def multiply(y):
+        return x * y
+    
+    return multiply
+
+    
+times_ten = times(10)  # Can you explain what this sets times_ten to?
+
+result = times_ten(5)  # This is the code from the top of example1.py
+print(result)
+```
+
+Go to your shell and run it:
+
+```bash
+python example1.py
