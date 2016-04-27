@@ -16,7 +16,22 @@ mkdir closure_practice
 cd closure_practice
 ```
 
-### Example 1:
+### Example 0: Functions stored in variables
+
+This isn't too complicated, but it's important that you understand that this is a thing that can happen in Python.
+
+```python
+def say_hi_to_reed():
+    print("Hi Reed")
+
+say_hi_to_reed()  # => "Hi Reed"
+
+variable_holding_a_function = say_hi_to_reed
+
+variable_holding_a_function()  # => "Hi Reed"
+```
+
+### Example 1: Intro to Closures
 
 Create a file called example1.py and open it up in the editor of your choice. Here's what I did:
 
@@ -180,7 +195,8 @@ print(double(5))  # => 10
 print(triple(5))  # => 15
 ```
 
-### Example 2
+----
+### Example 2: Try it on your own
 
 ```bash
 touch example2.py
@@ -191,6 +207,7 @@ subl example2.py  # The editor of your choice
 
 Inside `closure_practice/example2.py`, try to make a closure function `exponent` that takes a number `y`, and which returns a function that itself takes a number `x`, and which returns the value of raising `x` to the power of `y`.
 
+----
 First, you should try to make it work on your own. If you get stuck, I'm going to give hints and work through this as we proceed. If at any point you think that you can figure it out on your own, stopping reading and go try it.
 
 If you're not sure where to begin, start by breaking it down into the chunks like we did above:
@@ -199,7 +216,65 @@ If you're not sure where to begin, start by breaking it down into the chunks lik
 2. Which returns a function that takes a number `x`
 3. This function returns the value of raising `x` to the power of `y`
 
-If you're not sure how these steps should look, t
+----
+If that doesn't help, here is how I would follow these steps:
+
+1.
+
+```python
+def exponent(y):
+    pass
+```
+
+2.
+
+```python
+def exponent(y):
+    def base(x):
+        pass
+        
+    return base
+```
+
+3. (the solution)
+
+```python
+def exponent(y):
+    def base(x):
+        return x**y
+        
+    return base
+```
+
+----
+How do you use this closure function to make a function called `square`, that will return the value of squaring a number you give it?
+
+How would you use your closure to make a `cube` function, that cubes a number you give it?
+
+My solutions, using the closure function above:
+
+```python
+square = exponent(2)
+cube = exponent(3)
+```
+
+Looking at what I just typed, what is `square` after I say
+
+```python
+square = exponent(2)
+```
+
+Do you understand what square is at that moment? Can you track through your code, and point to what you're setting it to?
+
+To make sure that you've got good answers to these questions:
+
+`square` becomes the function `base` from our closure function, except that it has a value for `y` (2). To spell that out with code, when we say `square = exponent(2)`, it is the same as saying:
+
+```python
+def square(x):
+    return x**2
+```
+
 
 
 
