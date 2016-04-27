@@ -123,17 +123,6 @@ Also, I did something above that may be confusing. I took `the_list` (an iterabl
 
 I have glossed over the fact that _normally_ when you use a list (an iterable) in a for-loop, it gets an iterator from it without showing us that it is doing this, and then iterates over that iterator, returning each element by calling `next()` on the (invisible) iterator that it created out of our original iterable.
 
-**Note:** Iterators are lazy, but they still contain all of the information of the original iterable.
-To demonstrate this, type:
-
-```
-the_list = [1, 2, 3]
-iterator_one = iter(the_list)
-iterator_two = iter(iterator_one)
-```
-
-You can then call `next()` on `iterator_one` and `iterator_two` independently. They are on their own tracks.
-
 Apparently when you use an object that is already an iterator in a for-loop like I did above, it does not produce a fresh iterator from it. Otherwise, we would be able to call `next()` on `list_that_can_be_iterated_on` _after_ the for-loop, and still retrieve the next element. But we can’t; it raises a `StopIteration` exception.
 
 #### Reviewing the important concepts with custom classes:
