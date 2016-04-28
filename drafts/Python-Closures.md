@@ -275,7 +275,24 @@ def square(x):
     return x**2
 ```
 
+### Example 3: Interpreting someone else's closure
 
+Try to work through the following closure on your own. Use the tactics we used above.
+
+```python
+def times(x):
+    def times_x(y):
+        return y * x
+    return times_x
+```
+
+def apply_to_x(x):
+    def unnamed_function(func):
+        return func(x)
+
+    return unnamed function
+
+apply_five = apply_x(5)
 
 
 
