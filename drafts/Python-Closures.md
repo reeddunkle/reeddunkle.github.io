@@ -321,9 +321,59 @@ apply_five = apply_x(5)
 
 Answering the above questions:
 
-`apply_five` is set to the return value of calling `apply_x(5)`. `apply_x` returns
+`apply_five` is set to the return value of calling `apply_x(5)`. `apply_x` returns `unnamed_function`. Okay, then what is `unnamed_function`? It is a function that takes `func` as a parameter, and returns `func(x)`. That's strange, because we don't explicitly know what `func` is.
 
+We can deduce what it is, though, right? It's called `func`, which isn't meant to trick you. It's probably a function. And the return value `func(x)` reinforces that. We call functions with parenthesis, passing in their parameters as required.
 
+You may feel that the code above assumes too much. You're right, it does. It's easily broken, and not easily put to use. It's an exercise. As an exercise, though, once you understand what each part does and needs, it isn't hard to make an example that puts `apply_x` to use.
+
+Before I say more, see if you can put `apply_x` to use. Feel free to use `apply_five`.
+
+Returning to the explanation:
+
+`apply_x` returns `unnamed_function`. `unnamed_function` takes the parameter `func`, and returns the value of calling `func(x)`.
+
+This feels strange, because we don't know what `func` might be. Okay, but what do we know? We know that we can pass `unnamed_function` a function, and it will return the value of calling the function we passed into it with the value of `x`.
+
+If we say `apply_five = apply_x(5)`, then `apply_five` will call whatever function it is given with 5 as the parameter.
+
+How do we put this to use?
+
+Let's make a function that takes in a number, and returns the value of doing something with that number.
+
+Go to `closure_practice/example3.py` and add the above code if you haven't already:
+
+```python
+def apply_x(x):
+    def unnamed_function(func):
+        return func(x)
+
+    return unnamed_function
+
+apply_five = apply_x(5)
+
+# We make something that can use apply_five
+
+def multiply_by_ten(x):
+    return x * 10
+    
+# Now we use apply_five
+
+test_result = apply_five(multiply_by_ten)
+
+print test_result
+```
+
+Run the code:
+
+```bash
+python example3.py
+50
+```
+
+Now go back to the closure, and write an example like the one above that uses a string instead of a number.
+
+If you're still confused, let me know and I'll work with you to make this post better.
 
 
 
