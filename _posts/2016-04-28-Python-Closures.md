@@ -270,7 +270,7 @@ Looking at what I just typed, what is `square` after I declare...?
 square = exponent(2)
 ```
 
-Do you understand what square is at that moment? Can you track through your code, and point to what you're setting it to?
+Do you understand what `square` is at that moment? Can you track through your code, and point to what you're setting it to?
 
 To make sure that you've got good answers to these questions:
 
