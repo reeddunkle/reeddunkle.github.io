@@ -114,7 +114,9 @@ def times(x):
 ```
 
 ----
-This is a closure. A function that encloses another function. The enclosed function is dependent on the enclosing function.
+
+This is a closure. It is a function that encloses another function. The enclosed function is dependent on the enclosing function.
+
 Remember our `times_ten` function above? It took a number `x` and returned the value of multiplying `x` and `10`.
 
 With our new closure function `times`, we can remake the function `times_ten`.
