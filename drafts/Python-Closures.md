@@ -288,12 +288,32 @@ def apply_x(x):
 apply_five = apply_x(5)
 ```
 
-Can you write a simple example that puts `apply_five` to use? Can you make other ex
+Can you write a simple example that puts `apply_five` to use? Can you make an example that uses `apply_x` with something other than a number, and then puts that to use?
 
+If you can do that, I think you've got the hang of closures. Also, I haven't written it yet, but my next post will be on anonymous functions, and I'll revisit this example when I write that.
 
+If you're confused, don't worry. It's confusing.
 
+To start working out the confusing parts, try to answer these questions:
 
-After that last line, to what is `apply_five` set? 
+1. After that last line, to what is `apply_five` set? Work backwards from there.
+2. What is each function returning?
+3. What are the parameters of each function; what does each function require be passed in?
+4. Where and when are the parameters of the functions being used?
+
+**Spoiler ahead**:
+
+If you're still confused, I want to walk you through it. Here's the code again for reference:
+
+```python
+def apply_x(x):
+    def unnamed_function(func):
+        return func(x)
+
+    return unnamed function
+
+apply_five = apply_x(5)
+```
 
 
 
