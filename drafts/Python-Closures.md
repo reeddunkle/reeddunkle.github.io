@@ -283,14 +283,18 @@ def apply_x(x):
     def unnamed_function(func):
         return func(x)
 
-    return unnamed function
+    return unnamed_function
 
 apply_five = apply_x(5)
 ```
 
-Can you write a simple example that puts `apply_five` to use? Can you make an example that uses `apply_x` with something other than a number, and then puts that to use?
+- Can you write a simple example that puts `apply_five` to use?
+- Can you make an example that uses `apply_x` with something other than a number, and then puts that to use?
+- With the first two examples, I started with instructions, "Write a function that take a number, and which returns a function..." Can you write what the instructions for the above closure would be?
 
-If you can do that, I think you've got the hang of closures. Also, I haven't written it yet, but my next post will be on anonymous functions, and I'll revisit this example when I write that.
+If you can do these things, I think you've got the hang of closures.
+
+I haven't written it yet, but my next post will be on anonymous functions, and I'll revisit this example when I write that.
 
 If you're confused, don't worry. It's confusing.
 
@@ -310,12 +314,14 @@ def apply_x(x):
     def unnamed_function(func):
         return func(x)
 
-    return unnamed function
+    return unnamed_function
 
 apply_five = apply_x(5)
 ```
 
+Answering the above questions:
 
+`apply_five` is set to the return value of calling `apply_x(5)`. `apply_x` returns
 
 
 
