@@ -52,7 +52,7 @@ result = times_ten(5)
 print(result)
 ```
 
-In your shell:
+In your shell, run it:
 
 ```bash
 python example1.py
