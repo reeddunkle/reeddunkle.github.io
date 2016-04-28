@@ -201,6 +201,7 @@ print(triple(5))  # => 15
 ```
 
 ----
+
 ### Exercise 2: Try it on your own
 
 ```bash
