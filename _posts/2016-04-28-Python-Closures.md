@@ -338,7 +338,7 @@ That's strange, because we don't explicitly know what `func` is.
 
 We can deduce what it is, though, right? It's called `func`, which isn't meant to trick you. It's probably a function. And the return value `func(x)` reinforces that. We call functions with parenthesis, passing in their parameters as required.
 
-You may feel that the code above assumes too much. You're right, it does. It's easily broken, and not easily put to use. It's an exercise. As an exercise, though, once you understand what each part does and needs, it isn't hard to make an example that puts `apply_x` to use.
+You may feel that the code above assumes too much. You're right, it does. As an exercise, though, once you understand what each part does and needs, it isn't too hard to make an example that puts `apply_x` to use.
 
 Before I say more, see if you can put `apply_x` to use. Feel free to use `apply_five`.
 
