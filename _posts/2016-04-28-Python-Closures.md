@@ -225,14 +225,14 @@ If you're not sure where to begin, start by breaking it down into the chunks lik
 ----
 If that doesn't help, here is how I would follow these steps:
 
-1.
+**One**:
 
 ```python
 def exponent(y):
     pass
 ```
 
-2.
+**Two**:
 
 ```python
 def exponent(y):
@@ -242,7 +242,7 @@ def exponent(y):
     return base
 ```
 
-3. (the solution)
+**Three (the solution)**:
 
 ```python
 def exponent(y):
