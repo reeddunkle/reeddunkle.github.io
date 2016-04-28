@@ -188,7 +188,7 @@ We are setting `times_ten` to a function (`multiply`) that itself takes a parame
 
 If you go back to the top of your `exercise1.py` file, and look at the code we commented out, you'll that's exactly what we did to `times_ten`. We simply defined it as a function with the name `times_ten`.
 
-Closures provide us when an additional layer of abstraction. Now, instead of defining a function `times_ten` and `double` and `triple`, we can use our closure function from above, and simply declare:
+Closures provide us with an additional layer of abstraction. Now, instead of defining a function `times_ten` and `double` and `triple`, we can use our closure function from above, and simply declare:
 
 ```python
 times_ten = times(10)
