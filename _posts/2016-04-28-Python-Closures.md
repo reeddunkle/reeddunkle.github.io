@@ -281,6 +281,8 @@ def square(x):
     return x**2
 ```
 
+----
+
 ### Exercise 3: Interpreting someone else's closure
 
 Try to work through the following closure on your own. Use the tactics we used above.
