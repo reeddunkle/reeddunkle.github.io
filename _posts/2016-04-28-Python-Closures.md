@@ -344,13 +344,14 @@ Before I say more, see if you can put `apply_x` to use. Feel free to use `apply_
 
 Returning to the explanation:
 
-`apply_x` returns `unnamed_function`. `unnamed_function` takes the parameter `func`, and returns the value of calling `func(x)`.
+- `apply_x` returns `unnamed_function`
+- `unnamed_function` takes the parameter `func`, and returns the value of calling `func(x)`.
 
 This feels strange, because we don't know what `func` might be. Okay, but what do we know? We know that we can pass `unnamed_function` a function, and it will return the value of calling the function we passed into it with the value of `x`.
 
 If we say `apply_five = apply_x(5)`, then `apply_five` will call whatever function it is given with 5 as the parameter.
 
-How do we put this to use?
+**How do we put this to use?**
 
 Let's make a function that takes in a number, and returns the value of doing something with that number.
 
