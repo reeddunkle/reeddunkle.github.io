@@ -80,7 +80,7 @@ python example1.py
 
 Right, so comment all of that out, and it's on to the next one. (I recommend commenting out, rather than deleting these early portions, so that you have them to refer to in the same file.)
 
-#### Closures:
+### Closures:
 
 What if we want to make a function `times` that takes a number `x`, and which returns a function that itself takes a number `y`, and this function returns the value of multiplying `x` and `y`?
 
