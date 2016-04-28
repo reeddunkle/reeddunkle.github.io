@@ -61,8 +61,6 @@ python example1.py
 
 So far so good. Now let's make a function that takes two numbers `x` and `y`, and returns their product.
 
-(I recommend commenting out these early portions so that you have them to refer to in the same file.)
-
 Back inside `closure_practice/example1.py`:
 
 ```python
@@ -80,7 +78,7 @@ python example1.py
 50
 ```
 
-Right, so comment all of that out, and it's on to the next one:
+Right, so comment all of that out, and it's on to the next one. (I recommend commenting out, rather than deleting these early portions, so that you have them to refer to in the same file.)
 
 #### Closures:
 
