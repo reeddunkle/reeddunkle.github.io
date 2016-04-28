@@ -279,7 +279,7 @@ def square(x):
 Try to work through the following closure on your own. Use the tactics we used above.
 
 ```python
-def apply_to_x(x):
+def apply_x(x):
     def unnamed_function(func):
         return func(x)
 
@@ -288,7 +288,7 @@ def apply_to_x(x):
 apply_five = apply_x(5)
 ```
 
-Can you write a simple examples that takes advantage of `apply_five`?
+Can you write a simple example that puts `apply_five` to use? Can you make other ex
 
 
 
