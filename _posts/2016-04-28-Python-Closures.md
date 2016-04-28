@@ -330,7 +330,11 @@ apply_five = apply_x(5)
 
 Answering the above questions:
 
-`apply_five` is set to the return value of calling `apply_x(5)`. `apply_x` returns `unnamed_function`. Okay, then what is `unnamed_function`? It is a function that takes `func` as a parameter, and returns `func(x)`. That's strange, because we don't explicitly know what `func` is.
+- `apply_five` is set to the return value of calling `apply_x(5)`
+- `apply_x` returns `unnamed_function`
+- Okay, then what is `unnamed_function`? It is a function that takes `func` as a parameter, and returns `func(x)`
+
+That's strange, because we don't explicitly know what `func` is.
 
 We can deduce what it is, though, right? It's called `func`, which isn't meant to trick you. It's probably a function. And the return value `func(x)` reinforces that. We call functions with parenthesis, passing in their parameters as required.
 
