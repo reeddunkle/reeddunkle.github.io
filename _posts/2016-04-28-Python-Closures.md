@@ -16,7 +16,7 @@ mkdir closure_practice
 cd closure_practice
 ```
 
-### Example 0: Functions stored in variables
+### Exercise 0: Functions stored in variables
 
 This isn't too complicated, but it's important that you understand that this is a thing that can happen in Python:
 
@@ -31,18 +31,18 @@ variable_holding_a_function = say_hi_to_reed
 variable_holding_a_function()  # => "Hi Reed"
 ```
 
-### Example 1: Intro to Closures
+### Exercise 1: Intro to Closures
 
-Create a file (inside of the directory we mentioned above) called example1.py and open it up in the editor of your choice (I use Sublime Text). Here's what I did:
+Create a file (inside of the directory we mentioned above) called exercise1.py and open it up in the editor of your choice (I use Sublime Text). Here's what I did:
 
 ```
-touch example1.py
-subl example1.py  # Note: subl is Sublime Text's shorthand to open things up into it
+touch exercise1.py
+subl exercise1.py  # Note: subl is Sublime Text's shorthand to open things up into it
 ```
 
 Let's say that we want to make a function that takes a number `x` and returns the value of multiplying that number by 10.
 
-In `closure_practice/example1.py`:
+In `closure_practice/exercise1.py`:
 
 ```python
 def times_ten(x):
@@ -55,13 +55,13 @@ print(result)
 In your shell, run it:
 
 ```bash
-python example1.py
+python exercise1.py
 50
 ```
 
 So far so good. Now let's make a function that takes two numbers `x` and `y`, and returns their product.
 
-Back inside `closure_practice/example1.py`:
+Back inside `closure_practice/exercise1.py`:
 
 ```python
 def multiply(x, y):
@@ -74,7 +74,7 @@ print(result)
 In your shell:
 
 ```bash
-python example1.py
+python exercise1.py
 50
 ```
 
@@ -121,7 +121,7 @@ Remember our `times_ten` function above? It took a number `x` and returned the v
 
 With our new closure function `times`, we can remake the function `times_ten`.
 
-Back inside `closure_practice/example1.py`:
+Back inside `closure_practice/exercise1.py`:
 
 ```python
 # The closure function from above
@@ -134,14 +134,14 @@ def times(x):
     
 times_ten = times(10)  # Can you explain what this sets times_ten to?
 
-result = times_ten(5)  # This is the code from the top of example1.py
+result = times_ten(5)  # This is the code from the top of exercise1.py
 print(result)
 ```
 
 Go to your shell and run it:
 
 ```bash
-python example1.py
+python exercise1.py
 50
 ```
 
@@ -149,7 +149,9 @@ python example1.py
 ### Explaining what is happening
 
 
-The key for my understanding this -- when things really clicked for me -- was realizing what `return` is doing at each step. I went through this lesson today with a peer of mine, and this was where he was struggling also. This leads me to believe others will struggle with this too.
+The key for my understanding this -- when things really clicked for me -- was realizing what `return` is doing at each step.
+
+Before writing this, I went through these exercises with a peer of mine, and this was where he was struggling also. This leads me to believe others will struggle with this too.
 
 Back to the code. Follow the `return` calls:
 
@@ -184,7 +186,7 @@ times_ten = times(10)
 
 We are setting `times_ten` to a function (`multiply`) that itself takes a parameter `y`, and which returns the value of `x * y`.
 
-If you go back to the top of your `example1.py` file, and look at the code we commented out, you'll that's exactly what we did to `times_ten`. We simply defined it as a function with the name `times_ten`.
+If you go back to the top of your `exercise1.py` file, and look at the code we commented out, you'll that's exactly what we did to `times_ten`. We simply defined it as a function with the name `times_ten`.
 
 Closures provide us when an additional layer of abstraction. Now, instead of defining a function `times_ten` and `double` and `triple`, we can use our closure function from above, and simply declare:
 
@@ -199,16 +201,16 @@ print(triple(5))  # => 15
 ```
 
 ----
-### Example 2: Try it on your own
+### Exercise 2: Try it on your own
 
 ```bash
-touch example2.py
-subl example2.py  # The editor of your choice
+touch exercise2.py
+subl exercise2.py  # The editor of your choice
 ```
 
 **Your challenge**:
 
-Inside `closure_practice/example2.py`, try to make a closure function `exponent` that takes a number `y`, and which returns a function that itself takes a number `x`, and which returns the value of raising `x` to the power of `y`.
+Inside `closure_practice/exercise2.py`, try to make a closure function `exponent` that takes a number `y`, and which returns a function that itself takes a number `x`, and which returns the value of raising `x` to the power of `y`.
 
 ----
 First, you should try to make it work on your own. If you get stuck, I'm going to give hints and work through this as we proceed. If at any point you think that you can figure it out on your own, stopping reading and go try it.
@@ -278,7 +280,7 @@ def square(x):
     return x**2
 ```
 
-### Example 3: Interpreting someone else's closure
+### Exercise 3: Interpreting someone else's closure
 
 Try to work through the following closure on your own. Use the tactics we used above.
 
@@ -345,7 +347,7 @@ How do we put this to use?
 
 Let's make a function that takes in a number, and returns the value of doing something with that number.
 
-Go to `closure_practice/example3.py` and add the above code if you haven't already:
+Go to `closure_practice/exercise3.py` and add the above code if you haven't already:
 
 ```python
 def apply_x(x):
@@ -371,7 +373,7 @@ print test_result
 Run the code:
 
 ```bash
-python example3.py
+python exercise3.py
 50
 ```
 
