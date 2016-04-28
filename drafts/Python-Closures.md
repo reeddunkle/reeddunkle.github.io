@@ -4,8 +4,7 @@ title: Closures in Python
 ---
 
 **Specifications**: I'm using Python 2.7.6
-
-I'm going to assume that you're as new to closures as I was a week ago.
+**Proficiency**: Beginner to Intermediate; I'm going to assume that you're as new to closures as I was a week ago.
 
 In your shell, navigate to a directory where you can make some sample code files.
 If you don't have one that you already use for this purpose, make a directory called `closure_practice` and navigate into that directory:
@@ -280,12 +279,6 @@ def square(x):
 Try to work through the following closure on your own. Use the tactics we used above.
 
 ```python
-def times(x):
-    def times_x(y):
-        return y * x
-    return times_x
-```
-
 def apply_to_x(x):
     def unnamed_function(func):
         return func(x)
@@ -293,6 +286,14 @@ def apply_to_x(x):
     return unnamed function
 
 apply_five = apply_x(5)
+```
+
+Can you write a simple examples that takes advantage of `apply_five`?
+
+
+
+
+After that last line, to what is `apply_five` set? 
 
 
 
