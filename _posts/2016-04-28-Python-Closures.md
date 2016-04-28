@@ -145,7 +145,9 @@ python example1.py
 50
 ```
 
-#### Explaining what is happening
+
+### Explaining what is happening
+
 
 The key for my understanding of this -- when things really clicked for me -- was realizing what `return` is doing at each step. I went through this lesson today with a peer of mine, and this was where he was struggling also. This leads me to believe others will struggle with this too.
 
