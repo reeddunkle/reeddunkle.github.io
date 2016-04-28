@@ -18,7 +18,7 @@ cd closure_practice
 
 ### Example 0: Functions stored in variables
 
-This isn't too complicated, but it's important that you understand that this is a thing that can happen in Python.
+This isn't too complicated, but it's important that you understand that this is a thing that can happen in Python:
 
 ```python
 def say_hi_to_reed():
@@ -33,11 +33,11 @@ variable_holding_a_function()  # => "Hi Reed"
 
 ### Example 1: Intro to Closures
 
-Create a file called example1.py and open it up in the editor of your choice. Here's what I did:
+Create a file (inside of the directory we mentioned above) called example1.py and open it up in the editor of your choice (I use Sublime Text). Here's what I did:
 
 ```
 touch example1.py
-subl example1.py  # Or the editor of your choice
+subl example1.py  # Note: subl is Sublime Text's shorthand to open things up into it
 ```
 
 Let's say that we want to make a function that takes a number `x` and returns the value of multiplying that number by 10.
