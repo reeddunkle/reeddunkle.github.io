@@ -113,6 +113,7 @@ def times(x):
     return multiply
 ```
 
+----
 This is a closure. A function that encloses another function. The enclosed function is dependent on the enclosing function.
 Remember our `times_ten` function above? It took a number `x` and returned the value of multiplying `x` and `10`.
 
