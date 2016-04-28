@@ -264,7 +264,7 @@ square = exponent(2)
 cube = exponent(3)
 ```
 
-Looking at what I just typed, what is `square` after I say
+Looking at what I just typed, what is `square` after I declare...?
 
 ```python
 square = exponent(2)
