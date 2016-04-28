@@ -86,14 +86,14 @@ What if we want to make a function `times` that takes a number `x`, and which re
 
 Let's step through this by breaking that down:
 
-1. Make a function `times` that takes a number `x`:
+- Make a function `times` that takes a number `x`:
 
 ```python
 def times(x):
     pass
 ```
 
-2. Which returns a function that itself takes a number `y`...
+- Which returns a function that itself takes a number `y`...
 
 ```python
 def times(x):
@@ -103,7 +103,7 @@ def times(x):
     return multiply
 ```
 
-3. And this function returns the value of multiplying `x` and `y`:
+- And this function returns the value of multiplying `x` and `y`:
 
 ```python
 def times(x):
