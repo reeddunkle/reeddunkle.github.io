@@ -422,5 +422,5 @@ I will revisit and update this as I learn more. In the meantime, I've learned mo
 **Further reading**:
 
 - Mozilla's [post about closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures) (in JavaScript). They provide some practical examples.
-- _Common Mistake #6: Confusing how Python binds variables in closures_ in this article, [The 10 Most Common Mistakes That Python Developers Make](https://www.toptal.com/python/top-10-mistakes-that-python-programmers-make)
+- [The 10 Most Common Mistakes That Python Developers Make](https://www.toptal.com/python/top-10-mistakes-that-python-programmers-make), check out _Common Mistake #6: Confusing how Python binds variables in closures_
 
