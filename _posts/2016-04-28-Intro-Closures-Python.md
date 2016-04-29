@@ -413,7 +413,7 @@ If you're still confused, let me know and I'll work with you to make this post b
 
 ### Final comments
 
-I'm left feeling that I'm spent all of the above time focusing on useless examples, not teaching anything useful. This is partly (or mostly) because I am new to all of this myself, and I don't know enough to appreciate these power of these tools.
+I'm left feeling that I've spent all of the above time focusing on useless examples, not teaching anything useful. This is partly (or mostly) because I am new to all of this myself, and I don't know enough to appreciate the power of these tools.
 
 That said, I _know_ that, conceptually, the reason closures are powerful is because of the additional layer of abstraction they grant us. I hope that makes sense, conceptually. We can make a function that takes a number and multiplies it by ten. Or we can make a function that lets us create other functions to accomplish various aspects of a given task.
 
