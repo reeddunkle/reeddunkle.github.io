@@ -16,9 +16,11 @@ mkdir closure_practice
 cd closure_practice
 ```
 
-### Exercise 0: Functions stored in variables
+I've added this next section in my latest draft of this post, because I realized that it's important that you understand two things before we start on closures.
 
-This isn't too complicated, but it's important that you understand that this is a thing that can happen in Python:
+### Exercise 0.1: Functions stored in variables
+
+This is a thing that can happen in Python:
 
 ```python
 def say_hi_to_reed():
@@ -30,6 +32,26 @@ variable_holding_a_function = say_hi_to_reed
 
 variable_holding_a_function()  # => "Hi Reed"
 ```
+
+### Exercise 0.2: Functions defined inside another function
+
+This is another thing that can happen in Python:
+
+```python
+def say_hi():
+
+    def provide_name():
+        return "Reed"
+        
+    name = provide_name()
+    print "Hi {}".format(name)
+    
+say_hi()
+```
+
+Make sure you understand how `say_hi` constructs its output string from the function `provide_name` that is defined within it.
+
+----
 
 ### Exercise 1: Intro to Closures
 
