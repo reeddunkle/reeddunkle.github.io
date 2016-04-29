@@ -423,3 +423,7 @@ Big ass link to their post about closures:
 
 <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures>
 
+**Resources**:
+
+- Check out _Common Mistake #6: Confusing how Python binds variables in closures_ in this article, [The 10 Most Common Mistakes That Python Developers Make](https://www.toptal.com/python/top-10-mistakes-that-python-programmers-make)
+
