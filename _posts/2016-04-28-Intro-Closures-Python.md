@@ -417,7 +417,7 @@ I'm left feeling that I've spent all of the above time focusing on useless examp
 
 That said, I _know_ that, conceptually, the reason closures are powerful is because of the additional layer of abstraction they grant us. I hope that makes sense, conceptually. We can make a function that takes a number and multiplies it by ten. Or we can make a function that lets us create other functions to accomplish various aspects of a given task.
 
-I will revisit and update this as I learn more. In the meantime, I learned more by reading:
+I will revisit and update this as I learn more. In the meantime, I've learned more by reading:
 
 **Further reading**:
 
