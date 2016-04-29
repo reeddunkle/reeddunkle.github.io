@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Closures in Python
+title: Introduction to Closures in Python
 ---
 
 **Proficiency**: Beginner to Intermediate; I'm going to assume that closures are confusing to you.
