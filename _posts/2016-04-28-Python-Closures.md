@@ -3,9 +3,9 @@ layout: post
 title: Closures in Python
 ---
 
-**Specifications**: I'm using Python 2.7.6
+**Proficiency**: Beginner to Intermediate; I'm going to assume that closures are confusing to you.
 
-**Proficiency**: Beginner to Intermediate; I'm going to assume that you're completely new to closures.
+**Specifications**: I'm using Python 2.7.6
 
 In your shell, navigate to a directory where you can make some sample code files.
 If you don't have one that you already use for this purpose, make a directory called `closure_practice` and navigate into that directory:
