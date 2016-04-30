@@ -2,8 +2,7 @@
 layout: post
 title: Introduction to Closures in Python
 tags:
-- Python knowledge
-- Python 2.7
+- Python
 - Closures
 - Beginner to Intermediate
 ---
