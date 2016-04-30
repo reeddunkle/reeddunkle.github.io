@@ -211,3 +211,5 @@ Here are some other explanations, more thorough, but possibly more confusing:
 <http://stackoverflow.com/questions/9884132/what-exactly-are-pythons-iterator-iterable-and-iteration-protocols>
 
 <http://stackoverflow.com/questions/32799980/what-exactly-does-iterable-mean-in-python>
+
+----
