@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Upgrading to Sublime Text 3
+tags:
+- Sublime Text 2
+- Sublime Text 3
 ---
 
 I kept having this [error message](http://stackoverflow.com/questions/23165426/sublime-text-on-ubuntu-14-04-keeps-attempting-to-remove-it) come up on ST2, and it seems the solution was to install ST3.
