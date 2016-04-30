@@ -2,8 +2,7 @@
 layout: post
 title: Python's Iterables and Iterators
 tags:
-- Python knowledge
-- Python 2.7
+- Python
 - Beginner to Intermediate
 ---
 
