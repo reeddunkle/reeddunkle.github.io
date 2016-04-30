@@ -1,6 +1,12 @@
 ---
 layout: post
 title: Linux BASH Shortcuts
+tags:
+- Shell
+- Bash
+- Terminal
+- Ubuntu
+- Shortcuts
 ---
 
 I have learned these useful terminal shortcuts. I use them a lot, so I’ll document them here:
