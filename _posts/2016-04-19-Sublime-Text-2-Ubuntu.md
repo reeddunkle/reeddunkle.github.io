@@ -2,7 +2,7 @@
 layout: post
 title: Sublime Text 2 On Ubuntu
 tags:
-- Sublime Text 2
+- Sublime Text
 - Ubuntu
 ---
 
