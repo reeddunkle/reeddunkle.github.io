@@ -2,9 +2,7 @@
 layout: post
 title: Linux BASH Shortcuts
 tags:
-- Shell
 - Bash
-- Terminal
 - Ubuntu
 - Shortcuts
 ---
