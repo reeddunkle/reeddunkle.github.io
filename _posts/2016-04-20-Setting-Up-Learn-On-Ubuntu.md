@@ -3,8 +3,6 @@ layout: post
 title: Setting Up Learn.co on Ubuntu
 tags:
 - Ubuntu
-- Learn.co
-- Flatiron School
 ---
 
 When I first started on Learn.co, I was on Windows, and I used the Nitrous IDE, and they walk you through the set-up. I then used my girlfriend's iMac, and the set-up was easy, and again they walk you through it.
