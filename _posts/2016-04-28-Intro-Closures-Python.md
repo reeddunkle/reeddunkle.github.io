@@ -1,6 +1,11 @@
 ---
 layout: post
 title: Introduction to Closures in Python
+tags:
+- Python knowledge
+- Python 2.7
+- Closures
+- Beginner to Intermediate
 ---
 
 **Proficiency**: Beginner to Intermediate; I'm going to assume that closures are confusing to you.
