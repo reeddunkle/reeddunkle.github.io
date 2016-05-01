@@ -428,3 +428,6 @@ I will revisit and update this as I learn more. In the meantime, I've learned mo
 - Mozilla's [post about closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures) (in JavaScript). They provide some practical examples.
 - [The 10 Most Common Mistakes That Python Developers Make](https://www.toptal.com/python/top-10-mistakes-that-python-programmers-make), check out _Common Mistake #6: Confusing how Python binds variables in closures_
 
+After talking through this with a friend of mine, she worked through similar examples in Ruby. Check these things out:
+- [Her Ruby code](https://github.com/natalieparellano/programming-practice/blob/master/closures.rb)
+- Read the chapter "First Class Functions" in [this article](http://wit.io/posts/ruby-is-beautiful-but-im-moving-to-python)  I will come to some of these examples in my post on anonymous functions (not yet written)
