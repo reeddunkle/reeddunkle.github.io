@@ -4,6 +4,7 @@ title: Python's Iterables and Iterators
 tags:
 - Python
 - Beginner to Intermediate
+- Iteration
 ---
 
 Python has iterables and iterators, both of which are invoked during iteration (or while iterating). This is one of those things that is confusing until it isn’t, and there isn’t a great way to narrow that gap.
