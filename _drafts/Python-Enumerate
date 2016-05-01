@@ -1,0 +1,45 @@
+---
+layout: post
+title: Python's Enumerate Method
+tags:
+- Python
+- Beginner to Intermediate
+- Iteration
+---
+
+As a follow up to [Python's iterables and iterators](http://reeddunkle.github.io/Python-Iterables-Iterators/), here is the
+
+### Enumerate method on a list:
+
+Open up a Python repl:
+
+```bash
+>>> the_list = ['a', 'b', 'c']
+>>> enum = enumerate(the_list)
+>>> enum
+<enumerate object at 0x7f4b79751d20>
+>>> enum.next()
+(0, 'a')
+>>> enum.next()
+(1, 'b')
+>>> enum.next()
+(2, 'c')
+>>> enum.next()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+StopIteration
+```
+
+#### What it's doing here:
+
+It generates a list of tuples for each element in the list. Each tuple contains first the index number of the element, and second the element.
+To demonstrate that it generates a list of tuples, do this:
+
+```bash
+>>> the_list = ['a', 'b', 'c']
+>>> enum = enumerate(the_list)
+>>> a = list(enum)
+>>> a
+[(0, 'a'), (1, 'b'), (2, 'c')]
+
+
