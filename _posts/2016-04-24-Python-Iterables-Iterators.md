@@ -218,10 +218,10 @@ Refer to this code:
 ```
 
 
-| When you write: | Python calls: |
-| ------------ | ------------------- |
-| `iter(the_list)` | `the_list.__iter__() |
-| `next(x)` | `x.next()` |
+| When you write:  | Python calls:         |
+| ---------------- | --------------------- |
+| `iter(the_list)` | `the_list.__iter__()` |
+| `next(x)`        | `x.next()`            |
 
 ----
 
