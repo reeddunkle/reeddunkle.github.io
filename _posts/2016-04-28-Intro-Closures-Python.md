@@ -431,4 +431,4 @@ I will revisit and update this as I learn more. In the meantime, I've learned mo
 After talking through this with a friend of mine, she worked through similar examples in Ruby. Check these things out:
 
 - [Her Ruby code](https://github.com/natalieparellano/programming-practice/blob/master/closures.rb)
-- Read the chapter "First Class Functions" in [this article](http://wit.io/posts/ruby-is-beautiful-but-im-moving-to-python)  I will come to some of these examples in my post on anonymous functions (not yet written)
+- Read the chapter "First Class Functions" in [this article](http://wit.io/posts/ruby-is-beautiful-but-im-moving-to-python).  I will come to some of these examples in my post on anonymous functions (not yet written).
