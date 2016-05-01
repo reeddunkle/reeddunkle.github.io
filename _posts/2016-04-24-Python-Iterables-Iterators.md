@@ -33,7 +33,7 @@ for element in the_list:
 
 That has been all I’ve needed to know for most of the coding I’ve done up until this week.
 
-It turns out that a list is iterable, but that it can’t be iterated over until it is  made into an iterator (for-loops do this for you), at which point it can be iterated on.
+It turns out that a list is iterable, but that it can’t be iterated over until it is  made into an iterator (for-loops do this for you), at which point it can be iterated on. **Iterables have the function `__iter__()`**
 
 An iterator has the function `__next__()`, which retrieves and returns the next element in an iterable (beginning with the first element).
 
@@ -67,6 +67,7 @@ AttributeError: 'list' object has no attribute 'next'
 ```
 
 To get an iterator from `the_list`, on which you can call the `next()` function, you call the `iter()` function on the iterable. `iter(the_list)` will return an iterator of `the_list`.
+
 Continuing from above:
 
 ```
@@ -198,6 +199,31 @@ while True:
       except StopIteration:
           break
 ```
+
+----
+**Update 5/1/16:**
+I saw a table like this on [someone else's post](http://www.diveintopython3.net/special-method-names.html#acts-like-iterator), and I think it is helpful. These are equivalent, alternate ways to generate iterators from iterables, and fetch the next element from the iterator.
+
+Refer to this code:
+
+```bash
+>>> the_list = [1, 2, 3]
+>>> x = iter(the_list)
+>>> next(x)
+1
+>>> next(x)
+2
+>>> x.next()
+3
+```
+
+
+| When you write: | Python calls: |
+| ------------ | ------------------- |
+| `iter(the_list)` | `the_list.__iter__() |
+| `next(x)` | `x.next()` |
+
+----
 
 I will continue to edit this post and try to make it cleaner and clearer. If this is confusing to you to whatever degree, check out the following explanations from other people, and see if they make things clearer. I have tried my own way of explaining this, but I worry that I've made it all feel more muddled than it needs to be.
 
