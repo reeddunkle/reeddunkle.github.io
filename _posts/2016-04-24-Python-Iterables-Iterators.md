@@ -208,12 +208,12 @@ Refer to this code:
 
 ```bash
 >>> the_list = [1, 2, 3]
->>> x = iter(the_list)
->>> next(x)
+>>> iterator_of_list = iter(the_list)
+>>> next(iterator_of_list)
 1
->>> next(x)
+>>> next(iterator_of_list)
 2
->>> x.next()
+>>> iterator_of_list.next()
 3
 ```
 
@@ -221,7 +221,7 @@ Refer to this code:
 | When you write:  | Python calls:         |
 | ---------------- | --------------------- |
 | `iter(the_list)` | `the_list.__iter__()` |
-| `next(x)`        | `x.next()`          |
+| `next(x)`        | `x.next()`            |
 
 ----
 
