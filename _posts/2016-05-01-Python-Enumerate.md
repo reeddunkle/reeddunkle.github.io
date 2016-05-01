@@ -9,7 +9,7 @@ tags:
 
 This is a follow up to [Python's iterables and iterators](http://reeddunkle.github.io/Python-Iterables-Iterators/)
 
-### Enumerate method on a list:
+### Enumerate method:
 
 Open up a Python repl:
 
@@ -35,6 +35,7 @@ StopIteration
 
 It generates a list of tuples for each element in the list, and generates an iterator of that list.
 Each tuple contains first the index number of the element, and second the element.
+
 To demonstrate that it generates a list of tuples, try turning the enumerate object into a list:
 
 ```bash
