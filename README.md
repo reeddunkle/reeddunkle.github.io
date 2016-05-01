@@ -12,7 +12,7 @@ I've made some changes to the default Jekyll Now files. I'll document them here 
 
 #### Tables
 
-I added the following code to the `style.scss` file to get table borders and styling to render:
+I added the following code to the `style.scss` file to get table borders and styling to render. I got the code [here](https://gist.github.com/andyferra/2554919)
 
 ```css
 table {
