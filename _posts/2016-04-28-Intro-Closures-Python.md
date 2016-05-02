@@ -46,10 +46,10 @@ def say_hi():
 
     def provide_name():
         return "Reed"
-        
+
     name = provide_name()
     print "Hi {}".format(name)
-    
+
 say_hi()
 ```
 
@@ -92,7 +92,7 @@ Back inside `closure_practice/exercise1.py`:
 ```python
 def multiply(x, y):
     return x * y
-    
+
 result = multiply(5, 10)
 print(result)
 ```
@@ -125,7 +125,7 @@ def times(x):
 def times(x):
     def multiply(y):
         pass
-        
+
     return multiply
 ```
 
@@ -135,7 +135,7 @@ def times(x):
 def times(x):
     def multiply(y):
         return x * y
-    
+
     return multiply
 ```
 
@@ -154,10 +154,10 @@ Back inside `closure_practice/exercise1.py`:
 def times(x):
     def multiply(y):
         return x * y
-    
+
     return multiply
 
-    
+
 times_ten = times(10)  # Can you explain what this sets times_ten to?
 
 result = times_ten(5)  # This is the code from the top of exercise1.py
@@ -186,13 +186,13 @@ Back to the code. Follow the `return` calls:
 def times(x):
     def multiply(y):
         return x * y  # When multiply is called, this is what it returns
-    
+
     return multiply  # When times is called, this is what it returns
 ```
 
 Then we set...
- 
-```python   
+
+```python
 times_ten = times(10)
 ```
 
@@ -264,7 +264,7 @@ def exponent(y):
 def exponent(y):
     def base(x):
         pass
-        
+
     return base
 ```
 
@@ -274,7 +274,7 @@ def exponent(y):
 def exponent(y):
     def base(x):
         return x**y
-        
+
     return base
 ```
 
@@ -314,17 +314,17 @@ def square(x):
 Try to work through the following closure on your own. Use the tactics we used above.
 
 ```python
-def apply_x(x):
+def supply_x(x):
     def unnamed_function(func):
         return func(x)
 
     return unnamed_function
 
-apply_five = apply_x(5)
+supply_five = supply_x(5)
 ```
 
-- Can you write a simple example that puts `apply_five` to use?
-- Can you make an example that uses `apply_x` with something other than a number, and then puts that to use?
+- Can you write a simple example that puts `supply_five` to use?
+- Can you make an example that uses `supply_x` with something other than a number, and then puts that to use?
 - With the first two examples, I started with instructions, "Write a function that take a number, and which returns a function..." Can you write what the instructions for the above closure would be?
 
 If you can do these things, I think you've got the hang of closures.
@@ -335,7 +335,7 @@ If you're confused, don't worry. It's confusing.
 
 To start working out the confusing parts, try to answer these questions:
 
-1. After that last line, to what is `apply_five` set? Work backwards from there.
+1. After that last line, to what is `supply_five` set? Work backwards from there.
 2. What is each function returning?
 3. What are the parameters of each function; what does each function require be passed in?
 4. Where and when are the parameters of the functions being used?
@@ -345,37 +345,37 @@ To start working out the confusing parts, try to answer these questions:
 If you're still confused, I want to walk you through it. Here's the code again for reference:
 
 ```python
-def apply_x(x):
+def supply_x(x):
     def unnamed_function(func):
         return func(x)
 
     return unnamed_function
 
-apply_five = apply_x(5)
+supply_five = supply_x(5)
 ```
 
 Answering the above questions:
 
-- `apply_five` is set to the return value of calling `apply_x(5)`
-- `apply_x` returns `unnamed_function`
+- `supply_five` is set to the return value of calling `supply_x(5)`
+- `supply_x` returns `unnamed_function`
 - Okay, then what is `unnamed_function`? It is a function that takes `func` as a parameter, and returns `func(x)`
 
 That's strange, because we don't explicitly know what `func` is.
 
 We can deduce what it is, though, right? It's called `func`, which isn't meant to trick you. It's probably a function. And the return value `func(x)` reinforces that. We call functions with parenthesis, passing in their parameters as required.
 
-You may feel that the code above assumes too much. You're right, it does. As an exercise, though, once you understand what each part does and needs, it isn't too hard to make an example that puts `apply_x` to use.
+You may feel that the code above assumes too much. You're right, it does. As an exercise, though, once you understand what each part does and needs, it isn't too hard to make an example that puts `supply_x` to use.
 
-Before I say more, see if you can put `apply_x` to use. Feel free to use `apply_five`.
+Before I say more, see if you can put `supply_x` to use. Feel free to use `supply_five`.
 
 Returning to the explanation:
 
-- `apply_x` returns `unnamed_function`
+- `supply_x` returns `unnamed_function`
 - `unnamed_function` takes the parameter `func`, and returns the value of calling `func(x)`.
 
 This feels strange, because we don't know what `func` might be. Okay, but what do we know? We know that we can pass `unnamed_function` a function, and it will return the value of calling the function we passed into it with the value of `x`.
 
-If we say `apply_five = apply_x(5)`, then `apply_five` will call whatever function it is given with 5 as the parameter.
+If we say `supply_five = supply_x(5)`, then `supply_five` will call whatever function it is given with 5 as the parameter.
 
 **How do we put this to use?**
 
@@ -384,22 +384,22 @@ Let's make a function that takes in a number, and returns the value of doing som
 Go to `closure_practice/exercise3.py` and add the above code if you haven't already:
 
 ```python
-def apply_x(x):
+def supply_x(x):
     def unnamed_function(func):
         return func(x)
 
     return unnamed_function
 
-apply_five = apply_x(5)
+supply_five = supply_x(5)
 
-# We make something that can use apply_five
+# We make something that can use supply_five
 
 def multiply_by_ten(x):
     return x * 10
-    
-# Now we use apply_five
 
-test_result = apply_five(multiply_by_ten)
+# Now we use supply_five
+
+test_result = supply_five(multiply_by_ten)
 
 print test_result
 ```
