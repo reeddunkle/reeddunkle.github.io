@@ -16,8 +16,56 @@ I've found that making my own versions of built-in methods helps me understand t
 
 **Instructions**
 
- - Build a function called `my_filter` that takes a boolean function, and a list as parameters, and which returns a new list consisting of the elements from the original list for which that boolean expression is `True`.
- - Set `numbers = range(1, 100)`
- - Print the result of calling `my_filter` with a [lambda function](http://reeddunkle.github.io/Python-Lambda-Closures/) that filters the elements in `numbers` which are divisible by two
+ - Build a function called `my_filter` that takes a boolean function and a list as parameters. The function should iterate over the list, and test each element in the list against the boolean. Elements for which the boolean expression is `True` should be added to a new list. The function should return the new list.
+ 
+ Once you've done that:
+ 
+ - Set make a list of numbers: `numbers = range(1, 100)`
+ - Print the result of calling `my_filter` with a [lambda function](http://reeddunkle.github.io/Python-Lambda-Closures/) that filters the elements in `numbers` which are divisible by two.
  
  Here's [my solution](https://gist.github.com/reeddunkle/58e2d9bdb7b41cd3cb796d362964e64c)
+
+### Exercise 6
+
+Take this list of tuples:
+
+```python
+members = [('name1', 'Reed'), ('song1', "Don't Turn Around"), ('name2', 'Jonathan'), ('song2', "All That She Wants")]
+```
+
+Use your `my_filter` method to build a new list containing only the tuples that represent the members' names.
+
+Hints:
+
+- Elements in tuples can be accessed with index references
+
+```bash
+>>> tuple = ('fashion', 'nugget')
+>>> tuple[0]
+'fashion'
+>>> tuple[1]
+'nugget'
+```
+
+
+- The `startswith()` method is super useful here. It takes a string as an argument, and compares that string against the start of the string on which it was called. If the characters all match, it returns `True`, otherwise it returns `False`
+
+Example:
+
+```bash
+>>> string = "Reed Dunkle"
+>>> string.startswith('Reed D')
+True
+>>> string.startswith('Re')
+True
+>>> string.startswith('Reed W')
+False
+>>> 
+```
+
+
+### The actual, built-in filter
+
+Now that you've got a working version of your custom filter method, let's look briefly at the advantages of using the built-in `filter()` method.
+
+- Our function only
