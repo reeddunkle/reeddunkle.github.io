@@ -60,7 +60,7 @@ From the [documentation](https://docs.python.org/2/library/functions.html#filter
 
 Our function always filters the iterable's elements into a list. If you filter a tuple or a string, though, the output should be the same.
 
-Example
+Example:
 
 ```python
 def my_filter(function, iterable):
@@ -83,8 +83,8 @@ print(result2)
 The output:
 
 ```bash
-[2, 4, 6, 8]  # my_filter()
-(2, 4, 6, 8)  # filter()
+[2, 4, 6, 8]  # my_filter() outputs a list
+(2, 4, 6, 8)  # filter() maintains the container type
 ```
 
 
