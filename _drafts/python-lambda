@@ -8,8 +8,6 @@ tags:
 
 In Python, anonymous functions are declared with the `lambda` keyword.
 
-**Note**: I'm going to use this post to explain how to use `lambda`, and leave the "why" for later.
-
 ### How to use lambdas:
 
 Refer to the following:
@@ -39,10 +37,26 @@ print(add_two_numbers(10, 3))  # => 13
 
 Because the return value of a lambda isn't explicit, it's useful to see how they are commonly used.
 
-#### As a boolean expression
+#### Lambdas as a boolean expression
+
+Boolean expressions are one of the most common cases of lambdas.
 
 ```python
 is_even = lambda x: x % 2 == 0
 print(is_even(4))  # => True
 print(is_even(3))  # => False
 ```
+
+```python
+is_longer_than_5 = lambda s: len(s) > 5
+name1 = "Reed"
+name2 = "Reedworth"
+
+print(is_longer_than_5(name1))
+print(is_longer_than_5(name2))
+```
+
+----
+
+#### Lambdas in Closures
+
