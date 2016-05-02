@@ -52,8 +52,8 @@ is_longer_than_5 = lambda s: len(s) > 5
 name1 = "Reed"
 name2 = "Reedworth"
 
-print(is_longer_than_5(name1))
-print(is_longer_than_5(name2))
+print(is_longer_than_5(name1))  # => False
+print(is_longer_than_5(name2))  # => True
 ```
 
 ----
