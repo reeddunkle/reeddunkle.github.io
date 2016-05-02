@@ -141,11 +141,15 @@ def times(x):
 
 ----
 
-This is a closure. It is a function that encloses another function. The enclosed function is dependent on the enclosing function.
+This is an example of a closure. A closure describes the relationship the inner function `multiply` has to its parent function `times`. It includes the dependence `multiply` has on `times` to fulfill the lexical scope requirements of its variables. (`times` provides `multiply` with `x`).
+
+I'm going to go into more depth in this in a later post. Until then, more practice.
 
 Remember our `times_ten` function above? It took a number `x` and returned the value of multiplying `x` and `10`.
 
 With our new closure function `times`, we can remake the function `times_ten`.
+
+**Note**: The advantage doing this is reffered to as _function portability_, or making _higher order functions_, or more generally _abstraction_.
 
 Back inside `closure_practice/exercise1.py`:
 
