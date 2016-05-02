@@ -1,0 +1,18 @@
+---
+layout: post
+title: Functional Python - Filter
+tags:
+- Python
+- Functional
+---
+
+The `filter()` method is a way to filter through an [iterable](http://reeddunkle.github.io/Python-Iterables-Iterators/), using a boolean function as a sieve. It constructs a new iterable, filled with the elements from the original iterable that pass the criterion of your boolean function.
+
+It's a quick, easy way to test every element in your iterable against a certain criterion -- those that pass are passed on to the output, those that fail are left out.
+
+### Exercise 1: Make a custom filter
+
+I've found that making my own versions of built-in methods helps me understand the built-in methods a lot better. So, you should try to do it:
+
+ - Build a function that takes a boolean function, and a list as parameters, and which returns a new list consisting of the elements from the original list for which that boolean expression is `True`.
+
