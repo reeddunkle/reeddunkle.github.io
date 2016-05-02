@@ -23,7 +23,7 @@ I've found that making my own versions of built-in methods helps me understand t
  - Set make a list of numbers: `numbers = range(1, 100)`
  - Print the result of calling `my_filter` with a [lambda function](http://reeddunkle.github.io/Python-Lambda-Closures/) that filters the elements in `numbers` which are divisible by two.
 
- Here's [**my solution**](https://gist.github.com/reeddunkle/58e2d9bdb7b41cd3cb796d362964e64c)
+ - Here's [**my solution**](https://gist.github.com/reeddunkle/58e2d9bdb7b41cd3cb796d362964e64c)
 
 ### Exercise 6
 
@@ -42,7 +42,7 @@ Hints:
 - The `startswith()` method is super useful here. It takes a string as an argument, and compares that string against the start of the string on which it was called. If the characters all match, it returns `True`, otherwise it returns `False`.
     - [Example](https://gist.github.com/reeddunkle/6040173f8d1b5202998afedd2642e3f4)
 
-[**My solution**](https://gist.github.com/reeddunkle/569b6eb11340292be398faa5c431ac6d)
+- [**My solution**](https://gist.github.com/reeddunkle/569b6eb11340292be398faa5c431ac6d)
 
 ### The actual, built-in `filter()` method
 
