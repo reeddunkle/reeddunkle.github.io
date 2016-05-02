@@ -1,0 +1,21 @@
+---
+layout: default
+permalink: /terms/
+---
+
+<h1>Terms</h1>
+
+<div class="terms">
+  {% for term in site.terms %}
+    <article class="term">
+
+      <h1><a href="{{ site.baseurl }}{{ term.url }}">{{ term.title }}</a></h1>
+
+      <div class="entry">
+        {{ term.excerpt }}
+      </div>
+
+      <a href="{{ site.baseurl }}{{ term.url }}" class="read-more">Read More</a>
+    </article>
+  {% endfor %}
+</div>
