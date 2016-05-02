@@ -46,9 +46,17 @@ Hints:
 
 ### The built-in `filter()` method
 
-Now that you've got a working version of your custom filter method, let's look briefly at the advantages of using the built-in `filter()` method.
+The built-in method:
+
+_filter(function, iterable)_
+
+Now that you've got a working version of your custom filter method, let's look briefly at the advantages of the built-in method.
 
 **Advantage 1**
+
+From the [documentation](https://docs.python.org/2/library/functions.html#filter)
+
+> If iterable is a string or a tuple, the result also has that type; otherwise it is always a list.
 
 Our function always filters the iterable's elements into a list. If you filter a tuple or a string, though, the output should be the same.
 
@@ -81,6 +89,10 @@ The output:
 
 
 **Advantage 2**
+
+From the [documentation](https://docs.python.org/2/library/functions.html#filter):
+
+> filter(function, iterable) is equivalent to [item for item in iterable if function(item)] if function is not None and [item for item in iterable if item] if function is None.
 
 With the built-in filter, if you pass it `None` for the function in its parameters, it defaults to filtering the iterable's elements based on their truthiness, `if element`.
 
