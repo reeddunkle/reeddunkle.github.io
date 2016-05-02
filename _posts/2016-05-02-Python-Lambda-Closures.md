@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lambdas (and Closures Part II)
+title: Lambdas (and Closures: Part II)
 tags:
 - Python
 - Beginner to Intermediate
@@ -59,7 +59,7 @@ print(is_longer_than_5(name2))
 
 ----
 
-### Closures Part II: Lambdas in Closures
+### Closures: Part II
 
 I will refer to what I covered in Part I, the [Introduction to Closures](http://reeddunkle.github.io/Intro-Closures-Python/). 
 
