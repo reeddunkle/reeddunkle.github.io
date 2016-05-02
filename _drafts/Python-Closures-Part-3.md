@@ -20,7 +20,7 @@ You should try other things. This is only what I've found so far.
 
 Because it offers tab-complete (and lots of other great features), I'm going to use [ipython](https://ipython.org/install.html)
 
-```profile
+```rust
 In [1]: def add(x, y):
    ...:     return lambda a, b: a+b+x+y
    ...: 
