@@ -17,12 +17,12 @@ I've found that making my own versions of built-in methods helps me understand t
 **Instructions**
 
  - Build a function called `my_filter` that takes a boolean function and a list as parameters. The function should iterate over the list, and test each element in the list against the boolean. Elements for which the boolean expression is `True` should be added to a new list. The function should return the new list.
- 
+
  Once you've done that:
- 
+
  - Set make a list of numbers: `numbers = range(1, 100)`
  - Print the result of calling `my_filter` with a [lambda function](http://reeddunkle.github.io/Python-Lambda-Closures/) that filters the elements in `numbers` which are divisible by two.
- 
+
  Here's [**my solution**](https://gist.github.com/reeddunkle/58e2d9bdb7b41cd3cb796d362964e64c)
 
 ### Exercise 6
@@ -48,4 +48,70 @@ Hints:
 
 Now that you've got a working version of your custom filter method, let's look briefly at the advantages of using the built-in `filter()` method.
 
-- Our function only
+**Advantage 1**
+
+Our function always filters the iterable's elements into a list. If you filter a tuple or a string, though, the output should be the same.
+
+Example
+
+```python
+def my_filter(function, iterable):
+    output = []
+    for item in iterable:
+        if function(item):
+            output.append(item)
+
+    return output
+
+the_tuple = (1, 2, 3, 4, 5, 6, 7, 8, 9)
+
+result1 = my_filter(lambda x: x % 2 == 0, the_tuple)
+result2 = filter(lambda x: x % 2 == 0, the_tuple)
+
+print(result1)
+print(result2)
+```
+
+The output:
+
+```bash
+[2, 4, 6, 8]  # my_filter()
+(2, 4, 6, 8)  # filter()
+```
+
+
+**Advantage 2**
+
+With the built-in filter, if you pass it `None` for the function in its parameters, it defaults to filtering the iterable's elements based on their truthiness, `if element`.
+
+Adjusting `my_filter` to support this feature:
+
+```python
+def my_filter(function, iterable):
+    output = []
+    for item in iterable:
+        if function:
+            if function(item):
+                output.append(item)
+        elif item:
+            output.append(item)
+
+    return output
+
+
+the_list = [True, False, 100, "Reed", None, None, "Reedworth"]
+
+result1 = my_filter(None, the_list)
+result2 = filter(None, the_list)  # Showing the built-in
+
+print(result1)
+print(result2)
+```
+
+The output:
+
+```bash
+[True, 100, 'Reed', 'Reedworth']
+[True, 100, 'Reed', 'Reedworth']
+```
+
