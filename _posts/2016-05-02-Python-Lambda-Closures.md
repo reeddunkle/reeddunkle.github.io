@@ -67,7 +67,7 @@ The inner functions we make in closures are better expressed with anonymous func
 While the inner function is doing most of the work in the closure, we never refer to the inner functions by name.
 It ends up taking up a lot space, and making things more confusing.
 
-Let's clean up the closures we made in the introduction by replacing the inner functions with lambdas:
+Let's clean up the closures we made in the introduction by replacing the inner functions with lambdas.
 
 Navigate to the `closure_practice` directory (or anywhere you can play with some code).
 
