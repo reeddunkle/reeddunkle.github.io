@@ -7,7 +7,7 @@ tags:
 - Iteration
 ---
 
-This is a follow up to [Python's iterables and iterators](http://reeddunkle.github.io/Python-Iterables-Iterators/)
+This is a follow up to [Python's Iterables and Iterators](http://reeddunkle.github.io/Python-Iterables-Iterators/)
 
 ### Enumerate method:
 
