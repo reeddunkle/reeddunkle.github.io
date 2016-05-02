@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lambdas (and Closures: Part II)
+title: Lambdas (and Closures - Part II)
 tags:
 - Python
 - Beginner to Intermediate
