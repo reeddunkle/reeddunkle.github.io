@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: term
 title: Unpacking
 tags:
 - Python Terms
