@@ -61,11 +61,7 @@ print(is_longer_than_5(name2))
 
 ### Closures Part II: Lambdas in Closures
 
-I will refer to what I covered in the [Introduction to Closures](http://reeddunkle.github.io/Intro-Closures-Python/).
-
-Navigate to the `closure_practice` directory (or anywhere you can play with some code).
-
-#### Exercise 4: Lambdas in Closures
+I will refer to what I covered in the [Introduction to Closures](http://reeddunkle.github.io/Intro-Closures-Python/). 
 
 The inner functions we make in closures are better expressed with anonymous functions.
 
@@ -73,6 +69,8 @@ While the inner function is doing most of the work in the closure, we never refe
 It ends up taking up a lot space, and making things more confusing.
 
 Let's clean up the closures we made in the introduction by replacing the inner functions with lambdas:
+
+Navigate to the `closure_practice` directory (or anywhere you can play with some code).
 
 ```bash
 subl exercise4.py  # Or the editor of your choice
@@ -108,6 +106,15 @@ def supply_x(x):
     return unnamed_function
 ```
 
+----
 
+#### Last words
 
+As I said, the most common examples of lambdas that I've found are to create easy boolean expressions and to create closures. Lambda boolean expressions in particular (themselves within closures, at times) are common in these other subjects:
 
+- As conditions in list comprehensions
+- As conditions in generators
+- As the condition in these functional methods:
+  - filter(), map(), reduce()
+
+I'll write about these in upcoming days, and you'll see better how we put anonymous functions to use.
