@@ -7,15 +7,25 @@ permalink: /terms/
 
 <div class="terms">
   {% for term in site.terms %}
+    <h4><a href="{{ site.baseurl }}{{ term.url }}">{{ term.title }}</a></h4>
+    
     <article class="term">
-
-      <h1><a href="{{ site.baseurl }}{{ term.url }}">{{ term.title }}</a></h1>
-
       <div class="entry">
-        {{ term.excerpt }}
+        {{ term.title }}
       </div>
 
       <a href="{{ site.baseurl }}{{ term.url }}" class="read-more">Read More</a>
     </article>
   {% endfor %}
+</div>
+
+
+
+<div id="archives">
+    {% for term in site.terms %}
+    <article class="archive-item">
+      <h4><a href="{{ root_url }}{{ termt.url }}">{{term.title}}</a></h4>
+    </article>
+    {% endfor %}
+  </div>
 </div>
