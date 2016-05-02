@@ -44,7 +44,7 @@ Hints:
 
 - [**My solution**](https://gist.github.com/reeddunkle/569b6eb11340292be398faa5c431ac6d)
 
-### The actual, built-in `filter()` method
+### The built-in `filter()` method
 
 Now that you've got a working version of your custom filter method, let's look briefly at the advantages of using the built-in `filter()` method.
 
