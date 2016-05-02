@@ -141,9 +141,9 @@ def times(x):
 
 ----
 
-This is an example of a closure. A closure describes the relationship the inner function `multiply` has to its parent function `times`. It includes the dependence `multiply` has on `times` to fulfill the lexical scope requirements of its variables. (`times` provides `multiply` with `x`).
+This is an example of a closure. A closure describes the relationship the inner function `multiply` has to its parent function `times`. It includes the dependence `multiply` has on `times` to fulfill the lexical scope requirements of its calculations -- (`times` provides `multiply` with `x`).
 
-I'm going to go into more depth in this in a later post. Until then, more practice.
+I'm going to go into more depth in this in a later post.
 
 Remember our `times_ten` function above? It took a number `x` and returned the value of multiplying `x` and `10`.
 
