@@ -8,11 +8,13 @@ permalink: /terms/
 <div id="archives">
 {% for tag in site.tags %}
   <div class="archive-group">
-    {% for post in site.terms %}
+    {% for term in site.terms %}
     <article class="archive-item">
-      <h4><a href="{{ root_url }}{{ post.url }}">{{post.title}}</a></h4>
+      <h4><a href="{{ root_url }}{{ term.url }}">{{term.title}}</a></h4>
     </article>
     {% endfor %}
   </div>
 {% endfor %}
 </div>
+
+<h4>updates</h4>
