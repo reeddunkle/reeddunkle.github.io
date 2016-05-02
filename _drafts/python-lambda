@@ -1,0 +1,48 @@
+---
+layout: post
+title: Anonymous Functions in Python
+tags:
+- Python
+- Beginner to Intermediate
+---
+
+In Python, anonymous functions are declared with the `lambda` keyword.
+
+**Note**: I'm going to use this post to explain how to use `lambda`, and leave the "why" for later.
+
+### How to use lambdas:
+
+Refer to the following:
+
+```python
+add_two_numbers = lambda x, y: x + y
+
+print(add_two_numbers(10, 3))  # => 13
+```
+
+Note that I am setting the variable `add_two_numbers` to be the lambda function itself..
+
+The variables that follow the `lambda` declaration are the functions parameters.
+The resolution of the actions that follow the colon is its return value.
+
+Written as a normal function, this would be:
+
+```python
+def add_numbers(x, y):
+  return x + y
+  
+add_two_numbers = add_numbers  # To follow the process above
+print(add_two_numbers(10, 3))  # => 13
+```
+
+----
+
+Because the return value of a lambda isn't explicit, it's useful to see how they are commonly used.
+
+#### As a boolean expression
+
+```python
+is_even = lambda x: x % 2 == 0
+print(is_even(4))  # => True
+print(is_even(3))  # => False
+```
