@@ -38,22 +38,9 @@ Use your `my_filter` method to build a new list containing only the tuples that 
 Hints:
 
 - Elements in tuples can be accessed with index references
-
-```bash
->>> tuple = ('fashion', 'nugget')
->>> tuple[0]
-'fashion'
->>> tuple[1]
-'nugget'
-```
-
-
+    - [Example](https://gist.github.com/reeddunkle/dc0333e1e32af46c2b7fd5745ded924e)
 - The `startswith()` method is super useful here. It takes a string as an argument, and compares that string against the start of the string on which it was called. If the characters all match, it returns `True`, otherwise it returns `False`.
-
-Here's an example:
-
-<script src="https://gist.github.com/reeddunkle/6040173f8d1b5202998afedd2642e3f4.js"></script>
-
+    - [Example](https://gist.github.com/reeddunkle/6040173f8d1b5202998afedd2642e3f4)
 
 ### The actual, built-in filter
 
