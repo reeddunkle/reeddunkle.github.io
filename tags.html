@@ -14,7 +14,7 @@ permalink: /tags/
 </ul>
 
 <div id="archives">
-{% for tag in site.tags | sort %}
+{% for tag in { site.tags | sort } %}
   <div class="archive-group">
     {% capture tag_name %}{{ tag | first }}{% endcapture %}
     <h3 id="#{{ tag_name | slugize }}">{{ tag_name }}</h3>
