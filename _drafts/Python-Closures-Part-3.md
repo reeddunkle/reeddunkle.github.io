@@ -134,6 +134,7 @@ Out[33]: '<ipython-input-1-ad84dc0591c0>'
 In [34]: code.co_freevars
 Out[34]: ('x', 'y')
 
-In [35]: 
+In [35]: code.co_varnames
+Out[35]: ('a', 'b')
 
 
