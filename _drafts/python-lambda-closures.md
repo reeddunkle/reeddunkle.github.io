@@ -38,7 +38,7 @@ print(add_two_numbers(10, 3))  # => 13
 
 Because the return value of a lambda isn't explicit, it's useful to see how they are commonly used.
 
-### Lambdas as a boolean expression
+### Lambdas as a boolean expressions
 
 Boolean expressions are one of the most common cases of lambdas.
 
