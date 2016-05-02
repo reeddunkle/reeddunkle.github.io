@@ -434,7 +434,7 @@ I will revisit and update this as I learn more. In the meantime, I've learned mo
 **Further reading**:
 
 - [Closures Part II: Anonymous Functions](http://reeddunkle.github.io/Python-Lambda-Closures/)
-- http://stackoverflow.com/questions/36636/what-is-a-closure
+- <http://stackoverflow.com/questions/36636/what-is-a-closure>
 - Mozilla's [post about closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures) (in JavaScript)
 - [The 10 Most Common Mistakes That Python Developers Make](https://www.toptal.com/python/top-10-mistakes-that-python-programmers-make), check out _Common Mistake #6: Confusing how Python binds variables in closures_
 - My friend's [Closure practice in Ruby](https://github.com/natalieparellano/programming-practice/blob/master/closures.rb)
