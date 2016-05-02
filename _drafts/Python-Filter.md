@@ -48,20 +48,11 @@ Hints:
 ```
 
 
-- The `startswith()` method is super useful here. It takes a string as an argument, and compares that string against the start of the string on which it was called. If the characters all match, it returns `True`, otherwise it returns `False`
+- The `startswith()` method is super useful here. It takes a string as an argument, and compares that string against the start of the string on which it was called. If the characters all match, it returns `True`, otherwise it returns `False`.
 
-Example:
+Here's an example:
 
-```bash
->>> string = "Reed Dunkle"
->>> string.startswith('Reed D')
-True
->>> string.startswith('Re')
-True
->>> string.startswith('Reed W')
-False
->>> 
-```
+<script src="https://gist.github.com/reeddunkle/6040173f8d1b5202998afedd2642e3f4.js"></script>
 
 
 ### The actual, built-in filter
