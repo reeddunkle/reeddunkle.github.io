@@ -230,11 +230,11 @@ I will continue to edit this post and try to make it cleaner and clearer. If thi
 
 I hope that my long explanation makes it easier for some to understand. I suspect, however, that what's more important than the perfect explanation is general exposure to the confusion stretched out over time, flopping around in the confusion, and reading any explanation that helps to whatever degree, and from there will come understanding.
 
-Here are some other explanations, more thorough, but possibly more confusing:
+----
 
-<http://nvie.com/posts/iterators-vs-generators/>
+**Further Reading:**
 
-<http://stackoverflow.com/questions/9884132/what-exactly-are-pythons-iterator-iterable-and-iteration-protocols>
-
-<http://stackoverflow.com/questions/32799980/what-exactly-does-iterable-mean-in-python>
+- <http://nvie.com/posts/iterators-vs-generators/>
+- <http://stackoverflow.com/questions/9884132/what-exactly-are-pythons-iterator-iterable-and-iteration-protocols>
+- <http://stackoverflow.com/questions/32799980/what-exactly-does-iterable-mean-in-python>
 
