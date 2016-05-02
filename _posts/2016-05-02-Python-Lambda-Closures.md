@@ -58,7 +58,7 @@ print(is_longer_than_5(name2))  # => True
 
 ----
 
-### Closures: Part II
+### Closures - Part II
 
 I will refer to what I covered in Part I, the [Introduction to Closures](http://reeddunkle.github.io/Intro-Closures-Python/). 
 
