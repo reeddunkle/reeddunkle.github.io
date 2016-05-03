@@ -174,7 +174,9 @@ This is really cool stuff, right? I'll try to make sense of these.
 `code.co_stacksize`:
 
 - The [definition I found](http://python-reference.readthedocs.io/en/latest/docs/code/stacksize.html) reads:
+
 > Returns the required stack size (including local variables).
+
 - I guess this closure requires a stack size of 2
 
 ----
