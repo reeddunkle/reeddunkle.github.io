@@ -178,8 +178,8 @@ This is really cool stuff, right? I'll try to make sense of these.
 > Returns the required stack size (including local variables).
 
 - I guess this closure requires a stack size of 2
-<br />
 
+&nbsp;
 
 That's all I've got for now. Happy hacking.
 
