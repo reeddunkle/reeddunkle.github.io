@@ -3,12 +3,13 @@ layout: post
 title: Python Closures - Part III
 tags:
 - Python
+- Intermediate
 - Closures
 ---
 
-### Part III - Diving In
-
 Let's play around in the repl.
+
+### Diving In
 
 Feel free to call your variables anything else for convenience's sake. I just want to be clear what we're talking about at different moments, so I've been very explicit.
 
