@@ -19,7 +19,7 @@ add_two_numbers = lambda x, y: x + y
 print(add_two_numbers(10, 3))  # => 13
 ```
 
-- I am setting the variable `add_two_numbers` to be the lambda function.
+- I am setting the variable `add_two_numbers` to be the lambda function
 - The variables after the `lambda` declaration are **the function's parameters**: `x, y`
 - The resolution of the actions that follow the colon is **its return value**: `x + y`
 
