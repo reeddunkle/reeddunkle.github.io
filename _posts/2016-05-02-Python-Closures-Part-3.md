@@ -76,11 +76,11 @@ In [24]: cell_1.cell_contents  # Nope, that's it.
 
 I need to think about this in English.
 
-- We have our `add` function that takes two numbers and returns a function that takes two numbers and which returns the sum of all 4 numbers.
+- We have our `add` function that takes two numbers and returns a function that takes two numbers and which returns the sum of all 4 numbers
 - We set the variable `add_4_and_3_to_a_number` to the function returned by `add(4, 3)` (which is then: `lambda: a, b: a+b+4+3`)
-- `add_4_and_3_to_a_number` has a method `__closure__` which returns this tuple of cells.
-- We store that tuple in a variable `closure_data` for easy access.
-- At the end I store an individual cell in a variable called `cell_1`, and can call `cell_contents` on that, which returns `4`.
+- `add_4_and_3_to_a_number` has a method `__closure__` which returns this tuple of cells
+- We store that tuple in a variable `closure_data` for easy access
+- At the end I store an individual cell in a variable called `cell_1`, and can call `cell_contents` on that, which returns `4`
 - This means that the `cell_contents` of these cells represents the value I originally gave the `add` function when I called it at the time of storing it the variable `add_4_and_3_to_a_number`
 
 ----
