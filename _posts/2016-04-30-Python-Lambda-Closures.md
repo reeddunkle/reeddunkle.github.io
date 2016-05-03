@@ -64,8 +64,8 @@ I will refer to what I covered in my [introduction to closures](http://reeddunkl
 
 The inner functions we make in closures are better expressed with anonymous functions.
 
-While the inner function is doing most of the work in the closure, we never refer to the inner functions by name.
-It ends up taking up a lot space, and making things more confusing.
+While the inner function is doing most of the work in the closure, we never find ourselves needing to refer to it by name.
+It ends up taking up a lot space, and it makes things more confusing.
 
 Let's clean up the closures we made in the introduction by replacing the inner functions with lambdas.
 
