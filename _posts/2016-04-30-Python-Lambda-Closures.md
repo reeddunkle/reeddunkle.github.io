@@ -60,7 +60,7 @@ print(is_longer_than_5(name2))  # => True
 
 ### Python Closures - Part II
 
-I will refer to what I covered in Part I, the [Introduction to Closures](http://reeddunkle.github.io/Intro-Closures-Python/). 
+I will refer to what I covered in my [introduction to closures](http://reeddunkle.github.io/Intro-Closures-Python/). 
 
 The inner functions we make in closures are better expressed with anonymous functions.
 
