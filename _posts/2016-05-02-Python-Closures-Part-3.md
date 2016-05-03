@@ -21,7 +21,7 @@ You should try other things. This is only what I've found so far.
 
 Because it offers tab-complete (and lots of other great features), I'm going to use [ipython](https://ipython.org/install.html)
 
-```PHP
+```bash
 In [1]: def add(x, y):
    ...:     return lambda a, b: a+b+x+y
    ...: 
@@ -92,7 +92,7 @@ Okay, so _that's_ how the lambda knows what to refer to in this instance of `add
 
 What else can we come up with? Continuing from above...
 
-```PHP
+```bash
 In [27]: add_4_and_3_to_a_number.__
 add_4_and_3_to_a_number.__call__          add_4_and_3_to_a_number.__hash__
 add_4_and_3_to_a_number.__class__         add_4_and_3_to_a_number.__init__
