@@ -123,3 +123,4 @@ I'll write about these in upcoming days, and you'll see better how we put anonym
 **Further Reading**:
 
 - [Python Closures - Part III](http://reeddunkle.github.io/Python-Closures-Part-3/)
+- The _Further Reading_ section from my [first post](http://reeddunkle.github.io/Intro-Closures-Python/) on clousres
