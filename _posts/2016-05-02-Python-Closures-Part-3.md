@@ -7,7 +7,7 @@ tags:
 - Closures
 ---
 
-Let's play around in the repl.
+We started playing around in the repl...
 
 ### Diving In
 
@@ -181,6 +181,22 @@ This is really cool stuff, right? I'll try to make sense of these.
 
 &nbsp;
 
-That's all I've got for now. Happy hacking.
+----
+
+The best piece of information that I've taken away from this is a better understanding of what a "closure" is. When I wrote my [introduction](http://reeddunkle.github.io/Intro-Closures-Python/) to closures last week, I had this impression that a closure was a function that enclosed another function.
+
+I've edited my other posts to reflect what a closure actually represents -- a dependency a function has on variables defined outside of its scope, in its environment.
+
+We can see that happening above. After we set `add_4_and_3_to_a_number` to be equal to the return value of calling `add(4, 3)`, the `__closure__` method we call on `add_4_and_3_to_a_number` contains the cell data, whose contents turn out to be the numbers `4` and `3`.
+
+The lambda function needs access to those numbers; they give definition to the variables `x` and `y` within the lambda function. What we've seen above is, presumably, how the lambda actually accesses those values.
+
+When we say "this is a closure", this is what we're referring to: the variable scope that persists through one environment, which makes itself available to the lambda function.
+
+There's probably a better, clearer way to define this. Please help me in the comments.
+
+----
+
+Thank you to [James Porter](http://jamesporter.me/) for his help with this. He explained to me what closures _actually_ are, and started me playing around in the repl with the stuff above.
 
 (P.S. Read [this](http://stackoverflow.com/questions/36636/what-is-a-closure) if you didn't from my last post)
