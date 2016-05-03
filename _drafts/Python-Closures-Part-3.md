@@ -49,14 +49,14 @@ Out[4]:
 (<cell at 0x7f5a664ada98: int object at 0xca8110>,
  <cell at 0x7f5a663c3b08: int object at 0xca8128>)
 
-In [5]: closure_data = add_4_and_3_to_a_number.__closure__  # Store the above information in a variable
+In [5]: closure_data = add_4_and_3_to_a_number.__closure__  # Store the above information in a variable...
 
 In [6]: closure_data  # Contains a tuple of two cells
 Out[6]: 
 (<cell at 0x7f5a664ada98: int object at 0xca8110>,  
  <cell at 0x7f5a663c3b08: int object at 0xca8128>)
 
-In [10]: closure_data[0]  # Okay, so we can access each element in the tuple.
+In [10]: closure_data[0]  # Okay, this means that we can access each element in the tuple...
 Out[10]: <cell at 0x7f5a664ada98: int object at 0xca8110>
 
 In [11]: closure_data[1]  
@@ -73,7 +73,7 @@ In [23]: cell_1 = closure_data[0]  # To check for tab-complete options
 In [24]: cell_1.cell_contents  # Nope, that's it.
 ```
 
-Okay, I need to think about this in English.
+I need to think about this in English.
 
 We have our `add` function that takes two numbers and returns a function that takes two numbers and which returns the sum of all 4 numbers.
 
@@ -111,7 +111,7 @@ Out[27]: <code object <lambda> at 0x7f5a66390630, file "<ipython-input-1-ad84dc0
 
 In [28]: code = add_4_and_3_to_a_number.__code__  # Store this to a variable for easy access
 
-In [29]: code.__
+In [29]: code.__  # Tab-complete options?
 code.__class__         code.__ge__            code.__lt__            code.__setattr__
 code.__cmp__           code.__getattribute__  code.__ne__            code.__sizeof__
 code.__delattr__       code.__gt__            code.__new__           code.__str__
@@ -119,17 +119,14 @@ code.__doc__           code.__hash__          code.__reduce__        code.__subc
 code.__eq__            code.__init__          code.__reduce_ex__     
 code.__format__        code.__le__            code.__repr__          
 
-In [29]: code.
+In [29]: code.  # Tab-complete options without double underscore?
 code.co_argcount     code.co_filename     code.co_lnotab       code.co_stacksize
 code.co_cellvars     code.co_firstlineno  code.co_name         code.co_varnames
 code.co_code         code.co_flags        code.co_names        
 code.co_consts       code.co_freevars     code.co_nlocals      
 
-In [29]: code.co_argcount
+In [29]: code.co_argcount  # What do these do?
 Out[29]: 2
-
-In [33]: code.co_filename
-Out[33]: '<ipython-input-1-ad84dc0591c0>'
 
 In [34]: code.co_freevars
 Out[34]: ('x', 'y')
@@ -137,4 +134,31 @@ Out[34]: ('x', 'y')
 In [35]: code.co_varnames
 Out[35]: ('a', 'b')
 
+In [36]: code.co_nlocals
+Out[36]: 2
+
+In [37]: code.co_stacksize
+Out[37]: 2
+
+In [38]: code  # What is code?
+Out[38]: <code object <lambda> at 0x7f5a662a29b0>  # It's the lambda
+```
+
+I tried all of these, but cut out the ones that didn't seem that interesting for my purposes.
+
+This is really cool stuff, right? I'll try to make sense of these.
+
+```code.co_argcount```:
+
+- This method returns the number of arguments the lambda takes (because `code` points to the lambda function)
+- To verify this I made a version of our function in which the lambda takes 3 arguments
+
+```code.co_freevars```:
+
+- Returns a tuple containing the names of the free variables
+- I'm not sure what "free variables" means, but clearly in this case they are the closure variables; the variables the closure requires (and retrieves) from a different scope than the one in which the lambda was defined
+
+```code.co_varnames```:
+
+- Returns a tuple 
 
