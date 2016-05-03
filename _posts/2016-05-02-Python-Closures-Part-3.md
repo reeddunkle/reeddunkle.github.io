@@ -179,7 +179,7 @@ This is really cool stuff, right? I'll try to make sense of these.
 
 - I guess this closure requires a stack size of 2
 
-----
+
 
 That's all I've got for now. Happy hacking.
 
