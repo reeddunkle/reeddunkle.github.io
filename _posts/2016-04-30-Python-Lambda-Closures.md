@@ -58,7 +58,7 @@ print(is_longer_than_5(name2))  # => True
 
 ----
 
-### Closures - Part II
+### Python Closures - Part II
 
 I will refer to what I covered in Part I, the [Introduction to Closures](http://reeddunkle.github.io/Intro-Closures-Python/). 
 
@@ -117,3 +117,9 @@ As I said, the most common examples of lambdas that I've found are to create eas
   - filter(), map(), reduce()
 
 I'll write about these in upcoming days, and you'll see better how we put anonymous functions to use.
+
+----
+
+**Further Reading**:
+
+- [Python Closures - Part III](http://reeddunkle.github.io/Python-Closures-Part-3/)
