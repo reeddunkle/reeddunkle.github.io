@@ -107,14 +107,14 @@ def supply_x(x):
 
 ----
 
-#### Last words
+#### Look for lambdas
 
-As I said, the most common examples of lambdas that I've found are to create easy boolean expressions and to create closures. Lambda boolean expressions in particular (themselves within closures, at times) are common in these other subjects:
+Lambda boolean expressions (themselves within closures, at times) are also common as:
 
-- As conditions in list comprehensions
-- As conditions in generators
-- As the condition in these functional methods:
-  - filter(), map(), reduce()
+- Conditions in list comprehensions
+- Conditions in generators
+- The condition in these functional methods:
+  - [`filter()`](http://reeddunkle.github.io/Python-Filter/), map(), reduce()
 
 I'll write about these in upcoming days, and you'll see better how we put anonymous functions to use.
 
