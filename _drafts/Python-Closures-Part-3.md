@@ -91,7 +91,7 @@ Okay, so _that's_ how the lambda knows what to refer to in this instance of `add
 
 What else can we come up with? Continuing from above...
 
-```ipython
+```bash
 In [27]: add_4_and_3_to_a_number.__
 add_4_and_3_to_a_number.__call__          add_4_and_3_to_a_number.__hash__
 add_4_and_3_to_a_number.__class__         add_4_and_3_to_a_number.__init__
@@ -128,6 +128,9 @@ code.co_consts       code.co_freevars     code.co_nlocals
 In [29]: code.co_argcount  # What do these do?
 Out[29]: 2
 
+In [30]: code.co_name
+Out[29]: <lambda>
+
 In [34]: code.co_freevars
 Out[34]: ('x', 'y')
 
@@ -148,17 +151,36 @@ I tried all of these, but cut out the ones that didn't seem that interesting for
 
 This is really cool stuff, right? I'll try to make sense of these.
 
-```code.co_argcount```:
+`code.co_argcount` 
 
 - This method returns the number of arguments the lambda takes (because `code` points to the lambda function)
 - To verify this I made a version of our function in which the lambda takes 3 arguments
 
-```code.co_freevars```:
+`code.co_name`:
+
+- Returns the name of the object it refers to. I tested this with a named function in place of a lambda, and it returns the name of that function.
+
+`code.co_freevars`:
 
 - Returns a tuple containing the names of the free variables
 - I'm not sure what "free variables" means, but clearly in this case they are the closure variables; the variables the closure requires (and retrieves) from a different scope than the one in which the lambda was defined
 
-```code.co_varnames```:
+`code.co_varnames`:
 
-- Returns a tuple 
+- Returns a tuple containing the names of the lambda's variables
 
+`code.co_nlocals`:
+
+- Returns the number of local variables (which are the lamdba's variables)
+
+`code.co_stacksize`:
+
+- The [definition I found](http://python-reference.readthedocs.io/en/latest/docs/code/stacksize.html) reads:
+> Returns the required stack size (including local variables).
+- I guess this closure requires a stack size of 2
+
+----
+
+That's all I've got for now. Happy hacking.
+
+(P.S. Read [this](http://stackoverflow.com/questions/36636/what-is-a-closure) if you didn't from my last post)
