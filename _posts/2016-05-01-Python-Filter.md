@@ -16,7 +16,7 @@ I've found that making my own versions of built-in methods helps me understand t
 
 **Instructions**
 
- - Build a function called `my_filter` that takes a boolean function and a list as parameters. The function should iterate over the list, and test each element in the list against the boolean. Elements for which the boolean expression is `True` should be added to a new list. The function should return the new list.
+ - Build a function called `my_filter` that takes a boolean function and a list as parameters. The `my_filter` function should iterate over the list, and test each element in the list against the boolean function. Elements for which the boolean expression is `True` should be added to a new list. The function should return the new list.
 
  Once you've done that:
 
