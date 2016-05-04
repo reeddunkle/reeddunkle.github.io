@@ -18,7 +18,7 @@ I've found that making my own versions of built-in methods helps me understand t
 
  - Build a function called `my_filter` that takes a boolean function and a list as parameters. The `my_filter` function should iterate over the list, and test each element in the list against the boolean function. Elements for which the boolean expression is `True` should be added to a new list. The function should return the new list.
 
- Once you've done that:
+**Once you've done that**:
 
  - Make a list of numbers: `numbers = range(1, 100)`
  - Print the result of calling `my_filter` with a [lambda function](http://reeddunkle.github.io/Python-Lambda-Closures/) that filters the elements in `numbers` which are divisible by two.
