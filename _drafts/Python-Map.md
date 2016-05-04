@@ -9,7 +9,7 @@ tags:
 
 The `map()` method is a way to apply the effect of a function on every element in an iterable. It iterates over the iterable, and passes each element in turn into the function you provide it. Each of these return values are appended to a (new) list, which `map()` returns.
 
-A simple fact about `map()` that I found useful: The iterable it returns will always be the same size of the original.
+A simple fact about `map()` that I found useful: The iterable it returns will always be the same size as the original.
 
 ### Exercise 7: Make a custom map
 
@@ -132,7 +132,13 @@ Then:
 
 And then lots of Thom Yorke.
 
+----
+
+At the start of this I said that the size of the list returned by `map()` will always be the same as the size of the iterable you fed it.
+
 Before writing this I didn't know that `map()` could take `None` as an argument for the function, or that it could take multiple iterables and work through them in parallel.
+
+If you give multiple iterables of different lengths, then, the size of the list returned will always be as long as the _longest_ iterable.
 
 Thank you for reading this, and learning with me.
 
