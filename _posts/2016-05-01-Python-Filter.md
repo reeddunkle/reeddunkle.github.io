@@ -45,9 +45,9 @@ Use your `my_filter` method to build a list containing only the tuples that repr
 
 - [**My solution**](https://gist.github.com/reeddunkle/569b6eb11340292be398faa5c431ac6d)
 
-### The built-in `filter()` method
+----
 
-The built-in method:
+### The built-in `filter()` method
 
 _filter(function, iterable)_
 
