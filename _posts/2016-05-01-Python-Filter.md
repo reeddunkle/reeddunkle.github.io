@@ -20,7 +20,7 @@ I've found that making my own versions of built-in methods helps me understand t
 
  Once you've done that:
 
- - Set make a list of numbers: `numbers = range(1, 100)`
+ - Make a list of numbers: `numbers = range(1, 100)`
  - Print the result of calling `my_filter` with a [lambda function](http://reeddunkle.github.io/Python-Lambda-Closures/) that filters the elements in `numbers` which are divisible by two.
 
  - Here's [**my solution**](https://gist.github.com/reeddunkle/58e2d9bdb7b41cd3cb796d362964e64c)
