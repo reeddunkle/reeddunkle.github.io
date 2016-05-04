@@ -115,7 +115,7 @@ Lambda boolean expressions (themselves within closures, at times) are also commo
 - Conditions in generators
 - The condition in these functional methods:
   - [`filter()`](http://reeddunkle.github.io/Python-Filter/)
-  - map()
+  - [`map()`](http://reeddunkle.github.io/Python-Map/)
   - reduce()
 
 I'll write about these in upcoming days, and you'll see better how we put anonymous functions to use.
