@@ -29,7 +29,9 @@ A simple fact about `map()` that I found useful: The iterable it returns will al
 - Run this `numbers` through your `my_map` function with an [anonymous function](http://reeddunkle.github.io/Python-Lambda-Closures/) which doubles each number
 - Print the output
 
-- Did it work? Here's [**my solution**](https://gist.github.com/reeddunkle/4ff0d639155b4f921d6b0c3a925a63e5)
+**Did all of this work?**
+
+Here's [**my solution**](https://gist.github.com/reeddunkle/4ff0d639155b4f921d6b0c3a925a63e5)
 
 ### Exercise 8
 
