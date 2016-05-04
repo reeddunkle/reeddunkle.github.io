@@ -33,7 +33,7 @@ Take this list of tuples:
 members = [('name1', 'Reed'), ('song1', "Don't Turn Around"), ('name2', 'Jonathan'), ('song2', "All That She Wants")]
 ```
 
-Use your `my_filter` method to build a new list containing only the tuples that represent the members' names.
+Use your `my_filter` method to build a list containing only the tuples that represent the members' names.
 
 Hints:
 
