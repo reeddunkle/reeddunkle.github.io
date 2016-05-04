@@ -35,7 +35,7 @@ members = [('name1', 'Reed'), ('song1', "Don't Turn Around"), ('name2', 'Jonatha
 
 Use your `my_filter` method to build a list containing only the tuples that represent the members' names.
 
-Hints:
+**Hints:**
 
 - Elements in tuples can be accessed with index references
     - [Example](https://gist.github.com/reeddunkle/dc0333e1e32af46c2b7fd5745ded924e)
