@@ -11,7 +11,7 @@ The `map()` method is a way to apply the effect of a function on every element i
 
 A simple fact about `map()` that I found useful: The iterable it returns will always be the same size as the original.
 
-### Exercise 7: Make a custom map
+### Exercise 7.1: Make a custom map
 
 **Instructions**
 
@@ -23,7 +23,9 @@ A simple fact about `map()` that I found useful: The iterable it returns will al
 - Your `my_map` function should iterate over your iterable, and pass each element into the function you gave it
 - It should compile the return values of that step into a new list, which it returns
 
-**Once you've done that**:
+----
+
+### Exercise 7.2
 
 - Make a list of numbers: `NUMBERS = range(1, 100)`
 - Run this `numbers` through your `my_map` function with an [anonymous function](http://reeddunkle.github.io/Python-Lambda-Closures/) which doubles each number
