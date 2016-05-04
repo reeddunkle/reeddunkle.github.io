@@ -4,6 +4,7 @@ title: The Filter Method
 tags:
 - Python
 - Functional
+- Beginner to Intermediate
 ---
 
 The `filter()` method is a way to filter through an [iterable](http://reeddunkle.github.io/Python-Iterables-Iterators/), using a boolean function as a sieve. It constructs a new iterable, filled with the elements from the original iterable that pass the criterion of your boolean function.
