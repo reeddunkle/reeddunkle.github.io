@@ -35,6 +35,8 @@ A simple fact about `map()` that I found useful: The iterable it returns will al
 
 Here's [**my solution**](https://gist.github.com/reeddunkle/4ff0d639155b4f921d6b0c3a925a63e5)
 
+----
+
 ### Exercise 8
 
 - Take this list of strings:
@@ -46,6 +48,8 @@ PICTURES = ["picture1", "georgi_paws_everywhere", "custom_wreath"]
 - Map the extension `.jpg` on to the end of each of these strings
 
 - Did you get it working? Here's [**my solution**](https://gist.github.com/reeddunkle/863db100ab5c0d96149d5dc4dc9c79f9)
+
+----
 
 ### Exercise 9
 
