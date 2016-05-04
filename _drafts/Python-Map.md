@@ -68,7 +68,7 @@ NAMES = ['Rebecca', 'Georgi', 'Reed', 'Thom Yorke']
 **Hints:**
 
 - If using a lambda function confuses you, make a separate function
-- Tuples are immutable, so you'll need to construct the tuple in that function (you can't `append()` elements onto a tuple
+- Tuples are immutable, so you'll need to construct the tuple in that function (you can't `append()` elements onto a tuple)
 
 - Did you get it working? Here's [**my solution**](https://gist.github.com/reeddunkle/cd2bfb661fe1542681cc4f93a347937e)
 
