@@ -9,9 +9,9 @@ tags:
 
 The `map()` method is a way to apply the effect of a function on every element in an iterable. It iterates over the iterable, and passes each element in turn into the function you provide it. Each of these return values are appended to a (new) list, which `map()` returns.
 
-A simple fact about `map()` that I found useful: The iterable it returns will always be the same size of the original.
+A simple fact about `map()` that I found useful: The iterable it returns will always be the same size as the original.
 
-### Exercise 7: Make a custom map
+### Exercise 7.1: Make a custom map
 
 **Instructions**
 
@@ -19,17 +19,23 @@ A simple fact about `map()` that I found useful: The iterable it returns will al
 - The function it takes as an argument should be a function that takes something as an input, does something to it, and returns the changed element
     - It takes a number and returns the number squared
     - It takes a string and returns the string reversed
-    - Etc.
+    - ...etc.
 - Your `my_map` function should iterate over your iterable, and pass each element into the function you gave it
 - It should compile the return values of that step into a new list, which it returns
 
-**Once you've done that**:
+----
+
+### Exercise 7.2
 
 - Make a list of numbers: `NUMBERS = range(1, 100)`
 - Run this `numbers` through your `my_map` function with an [anonymous function](http://reeddunkle.github.io/Python-Lambda-Closures/) which doubles each number
 - Print the output
 
-- Did it work? Here's [**my solution**](https://gist.github.com/reeddunkle/4ff0d639155b4f921d6b0c3a925a63e5)
+**Did all of this work?**
+
+Here's [**my solution**](https://gist.github.com/reeddunkle/4ff0d639155b4f921d6b0c3a925a63e5)
+
+----
 
 ### Exercise 8
 
@@ -42,6 +48,8 @@ PICTURES = ["picture1", "georgi_paws_everywhere", "custom_wreath"]
 - Map the extension `.jpg` on to the end of each of these strings
 
 - Did you get it working? Here's [**my solution**](https://gist.github.com/reeddunkle/863db100ab5c0d96149d5dc4dc9c79f9)
+
+----
 
 ### Exercise 9
 
@@ -60,7 +68,7 @@ NAMES = ['Rebecca', 'Georgi', 'Reed', 'Thom Yorke']
 **Hints:**
 
 - If using a lambda function confuses you, make a separate function
-- Tuples are immutable, so you'll need to construct the tuple in that function (you can't `append()` elements onto a tuple
+- Tuples are immutable, so you'll need to construct the tuple in that function (you can't `append()` elements onto a tuple)
 
 - Did you get it working? Here's [**my solution**](https://gist.github.com/reeddunkle/cd2bfb661fe1542681cc4f93a347937e)
 
@@ -132,7 +140,13 @@ Then:
 
 And then lots of Thom Yorke.
 
+----
+
+At the start of this I said that the size of the list returned by `map()` will always be the same as the size of the iterable you fed it.
+
 Before writing this I didn't know that `map()` could take `None` as an argument for the function, or that it could take multiple iterables and work through them in parallel.
+
+If you give multiple iterables of different lengths, then, the size of the list returned will always be as long as the _longest_ iterable.
 
 Thank you for reading this, and learning with me.
 
