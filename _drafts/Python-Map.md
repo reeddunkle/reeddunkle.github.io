@@ -19,7 +19,7 @@ A simple fact about `map()` that I found useful: The iterable it returns will al
 - The function it takes as an argument should be a function that takes something as an input, does something to it, and returns the changed element
     - It takes a number and returns the number squared
     - It takes a string and returns the string reversed
-    - Etc.
+    - ...etc.
 - Your `my_map` function should iterate over your iterable, and pass each element into the function you gave it
 - It should compile the return values of that step into a new list, which it returns
 
