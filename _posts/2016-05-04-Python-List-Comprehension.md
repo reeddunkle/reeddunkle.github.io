@@ -76,10 +76,10 @@ Let's say we have a block of text:
 text = "Hello, my name is Reed. I am 28 years old. I am a hack-hack-hackin away at the Recurse Center in NYC. I play around in Python and I like words and vinegar."
 ```
 
-I haven't covered all of these functions. I will, or should, but for now just follow this.
+I haven't covered the `split()` method. It splits a string into a list on a specified token.
 
 ```bash
-text_list = text.split()  # It defaults to splitting on spaces
+text_list = text.split()  # It defaults to splitting the string over spaces
 >>> text_list
 ['Hello,', 'my', 'name', 'is', 'Reed.', 'I', 'am', '28', 'years', 'old.', 'I', 'am', 'a', 'hack-hack-hackin', 'away', 'at', 'the', 'Recurse', 'Center', 'in', 'NYC.', 'I', 'play', 'around', 'in', 'Python', 'and', 'I', 'like', 'words', 'and', 'vinegar.']
 ```
