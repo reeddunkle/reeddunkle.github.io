@@ -41,7 +41,7 @@ To create this list using **list comprehension**, we could instead do this:
 [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
 ```
 
-In English, this reads a bit like this:
+In English, this reads a bit like:
 
 - Set `squares2` to a list
 - Fill it with `x**2` for every x in the range of 0 to 9
