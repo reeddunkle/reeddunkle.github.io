@@ -138,3 +138,5 @@ NAMES = ['Rebecca', 'Georgi', 'Reed', 'Thom Yorke']
 ```
 
 Map them into a tuple using a list comprehension.
+
+[**HACKY SOLUTION**](https://gist.github.com/reeddunkle/bd9671b802ad53656dcccf34673ed427)
