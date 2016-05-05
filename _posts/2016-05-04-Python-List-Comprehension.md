@@ -48,7 +48,7 @@ In English, this reads a bit like:
 
 To compare this to a traditional function:
 
-- The first part of the listcomp are the operations you want to do, whose return values will fill the list you're making
+- In the first part of the list comprehension, you put the operation(s) you want to do, whose return values will populate the list you're making
 - The second part should iterate over the iterable from which you want to create your new list
 
 #### Map as list comprehension
