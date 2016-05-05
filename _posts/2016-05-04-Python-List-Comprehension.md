@@ -18,7 +18,7 @@ From the [docs](https://docs.python.org/2/tutorial/datastructures.html#list-comp
 
 It's easy, honestly. You just have to adjust the way that you express your logic. List comprehensions read a little more like English.
 
-Here's an example. I'm actually stealing the first example from the docs.
+Here's an example. I'm stealing the first example from the docs.
 
 Say we want to do this:
 
