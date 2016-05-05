@@ -57,7 +57,7 @@ This is exactly what we do with the `map()` function. We take a list `numbers`, 
 
 The difference is that, instead of passing `map` a function that raises each element to the power of 2, and an iterable from which to feed into the function, we tell the list comprehension what to do with elements it receives, and we define a for-loop to do the iterating and value passing.
 
-This list comphrension has been deemed a more Pythonic way of mapping an effect onto elements in a list than the built-in `map()` function.
+List comphrension has been deemed a more Pythonic way of mapping an effect onto elements in a list than the built-in `map()` function.
 
 For my purpose, I'm happy to abide by best practices regardless of the philosophy, but if you care about the debate, I believe the preference for list comprehension over functional methods is for two reasons:
 
