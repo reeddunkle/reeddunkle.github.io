@@ -53,7 +53,7 @@ To compare this to a traditional function:
 
 #### Map as list comprehension
 
-Note how this is exactly what we do with the `map()` function. We take a list `numbers`, we map the same effect across every item in that list -- here the effect is raising each element to the power of 2 -- and we make a new list of the return values of doing this thing.
+This is exactly what we do with the `map()` function. We take a list `numbers`, we map the same effect across every item in that list -- here the effect is raising each element to the power of 2 -- and we make a new list of the return values of doing this thing.
 
 The difference is that, instead of passing `map` a function that raises each element to the power of 2, and an iterable from which to feed into the function, we tell the list comprehension what to do with elements it receives, and we define a for-loop to do the iterating and value passing.
 
