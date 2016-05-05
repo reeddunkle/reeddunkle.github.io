@@ -59,10 +59,10 @@ The difference is that, instead of passing `map` a function that raises each ele
 
 List comphrension has been deemed a more Pythonic way of mapping an effect onto elements in a list than the built-in `map()` function.
 
-For my purpose, I'm happy to abide by best practices regardless of the philosophy, but if you care about the debate, I believe the preference for list comprehension over functional methods is for two reasons:
+For my purpose, I'm happy to abide by best practices regardless of the philosophy, but if you care about the debate, I believe that [people](https://en.wikipedia.org/wiki/Benevolent_dictator_for_life) prefer list comprehensions to functional methods for two reasons:
 
-    1. List comprehensions read more like math/logic expressions
-    2. They also read a little more like English
+1. List comprehensions read more like math/logic expressions
+2. They also read a little more like English
 
 ----
 
