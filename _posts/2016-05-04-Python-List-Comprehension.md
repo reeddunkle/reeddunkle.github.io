@@ -16,7 +16,7 @@ From the [docs](https://docs.python.org/2/tutorial/datastructures.html#list-comp
 
 ### Example 1: How it works
 
-It's easy, honestly. You just have to adjust the way that you express your logic. List comprehensions read a little more like english.
+It's easy, honestly. You just have to adjust the way that you express your logic. List comprehensions read a little more like English.
 
 Here's an example. I'm actually stealing the first example from the docs.
 
