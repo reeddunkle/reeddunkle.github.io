@@ -110,6 +110,14 @@ What if we want to look at frequency instead of size, the words that appear at l
 
 ----
 
+**Further Reading:**
+
+David Branner, a fellow Recurser, recently wrote a [short article](http://dpb.bitbucket.org/why-does-python-have-two-ways-to-filter-a-comprehension.html) about Python's list comprehensions.
+
+He includes an example with a clever, Pythonic way to check if a number is negative.
+
+----
+
 I think that exercises are a good way to get a feel for these things (I suppose this is obvious, as I've been assigning exercises without any preface)
 
 If you agree:
