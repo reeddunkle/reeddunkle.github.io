@@ -52,10 +52,10 @@ sudo apt-get install sublime-text
 
 #### **Install Packages (and set them up)**:
 In the second search box that I describe above, type the name of the package, and press Enter when it comes up.
+
   - **Theme – Soda**
-  - **SideBarEnhancements**: (I feel like this one might not have come up for me…)
-  - **AllAutocomplete**
-  - **TrailingSpaces**: Very useful
+  - **SideBarEnhancements**
+  - **TrailingSpaces**
 
 #### **Configure your Settings**:
 - In the menu bar along the **top of your screen** (hold **Alt** if it isn’t coming up), navigate to:
@@ -71,21 +71,26 @@ In the second search box that I describe above, type the name of the package, an
 ]
 }
 ```
-3. I’m going to paste my **Settings – User** file here:
+
+After installing the above packages, I adjusted my settings (from above) to this (below):
 
 ```
 {
-“font_size”: 16,
-“ignored_packages”:
-[
-“Vintage”
-],
-“tab_size”: 4,
-“translate_tabs_to_spaces”: true,
-"theme”: “Soda Dark.sublime-theme”,
-“trim_trailing_white_space_on_save”: true
+    "font_size": 14,
+    "ignored_packages":
+    [
+        "Vintage"
+    ],
+    "indent_to_bracket": true,
+    "soda_classic_tabs": true,
+    "soda_folder_icons": true,
+    "tab_size": 4,
+    "theme": "Soda Dark 3.sublime-theme",
+    "translate_tabs_to_spaces": true,
+    "trim_trailing_white_space_on_save": true
 }
 ```
+
 - The “`theme`” above selects the **Theme – Soda** (I chose Dark version — replace Dark with Light for alternate)
 - Adjust “`tab_size`” if needed
 
@@ -112,6 +117,7 @@ In the second search box that I describe above, type the name of the package, an
 { "keys": ["shift+space"], "command": "move_to", "args": {"to": "eol", "extend": false} }
 ]
 ```
+
 **Note**:
 - The first key binding replaces the **ctrl+v** function with “**Paste and Indent**“. This will adjust your **Paste** to automatically match the indentation of that in which you’re pasting.
 - The second key binding assigns your standard Paste function to ctrl+shift+v
@@ -137,6 +143,8 @@ In the second search box that I describe above, type the name of the package, an
 - Set the language you’re coding in by navigating to:
   **View > Syntax**
 - It’s useful to open entire directories in Sublime
+
+----
 
 _Sources:_  
 <br>
