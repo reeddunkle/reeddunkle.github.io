@@ -83,6 +83,8 @@ List comprehensions are much better choice to do this in my opinion:
 >>> int_input = [int(s) for s in string_input]
 >>> int_input
 [10, 20, 3]
+```
+
 ----
 
 ### Example 3
