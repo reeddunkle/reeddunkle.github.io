@@ -87,7 +87,8 @@ List comprehensions are much better choice to do this in my opinion:
 
 ----
 
-### Example 3
+Filter as a list comprehension
+----
 
 I'm going to switch to strings for a change of pace.
 
@@ -107,8 +108,7 @@ text_list = text.split()  # It defaults to splitting the string over spaces
 
 Now we have a list of the words from the original text, which I stored in a variable called `text_list`. Now we can use this in some examples of list comprehensions.
 
-Filter as a list comprehension
-----
+### Example 3
 
 Let's say we want to filter this list and only look at words longer than 4 characters. Continuing from the code above:
 
@@ -132,7 +132,7 @@ What if we want to look at frequency instead of size, the words that appear at l
 
 ----
 
-I think that exercises are a good way to get a feel for these things (I suppose this is obvious, as I've been assigning exercises without any preface)
+I think that exercises are a good way to get a feel for these things.
 
 If you agree:
 
@@ -170,7 +170,7 @@ C -> G
 T -> A
 A -> U
 
-[My Solution](http://exercism.io/submissions/21c6209b6e244695ba613fa1e55b0bc1)
+[SOLUTION](http://exercism.io/submissions/21c6209b6e244695ba613fa1e55b0bc1)
 ----
 
 ### Bonus Exercise
