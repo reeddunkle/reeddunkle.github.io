@@ -9,14 +9,12 @@ tags:
 
 The `map()` method is a way to apply the effect of a function on every element in an iterable. It iterates over the iterable, and passes each element in turn into the function you provide it. Each of these return values are appended to a (new) list, which `map()` returns.
 
-A simple fact about `map()` that I found useful: The iterable it returns will always be the same size as the original.
-
 ### Exercise 7.1: Make a custom map
 
 **Instructions**
 
 - Build a function called `my_map` that takes a function and an interable as arguments.
-- The function it takes as an argument should be a function that takes something as an input, does something to it, and returns the changed element
+- For this example, make the function it that map takes as an argument a function that takes something as an input, does something to it, and returns the changed element. Examples:
     - It takes a number and returns the number squared
     - It takes a string and returns the string reversed
     - ...etc.
@@ -45,7 +43,7 @@ Here's [**my solution**](https://gist.github.com/reeddunkle/4ff0d639155b4f921d6b
 PICTURES = ["picture1", "georgi_paws_everywhere", "custom_wreath"]
 ```
 
-- Map the extension `.jpg` on to the end of each of these strings
+- Use your custom `my_map` to map the extension `.jpg` on to the end of each of these strings
 
 - Did you get it working? Here's [**my solution**](https://gist.github.com/reeddunkle/863db100ab5c0d96149d5dc4dc9c79f9)
 
@@ -82,14 +80,14 @@ From the [documentation](https://docs.python.org/2/library/functions.html#map):
 
 > Apply function to every item of iterable and return a list of the results. If additional iterable arguments are passed, function must take that many arguments and is applied to the items from all iterables in parallel. If one iterable is shorter than another it is assumed to be extended with None items. If function is None, the identity function is assumed; if there are multiple arguments, map() returns a list consisting of tuples containing the corresponding items from all iterables (a kind of transpose operation). The iterable arguments may be a sequence or any iterable object; the result is always a list.
 
-To figure out what this does, I played around with it. For whatever reason, I started with this part:
+To figure out what this does, I played around with it. I started with this part:
 
 > If function is None, the identity function is assumed; if there are multiple arguments, map() returns a list consisting of tuples containing the corresponding items from all iterables (a kind of transpose operation). The iterable arguments may be a sequence or any iterable object; the result is always a list.
 
 
 By passing in `None` as the function value, it says "the identity function is assumed". I don't know what that means, but I tried giving it `None` as the function, and giving it both `NUMBERS` and `NAMES` in the iterable list, and look what it did:
 
-```bash
+```
 >>> NUMBERS = range(4)
 >>> NAMES = ['Rebecca', 'Georgi', 'Reed', 'Thom Yorke']
 >>>
@@ -107,7 +105,7 @@ Now I'm not sure about that first sentence:
 
 I tried this:
 
-```bash
+```
 >>> NUMBERS = range(4)
 >>> NAMES = ['Rebecca', 'Georgi', 'Reed', 'Thom Yorke']
 >>>
@@ -118,8 +116,8 @@ I tried this:
 
 Then I tried this:
 
-```bash
->>> NUMBERS = range(1, 5)  # I changed this to be 1-4
+```
+>>> NUMBERS = range(1, 5)  # I changed this to be the numbers 1 through 4
 >>> NAMES = ['Rebecca', 'Georgi', 'Reed', 'Thom Yorke']
 >>> results = map(lambda x, y: x*y, NUMBERS, NAMES)  # I changed this to multiply the values
 >>> print results
@@ -142,12 +140,8 @@ And then lots of Thom Yorke.
 
 ----
 
-At the start of this I said that the size of the list returned by `map()` will always be the same as the size of the iterable you fed it.
-
 Before writing this I didn't know that `map()` could take `None` as an argument for the function, or that it could take multiple iterables and work through them in parallel.
 
-If you give multiple iterables of different lengths, then, the size of the list returned will always be as long as the _longest_ iterable.
-
-Thank you for reading this, and learning with me.
+Thank you for reading this and learning with me!
 
 
