@@ -51,7 +51,8 @@ To compare this to a traditional function:
 - In the first part of the list comprehension, you put the operation(s) you want to do, whose return values will populate the list you're making
 - The second part should iterate over the iterable from which you want to create your new list
 
-#### Map as list comprehension
+Map as list comprehension
+----
 
 This is exactly what we do with the `map()` function. We take a list `numbers`, we map an effect across every item in that list -- here the effect is raising each element to the power of 2 -- and we make a new list of the return values of doing this.
 
@@ -63,8 +64,6 @@ For my purpose, I'm happy to abide by best practices regardless of the philosoph
 
 1. List comprehensions read more like math/logic expressions
 2. They also read a little more like English
-
-----
 
 ### Example 2
 
@@ -106,7 +105,8 @@ text_list = text.split()  # It defaults to splitting the string over spaces
 
 Now we have a list of the words from the original text, which I stored in a variable called `text_list`. Now we can use this in some examples of list comprehensions.
 
-#### Filter as a list comprehension
+Filter as a list comprehension
+----
 
 Let's say we want to filter this list and only look at words longer than 4 characters. Continuing from the code above:
 
