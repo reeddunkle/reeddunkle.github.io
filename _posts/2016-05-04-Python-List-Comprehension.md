@@ -6,7 +6,7 @@ tags:
 - Functional
 ---
 
-List comprehension is an easy way to define lists in Python. It is often an alternative to the lambda function, and is considered a more Pythonic way to create the functional methods [`filter()`](http://reeddunkle.github.io/Python-Filter/), [`map()`](http://reeddunkle.github.io/Python-Map/), and `reduce()`.
+List comprehensions are a quick, easy way to create lists in Python. They offer a short, **readable** alternative to creating and editing lists using the lambda function and/or for-loops, and they're considered a more Pythonic way to create and combine the functional methods [`filter()`](http://reeddunkle.github.io/Python-Filter/), [`map()`](http://reeddunkle.github.io/Python-Map/).
 
 From the [docs](https://docs.python.org/2/tutorial/datastructures.html#list-comprehensions):
 
@@ -22,7 +22,7 @@ Here's an example. I'm stealing the first example from the docs.
 
 Say we want to do this:
 
-```bash
+```
 >>> numbers = range(10)
 >>> squares = []
 >>> for x in numbers:
@@ -34,7 +34,7 @@ Say we want to do this:
 
 To create this list using **list comprehension**, we could instead do this:
 
-```bash
+```
 >>> numbers = range(10)
 >>> squares2 = [x**2 for x in numbers]
 >>> squares2
@@ -68,17 +68,37 @@ For my purpose, I'm happy to abide by best practices regardless of the philosoph
 
 ### Example 2
 
+I have often seen people coming from other languages map the `int()` function on a list of strings they are reading in as strings. This happens all of the time reading in inputs for [Hacker Rank](https://www.hackerrank.com) problems.
+
+```
+>>> string_input = ['10', '20', '3']
+>>> int_input = map(int, string_input)
+>>> int_input
+[10, 20, 3]
+```
+
+List comprehensions are much better choice to do this in my opinion:
+
+```
+>>> string_input = ['10', '20', '3']
+>>> int_input = [int(s) for s in string_input]
+>>> int_input
+[10, 20, 3]
+----
+
+### Example 3
+
 I'm going to switch to strings for a change of pace.
 
 Let's say we have a block of text:
 
-```bash
+```
 text = "Hello, my name is Reed. I am 28 years old. I am a hack-hack-hackin away at the Recurse Center in NYC. I play around in Python and I like words and vinegar."
 ```
 
 I haven't covered the `split()` method. It splits a string into a list on a specified token.
 
-```bash
+```
 text_list = text.split()  # It defaults to splitting the string over spaces
 >>> text_list
 ['Hello,', 'my', 'name', 'is', 'Reed.', 'I', 'am', '28', 'years', 'old.', 'I', 'am', 'a', 'hack-hack-hackin', 'away', 'at', 'the', 'Recurse', 'Center', 'in', 'NYC.', 'I', 'play', 'around', 'in', 'Python', 'and', 'I', 'like', 'words', 'and', 'vinegar.']
@@ -90,7 +110,7 @@ Now we have a list of the words from the original text, which I stored in a vari
 
 Let's say we want to filter this list and only look at words longer than 4 characters. Continuing from the code above:
 
-```bash
+```
 >>> long_words = [words for words in text_list if len(words) > 4]  # Notice our boolean expression
 >>> long_words
 ['Hello,', 'Reed.', 'years', 'hack-hack-hackin', 'Recurse', 'Center', 'around', 'Python', 'words', 'vinegar.']
@@ -102,7 +122,7 @@ In English:
 
 What if we want to look at frequency instead of size, the words that appear at least twice in the text.
 
-```bash
+```
 >>> freq_words = [words for words in text if text.count(words) >= 2]
 >>> freq_words
 ['I', 'am', 'I', 'am', 'in', 'I', 'in', 'and', 'I', 'and']
@@ -130,17 +150,25 @@ Map the ".jpg" extension onto each string using a list comprehension.
 
 ### Exercise 9.2
 
-Take the lists from before:
+This is an exercise from [Exercism](http://exercism.io/exercises/python/rna-transcription/readme). My assignment to you, is to complete this using a list comprehension.
 
-```python
-NUMBERS = range(4)
-NAMES = ['Rebecca', 'Georgi', 'Reed', 'Thom Yorke']
-```
+**Rna Transcription**
+Write a program that, given a DNA strand, returns its RNA complement (per RNA transcription).
 
-Map them into a tuple using a list comprehension.
+Both DNA and RNA strands are a sequence of nucleotides.
 
-[**HACKY SOLUTION**](https://gist.github.com/reeddunkle/bd9671b802ad53656dcccf34673ed427)
+The four nucleotides found in DNA are adenine (A), cytosine (C), guanine (G) and thymine (T).
 
+The four nucleotides found in RNA are adenine (A), cytosine (C), guanine (G) and uracil (U).
+
+Given a DNA strand, its transcribed RNA strand is formed by replacing each nucleotide with its complement:
+
+G -> C
+C -> G
+T -> A
+A -> U
+
+[My Solution](http://exercism.io/submissions/21c6209b6e244695ba613fa1e55b0bc1)
 ----
 
 ### Bonus Exercise
