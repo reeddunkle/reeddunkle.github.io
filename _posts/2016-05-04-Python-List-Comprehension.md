@@ -174,6 +174,7 @@ T -> A
 A -> U
 
 [SOLUTION](http://exercism.io/submissions/21c6209b6e244695ba613fa1e55b0bc1)
+
 ----
 
 ### Bonus Exercise
