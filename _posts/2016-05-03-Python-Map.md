@@ -70,7 +70,8 @@ NAMES = ['Rebecca', 'Georgi', 'Reed', 'Thom Yorke']
 
 - Did you get it working? Here's [**my solution**](https://gist.github.com/reeddunkle/cd2bfb661fe1542681cc4f93a347937e)
 
-Built-In Map Function
+
+The Built-In Map Function
 ----
 
 ----
