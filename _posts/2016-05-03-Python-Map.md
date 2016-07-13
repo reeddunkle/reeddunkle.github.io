@@ -101,7 +101,7 @@ By passing in `None` as the function value, it says "the identity function is as
 
 Well, that's cool. Our custom map function certainly won't do that. That takes care of Exercise 9. This seems like a really easy way to combine lists.
 
-Now I'm not sure about that first sentence:
+Now what about that first sentence:
 
 > If additional iterable arguments are passed, function must take that many arguments and is applied to the items from all iterables in parallel.
 
