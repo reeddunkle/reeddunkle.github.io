@@ -5,6 +5,7 @@ tags:
 - Bash
 ---
 
+
 I saw an obvious way to clean up my `hacker_rank` directory, and jumped into it. I had a series of directories from the [Hacker Rank Python exercises](https://www.hackerrank.com/domains/python/py-introduction) in my root directory called `collections_OrderedDict`, `collections_defaultdict`, etc. And another series called `itertools_groupby`, `itertools_combinations`, etc.
 
 I hadn't specified which language the challenges were in, but thought this would fit in with the clean up. In the root `hacker_rank` directory, I made `python_collections`, `python_itertools`, and `python_functionals` directories, mirroring Hacker Rank's categories.
@@ -17,9 +18,15 @@ mv collections_* python_collections
 
 ...(and the same for `itertools_*`), which cleaned up my root directory a lot. Another abstraction layer would be to make a `python` directory, but right now I actually only do the Python exercises.
 
+The Problem
+----
+
 Inside `hacker_rank/python_collections/` I now had a series of directories named `collections_...`, which had become redundant.
 
 I messaged [Leo](https://github.com/Leockard), and asked him to help me come up with a bash script to rename all of these in one swoop.
+
+The Solution
+----
 
 This is what he came up with:
 
