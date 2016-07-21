@@ -9,9 +9,15 @@ I saw an obvious way to clean up my `hacker_rank` directory, and jumped into it.
 
 I hadn't specified which language the challenges were in, but thought this would fit in with the clean up. In the root `hacker_rank` directory, I made `python_collections`, `python_itertools`, and `python_functionals` directories, mirroring Hacker Rank's categories.
 
-I ran `mv collections_* python_collections` (and the same for `itertools_*`), which cleaned up my root directory a lot. Another abstraction layer would be to make a `python` directory, but right now I actually only do the Python exercises.
+I ran...
 
-So then inside `hacker_rank/python_collections/` I had a series of directories named `collections_...`, which was now redundant.
+```
+mv collections_* python_collections
+```
+
+...(and the same for `itertools_*`), which cleaned up my root directory a lot. Another abstraction layer would be to make a `python` directory, but right now I actually only do the Python exercises.
+
+Inside `hacker_rank/python_collections/` I now had a series of directories named `collections_...`, which had become redundant.
 
 I messaged [Leo](https://github.com/Leockard), and asked him to help me come up with a bash script to rename all of these in one swoop.
 
