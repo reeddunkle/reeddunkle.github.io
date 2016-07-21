@@ -7,7 +7,7 @@ tags:
 
 I saw an obvious way to clean up my `hacker_rank` directory, and jumped into it. I had a series of directories from the [Hacker Rank Python exercises](https://www.hackerrank.com/domains/python/py-introduction) in my root directory called `collections_OrderedDict`, `collections_defaultdict`, etc. And another series called `itertools_groupby`, `itertools_combinations`, etc.
 
-I hadn't specified which language at this point, but thought this would fit in with the clean up. In the root `hacker_rank` directory, I made `python_collections`, `python_itertools`, and `python_functionals` directories, mirroring Hacker Rank's categories.
+I hadn't specified which language the challenges were in, but thought this would fit in with the clean up. In the root `hacker_rank` directory, I made `python_collections`, `python_itertools`, and `python_functionals` directories, mirroring Hacker Rank's categories.
 
 I ran `mv collections_* python_collections` (and the same for `itertools_*`), which cleaned up my root directory a lot. Another abstraction layer would be to make a `python` directory, but right now I actually only do the Python exercises.
 
