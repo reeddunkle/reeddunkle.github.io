@@ -41,7 +41,7 @@ find . -maxdepth 1 -name 'collections*' -exec sh -c 'mv {} `echo {} | cut -d _ -
 - which calls `sh` on the string passed as argument: 'mv {} `echo {} | cut -d _ -f2`'
 - which in turn says "call mv on the matched file (`{}`) and change its name to whatever is inside the backticks
 - which is the matched name (`echo {}`)
-- which is then `cut` by the delimiter(`-d`) `_`
+- which is then `cut` by the delimiter (`-d`) `_`
 - and from that cut, you only return the second field: `-f2`
 
 Leo says:
