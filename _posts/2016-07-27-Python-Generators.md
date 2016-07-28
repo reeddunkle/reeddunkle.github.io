@@ -114,7 +114,6 @@ DIY Generators
 ----
 
 > In practice (how you think about them), generators *are* functions, but with the twist that they're resumable.
-
 > -Guido
 
 For [this](https://www.hackerrank.com/challenges/map-and-lambda-expression) Hacker Rank problem, they want us to calculate the cubes of the first N fibonacci numbers.
