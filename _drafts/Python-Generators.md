@@ -268,7 +268,7 @@ You can always call `list()` on a generator to bring the full sequence into memo
 Exercises
 ----
 
-### Exercise 11
+### Exercise 12
 
 - The next time you make code that does this...
 
@@ -289,7 +289,8 @@ def make_generator(things)
         yield do_something(thing)
 ```
 
+### Exercise 13
 
-- For [this](http://exercism.io/exercises/python/run-length-encoding/readme) exercism problem, I made a solution that uses generators for the encoding and decoding. See if you can too!s
+For [this](http://exercism.io/exercises/python/run-length-encoding/readme) exercism problem, I made a solution that uses generators for the encoding and decoding. See if you can too!
 
 [**MY SOLUTION**](http://exercism.io/submissions/f769de6ff62141eda728e93e45a1df9d)
