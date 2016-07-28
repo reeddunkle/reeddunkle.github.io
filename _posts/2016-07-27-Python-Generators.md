@@ -85,9 +85,9 @@ TypeError: 'generator' object has no attribute '__getitem__'
 When might this be useful? In [this](http://exercism.io/exercises/python/difference-of-squares/readme) exercism.io problem, you have to make a function that returns the sum of squares of a range. The code above calculates the squares of a range. For the exercism problem, you need to add these numbers together, so you call `sum()` on them:
 
 ```
->>> sum([x**2 for x in range(5)])
+>>> sum([x**2 for x in xrange(5)])
 30
->>> sum((x**2 for x in range(5)))
+>>> sum((x**2 for x in xrange(5)))
 30
 >>>
 ```
@@ -97,16 +97,16 @@ Notice that to make this calculation, you didn't care about referencing the squa
 You should use a generator for this.
 
 **Note**:
-In [PEP 289](https://www.python.org/dev/peps/pep-0289/), `sum()` was itself turns into a generator function. This means that instead of the above code...
+If you're using a generator like `xrange` (or `range` in python3), then you don't need the parenthesis. Instead of this...
 
 ```
-sum((x**2 for x in range(5)))
+sum((x**2 for x in xrange(5)))
 ```
 
 ...you can do this:
 
 ```
-sum(x**2 for x in range(5))
+sum(x**2 for x in xrange(5))
 ```
 
 I don't know if this difference preserves anything but your eyes.
