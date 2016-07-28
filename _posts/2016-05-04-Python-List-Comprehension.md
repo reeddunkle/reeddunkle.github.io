@@ -139,7 +139,7 @@ I think that exercises are a good way to get a feel for these things.
 
 If you agree:
 
-### Exercise 8.2
+### Exercise 10
 
 Take the list from before:
 
@@ -153,7 +153,7 @@ Map the ".jpg" extension onto each string using a list comprehension.
 
 ----
 
-### Exercise 9.2
+### Exercise 11
 
 This is an exercise from [Exercism](http://exercism.io/exercises/python/rna-transcription/readme). My assignment to you, is to complete this using a list comprehension.
 
