@@ -3,6 +3,7 @@ layout: post
 title: Python Generators
 tags:
 - Python
+- Generators
 ---
 
 When I first heard about generators, it was in context of Python2, and the difference between **range()** and **xrange()**, `xrange()` being a generator function. In Python3, I learned, the original `range()` was removed, and `xrange()` was renamed `range()`. If you look up generators in Python, I can almost guarantee this will be the example you'll see.
