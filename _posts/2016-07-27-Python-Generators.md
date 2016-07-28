@@ -29,7 +29,7 @@ xrange(5)
 >>>
 ```
 
-As you can see, the original `range()` function returns a list -- which means that the entire list is help in memory -- and on the other hand, `xrange()` is this other thing. It’s called a generator, and it brings one element at a time into memory as needed.
+As you can see, the original `range()` function returns a list -- which means that the entire list is held in memory -- and on the other hand, `xrange()` is this other thing. It’s called a generator, and it brings one element at a time into memory as needed.
 
 I didn’t catch on to this at first, but we commonly use lists in a few different ways, and the difference between these have different memory demands. One way we use lists is when part of our design is to edit and manipulate parts of the list, such as rearranging or sorting, and when we need to refer to the list throughout our program.
 
@@ -97,7 +97,7 @@ Notice that to make this calculation, you didn't care about referencing the squa
 You should use a generator for this.
 
 **Note**:
-In [PEP 289](https://www.python.org/dev/peps/pep-0289/), `sum()` was itself turns into a generator expression. This means that instead of the above code...
+In [PEP 289](https://www.python.org/dev/peps/pep-0289/), `sum()` was itself turns into a generator function. This means that instead of the above code...
 
 ```
 sum((x**2 for x in range(5)))
