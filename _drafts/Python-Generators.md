@@ -268,7 +268,7 @@ You can always call `list()` on a generator to bring the full sequence into memo
 Exercises
 ----
 
-### Exercise 
+### Exercise 11
 
 - The next time you make code that does this...
 
