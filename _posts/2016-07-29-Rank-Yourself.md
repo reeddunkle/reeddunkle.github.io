@@ -20,7 +20,7 @@ No one knows how to reply. I have a hard time. "I'm a 7, well...maybe a 6." 15 m
 
 I've been asked by friends to help rank them: "Is my Python 'Intermediate' or 'Advanced'?" I've asked friends to help rank me. As far as I can tell, no one likes it.
 
-I think a big reason I and others don't like it, is because all of these terms are so vague, ambiguous, and amorphous. What we need are clear cut definitions of the terms by which we can categorize ourselves.
+I think a big reason that we don't like it is because all of these terms are so vague, ambiguous, and amorphous. We want clear cut definitions of the terms by which we can categorize ourselves.
 
 I found this [Drefyus model](https://en.wikipedia.org/wiki/Dreyfus_model_of_skill_acquisition), and I think it does just that.
 
