@@ -22,9 +22,7 @@ I've been asked by friends to help rank them: "Is my Python 'Intermediate' or 'A
 
 I think a big reason that we don't like it is because all of these terms are so vague, ambiguous, and amorphous. We want clear cut definitions of the terms by which we can categorize ourselves.
 
-I found this [Drefyus model](https://en.wikipedia.org/wiki/Dreyfus_model_of_skill_acquisition), and I think it does this pretty well.
-
-Here it is:
+I found this [Drefyus model](https://en.wikipedia.org/wiki/Dreyfus_model_of_skill_acquisition), and I think it does this pretty well:
 
 **1. Novice**
 - "rigid adherence to taught rules or plans"
