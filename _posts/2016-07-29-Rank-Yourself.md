@@ -11,6 +11,7 @@ I've ranked my expertise a lot since getting into programming, conversationally,
 
 
 <br/>
+
 Dreyfus Model of Skill Acquisition
 ----
 
@@ -50,6 +51,7 @@ I would like it if I were asked to score myself on this more. Employers might wi
 
 
 <br/>
+
 Some opinions that I currently have
 ----
 
