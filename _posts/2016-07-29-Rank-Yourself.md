@@ -18,7 +18,7 @@ On my CV, and in interviews, I have had to rank my expertise with a language or 
 
 No one knows how to reply. I have a hard time. "I'm a 7, well...maybe a 6." 15 minutes later in the interview, "Can I change that to a 5?".
 
-I've been asked by friends to help rank them: "Is my Python 'Intermediate' or 'Advanced'?" I've asked friends to help rank me. This stuff is hard. As far as I can tell, no one likes it.
+I've been asked by friends to help rank them: "Is my Python 'Intermediate' or 'Advanced'?" I've asked friends to help rank me. As far as I can tell, no one likes it.
 
 I think a big reason I and others don't like it, is because all of these terms are so vague, ambiguous, and amorphous. What we need are clear cut definitions of the terms by which we can categorize ourselves.
 
