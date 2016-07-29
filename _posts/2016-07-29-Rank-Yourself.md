@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Rank Yourself!: A Better Metric for Expertise
+title: Rank Yourself! A Better Metric for Expertise
 tags:
 - Op-Ed
 - Interviews
