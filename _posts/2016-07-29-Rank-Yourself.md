@@ -25,26 +25,26 @@ I think a big reason that we don't like it is because all of these terms are so 
 I found this [Drefyus model](https://en.wikipedia.org/wiki/Dreyfus_model_of_skill_acquisition), and I think it does this pretty well:
 
 **1. Novice**
-- "rigid adherence to taught rules or plans"
-- no exercise of "discretionary judgment"
+    - "rigid adherence to taught rules or plans"
+    - no exercise of "discretionary judgment"
 **2. Advanced beginner**
-- limited "situational perception"
-- all aspects of work treated separately with equal importance
+    - limited "situational perception"
+    - all aspects of work treated separately with equal importance
 **3. Competent**
-- "coping with crowdedness" (multiple activities, accumulation of information)
-- some perception of actions in relation to goals
-- deliberate planning
-- formulates routines
+    - "coping with crowdedness" (multiple activities, accumulation of information)
+    - some perception of actions in relation to goals
+    - deliberate planning
+    - formulates routines
 **4. Proficient**
-- holistic view of situation
-- prioritizes importance of aspects
-- "perceives deviations from the normal pattern"
-- employs maxims for guidance, with meanings that adapt to the situation at hand
+    - holistic view of situation
+    - prioritizes importance of aspects
+    - "perceives deviations from the normal pattern"
+    - employs maxims for guidance, with meanings that adapt to the situation at hand
 **5. Expert**
-- transcends reliance on rules, guidelines, and maxims
-- "intuitive grasp of situations based on deep, tacit understanding"
-- has "vision of what is possible"
-- uses "analytical approaches" in new situations or in case of problems
+    - transcends reliance on rules, guidelines, and maxims
+    - "intuitive grasp of situations based on deep, tacit understanding"
+    - has "vision of what is possible"
+    - uses "analytical approaches" in new situations or in case of problems
 
 I would like it if I were asked to score myself on this more. Employers might wish they were using it too. I can't imagine "1-10" means anything more to them than it does to us.
 
