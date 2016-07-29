@@ -14,7 +14,9 @@ I've ranked my expertise a lot since getting into programming, conversationally,
 
 ## Dreyfus Model of Skill Acquisition
 
-On my CV, and in interviews, I have had to rank my expertise with a language or framework. "Beginner, Intermediate, or Advanced?", "1-5?", "1-10?". I have recently asked others to do this on a 1-10 scale in the [RC Start](https://www.recurse.com/blog/99-free-one-on-one-mentorship-for-new-programmers) community. I was hoping that I could create well-balanced groups. It's terrible. No one knows how to reply. I have a hard time. "I'm a 7, well...maybe a 6." 15 minutes later in the interview, "Can I change that to a 5?".
+On my CV, and in interviews, I have had to rank my expertise with a language or framework. "Beginner, Intermediate, or Advanced?", "1-5?", "1-10?". I have recently asked others to do this on a 1-10 scale in the [RC Start](https://www.recurse.com/blog/99-free-one-on-one-mentorship-for-new-programmers) community. I was hoping that I could create well-balanced groups.
+
+No one knows how to reply. I have a hard time. "I'm a 7, well...maybe a 6." 15 minutes later in the interview, "Can I change that to a 5?".
 
 I've been asked by friends to help rank them: "Is my Python 'Intermediate' or 'Advanced'?" I've asked friends to help rank me. This stuff is hard. As far as I can tell, no one likes it.
 
