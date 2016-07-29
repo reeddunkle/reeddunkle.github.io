@@ -12,7 +12,7 @@ I've ranked my expertise a lot since getting into programming, conversationally,
 
 <br/>
 
-## Dreyfus Model of Skill Acquisition
+## A Different Model
 
 On my CV, and in interviews, I have had to rank my expertise with a language or framework. "Beginner, Intermediate, or Advanced?", "1-5?", "1-10?". I have recently asked others to do this on a 1-10 scale in the [RC Start](https://www.recurse.com/blog/99-free-one-on-one-mentorship-for-new-programmers) community. I was hoping that I could create well-balanced groups.
 
