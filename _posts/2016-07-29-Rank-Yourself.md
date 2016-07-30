@@ -7,7 +7,7 @@ tags:
 - Jobs
 ---
 
-I've ranked my expertise a lot since getting into programming, conversationally, occupationally, and maybe even recreationally once I started to get into the habit. The job postings I see have level requirements: "Senior", "Advanced", or "Intermediate". I hear about "Senior" vs "Junior" devs (and sometimes "Intermediate" here too). I get asked to rank myself, "Beginner", "Intermediate", "Advanced." Or sometimes it's "1-5", or in a recent interview, "1-10". I have opinions about this that I want to share.
+I've ranked my expertise a lot since getting into programming, conversationally, occupationally, and maybe even recreationally once I started to get into the habit. The job postings I see have level requirements: "Senior", "Advanced", or "Intermediate". I hear about "Senior" vs "Junior" devs (and sometimes "Intermediate" here too). I get asked to rank myself, "Beginner", "Intermediate", "Advanced." Or sometimes it's "1-5", or in a recent interview, "1-10". I have opinions about this.
 
 
 <br/>
