@@ -8,7 +8,7 @@ tags:
 
 The main concept that has helped me grasp and use generators is the idea that a generator is an iterable function. I'm going to poke around briefly in the repl to show what methods are available to generators, and how Python uses them.
 
-What is the original `range()` at its core? It's a function that returns a list of numbers. What is `xrange()` at its core? It's a function that...what? Brings one element into memory at a time. Okay, but what does that mean?
+What is the original `range` at its core? It's a function that returns a list of numbers. What is `xrange` at its core? It's a function that...what? Brings one element into memory at a time. Okay, but what does that mean?
 
 Let's look. I'm going to switch to [iPython](https://ipython.org/install.html) because it's much easier on the eyes. If you've never used iPython before, don't worry. It's just a repl with a different look:
 
@@ -51,9 +51,9 @@ In [7]: next(b)
 Out[7]: 1
 ```
 
-It looks like `xrange()` returns an 'xrange' object **which is an iterable**. An [iterable](http://reeddunkle.github.io/Python-Iterables-Iterators/) is an object that can return an iterator. An iterator has the method `next()`.
+It looks like `xrange` returns an 'xrange' object **which is an iterable**. An [iterable](http://reeddunkle.github.io/Python-Iterables-Iterators/) is an object that can return an iterator. An iterator has the method `next()`.
 
-On the other hand, (the original) `range()` returns a list, which is an iterable. Let's imagine you want to use range in a for-loop like above:
+On the other hand, (the original) `range` returns a list, which is an iterable. Let's imagine you want to use range in a for-loop like above:
 
 ```
 In [8]: squares = []
@@ -161,6 +161,6 @@ In [29]:
 
 The generator_range function returns a generator object. Generator objects have the `next()` method which, like any iterator, holds its present state.
 
-To compare `xrange()` to my custom `generator_range()` function, it seems that, roughly: `xrange() returns an object is an iterable, which in turn returns an iterator, whereas `generator_range()` returns a generator object which is an iterator.
+To compare `xrange` to my custom `generator_range` function, it seems that, roughly: `xrange` returns an object is an iterable, which in turn returns an iterator, whereas `generator_range` returns a generator object which is an iterator.
 
-Okay, enough with `xrange()`.
+Okay, enough with `xrange`.
