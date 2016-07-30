@@ -6,7 +6,7 @@ tags:
 - Generators
 ---
 
-When I first heard about generators, it was in context of Python2, and the difference between **range()** and **xrange()**, `xrange()` being a generator function. In Python3, I learned, the original `range()` was removed, and `xrange()` was renamed `range()`. If you look up generators in Python, I can almost guarantee this will be the example you'll see.
+When I first heard about generators, it was in context of Python2, and the difference between **range** and **xrange**, `xrange` being a generator function. In Python3, I learned, the original `range` was removed, and `xrange` was renamed `range`. If you look up generators in Python, I can almost guarantee this will be the example you'll see.
 
 Quick Introduction
 ----
@@ -29,7 +29,7 @@ xrange(5)
 >>>
 ```
 
-As you can see, the original `range()` function returns a list -- which means that the entire list is held in memory -- and on the other hand, `xrange()` is this other thing. It’s called a generator, and it brings one element at a time into memory as needed.
+As you can see, the original `range` function returns a list -- which means that the entire list is held in memory -- and on the other hand, `xrange` is this other thing. It’s called a generator, and it brings one element at a time into memory as needed.
 
 I didn’t catch on to this at first, but we commonly use lists in a few different ways, and the difference between these have different memory demands. One way we use lists is when part of our design is to edit and manipulate parts of the list, such as rearranging or sorting, and when we need to refer to the list throughout our program.
 
@@ -37,7 +37,7 @@ In this case it makes sense to hold the entire list in memory, and work with it 
 
 Another common way we use lists, however, is to build or accumulate a list whose elements we only need to access once for the purposes of iterating. We can save a lot of memory usage in these cases, if we can get away with only bringing one element into memory at a time.
 
-Python’s `range()` is an example of this. We use it to do something a certain amount of times. Or we use it to quickly produce a sequence of numbers that we can refer to one at a time -- for indexing, or for filtering/reducing/mapping.
+Python’s `range` is an example of this. We use it to do something a certain amount of times. Or we use it to quickly produce a sequence of numbers that we can refer to one at a time -- for indexing, or for filtering/reducing/mapping.
 
 In these cases, we don’t require the entire list to be held in memory at the same time. We care about iterating through the elements, one at a time from start to finish. Once we’ve used that element we’re done with it until the next time we want to iterate through them.
 
@@ -50,7 +50,7 @@ I got to this point without too much confusion or objection. But it took me a wh
 Practical Implications
 ----
 
-The key to understand is that we want to use the container solely for the purpose of iteration. We want to go through the elements one at a time. With `range()`, we want to iterate over a range of numbers one at a time. Maybe we have a list of students’ names, and we want to reference them one at a time.
+The key to understand is that we want to use the container solely for the purpose of iteration. We want to go through the elements one at a time. With `range`, we want to iterate over a range of numbers one at a time. Maybe we have a list of students’ names, and we want to reference them one at a time.
 
 The core idea is that for this purpose we want to iterate over the list. We have a container of values, and for our current goal we only care about accessing one value at a time.
 
@@ -124,8 +124,8 @@ I'm going to do it in python3.
 Using generators, we could do this a couple of different ways. This way:
 
 1. Makes a generator that gathers the first `n` fibonacci numbers
-2. Uses `map()` and `lambda` to generate the cubes
-3. In python3, `map()` returns a generator, so I use `list()` to convert it to a list. In python2, map returns a list
+2. Uses `map` and `lambda` to generate the cubes
+3. In python3, `map` returns a generator, so I use `list` to convert it to a list. In python2, map returns a list
 
 ```python
 def fibs(n):
