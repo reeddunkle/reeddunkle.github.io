@@ -1,8 +1,9 @@
 ---
 layout: post
-title: Python Generators II: Under the hood
+title: Python Generators Part II - Under the hood
 tags:
 - Python
+- Generators
 ---
 
 The main concept that has helped me grasp and use generators is the idea that a generator is an iterable function. I'm going to poke around briefly in the repl to show what methods are available to generators, and how Python uses them.
