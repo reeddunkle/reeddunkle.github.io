@@ -7,7 +7,8 @@ tags:
 - From Leo
 ---
 
-Life is short, though I keep this from my children.
+
+>Life is short, though I keep this from my children.
 Life is short, and I’ve shortened mine
 in a thousand delicious, ill-advised ways,
 a thousand deliciously ill-advised ways
@@ -25,4 +26,4 @@ walking you through a real shithole, chirps on
 about good bones: This place could be beautiful,
 right? You could make this place beautiful.
 
-[Maggie Smith](https://www.poetryfoundation.org/poems-and-poets/poets/detail/maggie-smith)
+>[Maggie Smith](https://www.poetryfoundation.org/poems-and-poets/poets/detail/maggie-smith)
