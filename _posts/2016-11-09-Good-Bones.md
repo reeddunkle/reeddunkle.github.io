@@ -7,8 +7,11 @@ tags:
 - From Leo
 ---
 
+----
 
->Life is short, though I keep this from my children.  <br/>
+
+> **Good Bones**  <br/><br/>
+Life is short, though I keep this from my children.  <br/>
 Life is short, and I’ve shortened mine  <br/>
 in a thousand delicious, ill-advised ways,  <br/>
 a thousand deliciously ill-advised ways  <br/>
